@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.01</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Foundations of Natural Law</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.01</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Nature and Moral Order</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Foundations of Natural Law</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.01</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Nature and Moral Order: Is There a Law Written into Reality?</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Is there a moral order built into nature itself, or do human beings make up morality from scratch?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Natural law theory is the oldest and most influential tradition in Western ethics. It holds that human reason can discern, from the structure of human nature and reality itself, basic principles of how human beings ought to act. These principles are not invented by legislatures, not discovered in religious texts alone, and not relative to cultural preference. They are discovered by reason as it reflects on what human beings are and what they are for. Quarter 4 develops this tradition from its ancient roots through its mature expression in Aquinas and into its contemporary relevance. The central text for the quarter is Thomas Aquinas (1225&ndash;1274), whose <em>Summa Theologica</em> contains the definitive classical account of natural law.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the central claim of natural law theory and how it differs from legal positivism and moral relativism.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> trace the idea of natural law from Aristotle through Cicero to Aquinas.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Aquinas's four-tier hierarchy of law and where natural law fits within it.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE CENTRAL CLAIM</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Do you believe that some things are morally wrong regardless of what any government, culture, or religion says about them? If yes, on what basis are they wrong?</div>
+            <div class="widget-options">
+                <button data-response="You are in the intuitive starting point of natural law theory. The challenge it faces is to explain the basis of that intuition: not just that some things are wrong regardless of human agreement, but why, and how we know. That is what the next several weeks will address.">Yes: some acts are wrong regardless of cultural or legal approval.</button>
+                <button data-response="This is a serious philosophical position called moral relativism or legal positivism. Natural law theory was developed precisely to challenge this view. Whether it succeeds is one of the deepest questions in ethics. Over the next weeks you will be in a position to evaluate its arguments from the inside.">No: morality is ultimately relative to culture, law, or agreement.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Core Claim</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Natural law theory holds that there is a moral order that is objective, discoverable by reason, and grounded in the nature of things rather than in human convention. This claim has three components:</p>
+        <ol style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0; padding-left: 22px;">
+            <li style="margin-bottom: 10px;"><strong>Objective:</strong> Moral truths are not invented or decided by human beings; they hold regardless of what any individual or community believes about them.</li>
+            <li style="margin-bottom: 10px;"><strong>Discoverable by reason:</strong> Moral truths can be known through the natural capacity of human reason to reflect on what human beings are and what they are for. This knowledge does not require revelation, though it is consistent with it.</li>
+            <li style="margin-bottom: 10px;"><strong>Grounded in nature:</strong> The source of moral truths is the nature of things, above all human nature and its <em>telos</em> (end or purpose). Because human beings have a nature, there are things that fulfill it and things that frustrate it.</li>
+        </ol>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE TRADITION: ARISTOTLE, CICERO, AQUINAS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Aristotle: The Teleological Foundation</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The ancient roots of natural law lie in Aristotle's teleological account of nature. For Aristotle, every natural kind has a <em>telos</em>: an end or function that defines what it means for a thing of that kind to be excellent. An acorn's telos is to become an oak; a human being's telos is to exercise the soul excellently in accordance with reason. Moral norms follow from this: what is genuinely good for human beings is what enables them to achieve their telos. Aristotle also distinguishes, in the <em>Rhetoric</em>, between laws that apply "to us only" and laws "common to all," the latter grounded in nature rather than human convention.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Cicero: Natural Law as Universal Reason</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The Roman statesman and philosopher Marcus Tullius Cicero (106&ndash;43 BC) gave natural law its most eloquent ancient formulation. In <em>De Re Publica</em> he wrote: "True law is right reason in agreement with nature. It is of universal application, unchanging and everlasting; it summons to duty by its commands, and averts from wrongdoing by its prohibitions... We cannot be freed from its obligations by Senate or People, and we need not look outside ourselves for an expounder or interpreter of it." Cicero's formulation is important for two reasons: it identifies natural law with <em>right reason</em> rather than with mere biology, and it insists on universality as the test of natural law's validity.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Aquinas: The Four-Tier Hierarchy of Law</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Thomas Aquinas synthesized the Aristotelian and Ciceronian traditions, integrating them with the Christian theological tradition. In <em>Summa Theologica</em> I-II, Questions 90&ndash;94, he articulates the definitive classical account. Aquinas distinguishes four types of law that form a hierarchy:</p>
+
+        <div style="background: #0E1C42; border-radius: 10px; padding: 22px 26px; margin: 14px 0 6px 0; color: #ffffff;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.5px;">AQUINAS'S FOUR-TIER HIERARCHY OF LAW (ST I-II, QQ. 90-97)</div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 14px 16px;">
+                    <div style="min-width: 32px; height: 32px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+                    <div>
+                        <div style="font-size: 16px; color: #C7922C; margin-bottom: 5px;">Eternal Law</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6;">The rational order by which God governs all creation. It is the original source of all law. Human beings cannot know the eternal law in its fullness, but they participate in it through reason.</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 14px 16px;">
+                    <div style="min-width: 32px; height: 32px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+                    <div>
+                        <div style="font-size: 16px; color: #C7922C; margin-bottom: 5px;">Divine Law</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6;">God's explicit commands as revealed in Scripture. It supplements natural law by providing guidance beyond what unaided reason can reach, particularly regarding humanity's supernatural end.</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.12); border-radius: 7px; padding: 14px 16px; border: 1px solid #55C8E8;">
+                    <div style="min-width: 32px; height: 32px; border-radius: 50%; background: #55C8E8; color: #0e1c42; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                    <div>
+                        <div style="font-size: 16px; color: #55C8E8; margin-bottom: 5px;">Natural Law <span style="font-size: 12px; color: rgba(255,255,255,0.6);">(our focus this quarter)</span></div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.9); line-height: 1.6;">Human reason's participation in the eternal law. The basic principles of right action that reason discerns from human nature: seek the good and avoid evil, preserve human life, live in community, seek truth. These precepts are universal and knowable by all rational persons.</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 14px 16px;">
+                    <div style="min-width: 32px; height: 32px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+                    <div>
+                        <div style="font-size: 16px; color: #C7922C; margin-bottom: 5px;">Human Law</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6;">Particular determinations made by human authority: statutes, regulations, constitutions. These are valid only insofar as they are consistent with natural law. An unjust human law is no law at all.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Key Claim: Human Law Must Conform to Natural Law</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">For Aquinas, human-made law is not self-validating. A law that commands something contrary to the natural moral order is not a genuine law but a corruption of law. This is the principle that later grounded resistance to unjust regimes: during the Nuremberg Trials (which you examined in Q2), the defense that soldiers were merely following legal orders was rejected precisely on natural law grounds. The judgment affirmed that there is a moral order above positive law to which legal systems are accountable.</p>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; THE FOUR KINDS OF LAW</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; MATCHING AQUINAS'S HIERARCHY</div>
+            <div class="widget-question">Identify which tier of Aquinas's hierarchy of law each scenario most closely involves.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Think about what kind of law this is. Is it invented by a legislature, derived from Scripture, knowable by reason from human nature, or the original rational order of creation?" data-fb="Correct. A municipal regulation about noise limits is a specific determination made by human political authority to serve the common good. It is human law: a particular rule that must be consistent with natural law but has no direct basis in nature or reason alone.">
+                <div class="widget-row-prompt">1. A city ordinance prohibits noise above a certain decibel level after 10 p.m.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Eternal law</button>
+                    <button data-choice="1">Human law</button>
+                    <button data-choice="2">Natural law</button>
+                    <button data-choice="3">Divine law</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Consider: is this principle specific enough to be a human statute? Is it derived from revelation? Or is it a basic principle that reason can discern from what human beings are?" data-fb="Correct. The precept that human beings should not be killed arbitrarily is a primary precept of natural law: it follows from reason's recognition that human life is a basic good, and any rational person reflecting on human nature can discern it. It is not specific enough to be a human statute and is not derived from Scripture alone.">
+                <div class="widget-row-prompt">2. The principle that innocent human beings ought not to be killed arbitrarily.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Eternal law</button>
+                    <button data-choice="1">Human law</button>
+                    <button data-choice="2">Natural law</button>
+                    <button data-choice="3">Divine law</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="This question is not about a specific moral norm or a human rule, but about something more fundamental: the rational order by which all of creation is governed." data-fb="Correct. The rational order by which God governs all creation is eternal law in Aquinas's framework. It is not accessible to human beings in its fullness, but natural law is human reason's participation in it. Eternal law is the ultimate source from which all other valid law derives.">
+                <div class="widget-row-prompt">3. The rational order by which God governs all of creation, the ultimate source from which all valid law derives its authority.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Eternal law</button>
+                    <button data-choice="1">Human law</button>
+                    <button data-choice="2">Natural law</button>
+                    <button data-choice="3">Divine law</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aquinas, <em>Summa Theologica</em> I-II, Question 90 ("On the Essence of Law") and Question 91 ("On the Different Kinds of Law")</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Aquinas's definition of law and his taxonomy carefully. Pay attention to Articles 1 and 2 of Question 90 (law as an ordinance of reason for the common good) and Articles 1&ndash;4 of Question 91.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (4.01 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In your own words, explain the difference between natural law and human law in Aquinas's framework. Can you think of a historical example where human law violated natural law? What was the consequence?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Natural law theory holds that there is a moral order that is objective, discoverable by reason, and grounded in the nature of things. It has its roots in Aristotle's teleological ethics and Cicero's account of universal reason, and reaches its mature expression in Aquinas's four-tier hierarchy of law. For Aquinas, natural law is human reason's participation in the rational order governing all creation. Human law is valid only insofar as it conforms to natural law. The next lesson examines what natural law theory means by "the good" and why the first precept of natural law is: do good and avoid evil.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.01 &middot; Nature and Moral Order</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

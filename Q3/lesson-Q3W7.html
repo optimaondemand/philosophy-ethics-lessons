@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 3.07</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .scale-label { font-size: 13px; color: #6b7a99; font-style: italic; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Virtue Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.07</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Friendship and the Good Life</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Virtue Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.07</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Friendship and the Good Life: Aristotle on Philia</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Is friendship a luxury for a good life, or a necessity?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Aristotle devotes two of the ten books of the <em>Nicomachean Ethics</em> (Books VIII and IX) to friendship. This is a striking proportion: nearly one-fifth of his entire ethical treatise. Most contemporary ethical theories treat friendship as a morally neutral personal matter, or even as a potential source of bias. Aristotle takes the opposite view: genuine friendship is not only a component of the good life but something no human being can flourish without. This lesson examines Aristotle's three-tier account of friendship, explains why the highest kind is so rare and so valuable, and shows how his account of friendship follows directly from his account of virtue and human nature.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish Aristotle's three types of friendship and explain the basis of each.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why Aristotle regards virtue-friendship as essential to flourishing rather than merely pleasant.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why the self-love Aristotle endorses is not narcissism and why it is the foundation of good friendship.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THREE KINDS OF FRIENDSHIP</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think of three people you consider friends. Do you like all three for the same reasons? What is the basis of each relationship?</div>
+            <div class="widget-options">
+                <button data-response="Aristotle anticipates exactly this: people differ in what draws them to different friends. The interesting philosophical question is whether those differences are superficial or reflect fundamentally different kinds of relationship.">The reasons vary quite a bit across my different friendships.</button>
+                <button data-response="Aristotle would push back gently: even if 'caring about the person' feels like a unified answer, on examination you will find that what you value about each person differs. His taxonomy is meant to make those differences explicit.">I like all my friends for roughly the same reason: I genuinely care about them as people.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Philia: More Than What We Mean by "Friendship"</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The Greek word <em>philia</em> covers a wider territory than the English word "friendship." It includes close friendships, but also ties of affection between parents and children, between business partners, and between citizens. The root meaning is love with mutual goodwill: both parties wish well to the other and both know it. When that mutual knowledge is absent, you may have goodwill toward someone, but not friendship.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle argues that all friendships are based on one of three things: utility, pleasure, or virtue. This gives him his three-tier taxonomy.</p>
+
+        <!-- Three-tier visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 22px 26px; margin: 18px 0 6px 0; color: #ffffff;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.5px;">ARISTOTLE'S THREE-TIER TAXONOMY OF FRIENDSHIP (NE VIII)</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+                <div style="background: rgba(255,255,255,0.08); border-radius: 8px; padding: 16px 18px;">
+                    <div style="font-size: 16px; color: #C7922C; margin-bottom: 8px;">Utility Friendship</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6; margin-bottom: 6px;"><strong>Based on:</strong> mutual usefulness. Each person values the other for the benefits received.</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.5; margin-bottom: 6px;"><strong>Example:</strong> two business partners; a student and a classmate who share notes.</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.5;"><strong>Stability:</strong> Low. The friendship dissolves when the utility ends.</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 8px; padding: 16px 18px;">
+                    <div style="font-size: 16px; color: #C7922C; margin-bottom: 8px;">Pleasure Friendship</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6; margin-bottom: 6px;"><strong>Based on:</strong> the enjoyment each person takes in the other. Each values the other for the pleasure the relationship provides.</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.5; margin-bottom: 6px;"><strong>Example:</strong> friends who enjoy the same activity; acquaintances who are witty and entertaining together.</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.5;"><strong>Stability:</strong> Moderate. Dissolves if tastes change or life circumstances separate the parties.</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 8px; padding: 16px 18px;">
+                    <div style="font-size: 16px; color: #55C8E8; margin-bottom: 8px;">Virtue Friendship</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6; margin-bottom: 6px;"><strong>Based on:</strong> mutual recognition of and respect for each other's good character. Each loves the other for who they are, not for what they provide.</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.5; margin-bottom: 6px;"><strong>Example:</strong> two people who share deep values, help each other become better, and wish for each other's genuine good.</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.75); line-height: 1.5;"><strong>Stability:</strong> High. Lasts as long as both remain good, because what is loved does not change.</div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 15px; color: #666; font-style: italic; margin: 4px 0 14px 0;">Aristotle does not say utility and pleasure friendships are false or bad. They are genuine friendships with genuine value. But they are, as he says, friendships only "incidentally" &mdash; the friend is valued for something external, not for himself.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHY VIRTUE-FRIENDSHIP IS NECESSARY</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Argument from Human Nature</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle says in Book IX that "a human being is a social and political animal" and that living a solitary life is not merely lonely but a failure to live a properly human life. Virtue-friendship is not an ornament added to a life already complete; it is partly constitutive of the good life. Why?</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle's argument runs as follows. Virtuous activity is the highest good. But it is very difficult to exercise virtues fully in isolation: courage, justice, and generosity all require a community of persons toward whom you act. Moreover, knowing yourself is difficult: we cannot see ourselves clearly, but we can see our friends clearly, and they can see us. A virtue-friend who knows your character and tells you the truth about it provides something no amount of self-examination can supply. Finally, virtuous friends help each other continue to be virtuous: "living together" with good people shapes character in the way that habituation shapes it initially. The philosopher who lives among scholars becomes more learned; the generous person surrounded by generous friends becomes more reliably generous.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Right Kind of Self-Love</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle makes a striking distinction in Book IX between two senses of self-love. The person who is a "self-lover" in the bad sense assigns the most goods to herself: wealth, honor, and bodily pleasures. This is what we ordinarily mean by selfishness. But Aristotle says there is a different, correct sense of self-love: assigning to yourself the most excellent activities, above all virtuous action and intellectual inquiry. The person who loves herself in this correct sense will also be a better friend, because she has more genuinely good things to share and contribute.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The connection between self-love and friendship becomes clear when Aristotle says: "the virtuous man's relation to his friend is the same as his relation to himself, for his friend is another self." The good friend is not someone who sacrifices herself entirely for another, nor someone who uses another entirely for herself: she is someone who recognizes her friend's genuine good as genuinely good.</p>
+
+        <!-- Commit-then-reveal -->
+        <details style="background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin: 18px 0;">
+            <summary style="font-size: 17px; color: #0e1c42; cursor: pointer; font-weight: 600;">Think about this first, then open: How would Aristotle respond to the objection that virtue-friendship leads to nepotism or favoritism? Write or think through your answer before clicking.</summary>
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #D0D9E8; font-size: 17px; color: #1a2340; line-height: 1.65;">
+                <strong>Aristotle's response:</strong> The objection confuses two domains. Aristotle acknowledges that in matters of justice, impartiality is required: you cannot assign goods unfairly just because someone is your friend. But friendship is not a domain of justice; it is a domain of love and mutual goodwill. It is entirely appropriate to give more attention, time, and care to your virtue-friend than to strangers. The just person treats acquaintances and strangers fairly; she is not obligated to love them equally to her closest friends. What virtue-friendship cannot do is exempt a friend from the demands of justice: if your friend is corrupt, loyalty does not require you to help him conceal it.
+            </div>
+        </details>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; APPLYING ARISTOTLE'S ACCOUNT</div>
+
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; TRY IT &middot; PLACEMENT PRACTICE</div>
+            <div class="widget-question">For each scenario, identify which kind of friendship Aristotle would most likely say it is. Mark your answer on the scale.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Think about what each person values about the other. Is it the benefit they provide, the enjoyment of the interaction, or the other's character itself?" data-fb="Correct. Two study-group members who share notes and help each other prepare for exams value each other primarily for academic benefit. When the course ends or their needs diverge, the relationship typically dissolves. This is utility friendship by Aristotle's account.">
+                <div class="widget-row-prompt">1. Two students form a study group, meet weekly, and rely on each other for notes and exam preparation. They are cordial and helpful but rarely spend time together outside of academic contexts.</div>
+                <div class="scale-label" style="margin-bottom: 8px;">What kind of friendship is this?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Virtue friendship</button>
+                    <button data-choice="1">Utility friendship</button>
+                    <button data-choice="2">Pleasure friendship</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="What is the basis of the affection and concern here? Is it usefulness, enjoyment, or something about who each person is?" data-fb="Correct. Two people who have supported each other through genuine moral difficulty, helped each other stay honest, and still care about each other's flourishing after decades match Aristotle's description of virtue friendship. Each loves the other for who they are, not for what they provide or how they entertain.">
+                <div class="widget-row-prompt">2. Two long-time friends have known each other since college. Over the decades each has told the other difficult truths, helped the other through moral failures, and continues to care about the other's flourishing even when separated by geography.</div>
+                <div class="scale-label" style="margin-bottom: 8px;">What kind of friendship is this?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Virtue friendship</button>
+                    <button data-choice="1">Utility friendship</button>
+                    <button data-choice="2">Pleasure friendship</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Consider what the relationship is actually based on. What do these two people value about the shared time? What would happen if circumstances changed?" data-fb="Correct. A friendship based primarily on shared enjoyment of an activity is pleasure friendship in Aristotle's taxonomy. The people genuinely like each other and the relationship is real, but it is grounded in a shared source of pleasure rather than in mutual recognition of each other's character. If their interests diverged, the friendship would likely fade.">
+                <div class="widget-row-prompt">3. Two neighbors enjoy spending Saturday mornings hiking together. They share a love of the outdoors and have enjoyable conversations on the trail, but rarely see each other otherwise and have not shared personal challenges or moral concerns.</div>
+                <div class="scale-label" style="margin-bottom: 8px;">What kind of friendship is this?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Virtue friendship</button>
+                    <button data-choice="1">Utility friendship</button>
+                    <button data-choice="2">Pleasure friendship</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aristotle, <em>Nicomachean Ethics</em>, Book VIII, Chapters 1&ndash;6; Book IX, Chapters 4&ndash;9</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Aristotle's introduction to friendship and his famous account of the friend as "another self." Pay attention to how Books VIII and IX build on each other.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (3.07 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Do you think Aristotle is right that virtue-friendship is necessary for flourishing, or is it possible to live a good human life with only utility and pleasure friendships? Defend your answer with specific reference to Aristotle's argument.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Aristotle distinguishes three kinds of friendship based on utility, pleasure, and virtue. Only virtue-friendship involves loving the other person for who they are: it is grounded in mutual recognition of good character and involves genuine care for each other's flourishing. Aristotle regards this kind of friendship as necessary, not optional, for the good life: it enables virtuous activity, self-knowledge, and the continued formation of character that eudaimonia requires. The next lesson turns to one of the most searching challenges to virtue ethics: what happens when a person knows what is right but cannot bring himself to do it?</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.07 &middot; Friendship and the Good Life</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 3.06</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; margin: 16px 0; }
+    .flip-card { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 16px 18px; cursor: pointer; transition: box-shadow 0.15s; }
+    .flip-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
+    .flip-card .flip-front { font-size: 15px; color: #0E1C42; line-height: 1.5; font-weight: 600; }
+    .flip-card .flip-back { font-size: 14px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #D0D9E8; display: none; }
+    .flip-card.flipped .flip-back { display: block; }
+    .flip-card .flip-hint { font-size: 11px; color: #999; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Virtue Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.06</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Cardinal Virtues</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Virtue Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.06</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Cardinal Virtues: Courage, Temperance, Justice, and Prudence</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What are the virtues that every human being needs in order to live well?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">The four cardinal virtues &mdash; courage, temperance, justice, and prudence (practical wisdom) &mdash; form the backbone of the classical ethical tradition. They appear in Plato's <em>Republic</em>, are developed in Aristotle's <em>Nicomachean Ethics</em>, and were systematized in the medieval tradition by Thomas Aquinas (1225&ndash;1274), who integrated them with the Christian theological virtues of faith, hope, and charity. They remain the core of the Western virtue tradition. This lesson examines each cardinal virtue in depth, with attention to why each one is necessary for human flourishing and how each can be malformed.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why these four virtues are called "cardinal" and define each one precisely in Aristotelian terms.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why justice is a special virtue, and how Aristotle's account of justice differs from modern rights-based accounts.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> connect the cardinal virtues to the structure of human flourishing established in earlier lessons.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; WHY THESE FOUR</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before reading on, can you think of a person who is missing just one of these four virtues: courage, temperance, justice, or practical wisdom? What goes wrong in their life or character?</div>
+            <div class="widget-options">
+                <button data-response="That is exactly right: each missing virtue leaves a characteristic gap. The coward can see what is right but cannot bring himself to do it. The intemperate person is enslaved to appetite and compromises every other good. The unjust person uses others for his own benefit. The person without practical wisdom cannot recognize what any situation calls for. All four are genuinely necessary.">Yes: each missing virtue creates a specific kind of failure in character and life.</button>
+                <button data-response="Aristotle would say: while virtues are interconnected (and phronesis unifies them), each cardinal virtue addresses a distinct domain. You can have natural tendencies toward three without the fourth, and the gap will show.">It seems like these virtues are so connected you can't really have one without the others.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Cardinal: From the Latin Cardo, a Hinge</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The word "cardinal" comes from the Latin <em>cardo</em>, meaning hinge: these virtues are the hinges on which the moral life turns. They appear first in Plato's <em>Republic</em> (each virtue governing a part of the soul and a part of the city), are developed in Aristotle's <em>Nicomachean Ethics</em>, and are given their canonical form in Aquinas's <em>Summa Theologica</em>. They are called cardinal not because they are arbitrary cultural choices but because each one addresses a fundamental dimension of human action and character that no person can flourish without.</p>
+    </div>
+
+    <!-- PART 2: The Four Virtues -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE FOUR CARDINAL VIRTUES</div>
+
+        <div class="flip-grid ow-flip">
+            <div class="flip-card">
+                <div class="flip-front">Courage (Andreia)</div>
+                <div class="flip-back">The mean between cowardice and recklessness in the domain of fear and danger. The courageous person faces genuinely fearful things in the right way, at the right time, for the right reasons. Aristotle regards this as the foundational virtue: without it, you cannot act on any other virtue when doing so involves difficulty or risk. The coward knows what is right but cannot bring himself to do it.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Temperance (Sophrosyne)</div>
+                <div class="flip-back">The mean between insensibility and self-indulgence in the domain of bodily pleasures. The temperate person is not enslaved to appetite: she takes pleasure in the right things in the right amounts. Aristotle is not an ascetic: he does not say pleasures are bad, but that they must be ordered rather than dominant. The intemperate person allows appetite to override reason and gradually loses the capacity for self-governance.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Justice (Dikaiosyne)</div>
+                <div class="flip-back">Aristotle calls justice "the greatest of the virtues" and "a complete virtue" because it is the only virtue directed entirely toward others. The just person gives each person their due: neither more nor less than what they are owed. There are two kinds: distributive justice (fair distribution of goods and burdens) and corrective justice (rectifying wrongs). Justice is not just a disposition but a relationship: it requires a community of persons between whom claims and obligations exist.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Prudence (Phronesis)</div>
+                <div class="flip-back">Practical wisdom, or the capacity to deliberate well about what conduces to living well overall. Aristotle makes this the master intellectual virtue governing all the moral virtues. Without phronesis, the moral virtues become rigid traits that misfire in unusual situations. With it, a person perceives what each situation calls for and responds accordingly. This is why Aquinas (following Aristotle) places prudence among the cardinal virtues: it is not merely a technique but a form of moral excellence.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+        </div>
+        <button class="widget-reset" style="margin: 4px 0 12px 0;">Reset cards</button>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Justice as a Special Case</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle devotes the entire Book V of the <em>Nicomachean Ethics</em> to justice, more than any other virtue. He says justice is the complete virtue in relation to others: if you are just, you exercise virtue in all your dealings with other people, not merely with yourself. "The just man," Aristotle says, "is the man who exercises his good qualities in his relations with other people; whereas the unjust man uses others for his own ends."</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This differs importantly from the Kantian rights-based account. For Kant, justice is primarily a matter of non-violation: you are just when you do not violate others' rights. For Aristotle, justice is a positive virtue: it involves actively recognizing what others are owed and giving it to them. The just person is not merely someone who refrains from stealing; she is someone who actively attends to what fairness requires in her dealings with others.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; THE VIRTUES AND FLOURISHING</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHICH CARDINAL VIRTUE?</div>
+            <div class="widget-question">Identify which cardinal virtue is most clearly at issue in each scenario.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Is the failure here related to fear and danger, to appetite, to what others are owed, or to knowing what the situation calls for?" data-fb="Correct. The failure to control appetite for food and drink so that it compromises important activities and relationships is a failure of temperance. The temperate person enjoys pleasures in the right amounts; the intemperate person allows appetite to override other goods.">
+                <div class="widget-row-prompt">1. A person consistently fails to control his appetite for food and drink, allowing it to disrupt his health, his work, and his relationships.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Courage</button>
+                    <button data-choice="1">Temperance</button>
+                    <button data-choice="2">Justice</button>
+                    <button data-choice="3">Prudence</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Is this a failure about fear, appetite, recognizing what is owed to others, or practical judgment?" data-fb="Correct. Taking credit for others' work and paying unequal wages for equal work are failures of justice: failures to give each person what they are owed. The just manager recognizes the claims of others and meets them.">
+                <div class="widget-row-prompt">2. A manager routinely takes credit for her team's work and underpays employees doing equivalent jobs based on favoritism.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Courage</button>
+                    <button data-choice="1">Temperance</button>
+                    <button data-choice="2">Justice</button>
+                    <button data-choice="3">Prudence</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3" data-hint="Is this about overcoming fear, controlling appetite, treating others fairly, or knowing what the situation actually calls for?" data-fb="Correct. Applying a general principle without perceiving that this particular situation calls for something different is a failure of prudence. Practical wisdom involves recognizing when universal principles need to be qualified in specific circumstances.">
+                <div class="widget-row-prompt">3. A well-intentioned person rigidly applies a general principle to a situation where it clearly does not fit, causing harm that could have been avoided with more perceptive judgment.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Courage</button>
+                    <button data-choice="1">Temperance</button>
+                    <button data-choice="2">Justice</button>
+                    <button data-choice="3">Prudence</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aristotle, <em>Nicomachean Ethics</em>, Book III, Chapters 6&ndash;12 (Courage and Temperance); Book V, Chapters 1&ndash;5 (Justice)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Aristotle's extended treatment of courage and temperance, paying attention to how he identifies genuine vs. apparent instances of each. Then read his distinction between general and particular justice.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (3.06 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Choose one cardinal virtue and describe what a fully developed example of it looks like in contemporary life. What does its opposite (the relevant vice) look like? What is needed to develop the virtue?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The four cardinal virtues &mdash; courage, temperance, justice, and prudence &mdash; are the virtues on which the moral life hinges. Each addresses a fundamental dimension of human action and character: how we face danger and difficulty; how we order our appetite and pleasure; how we treat others and give them their due; and how we perceive and deliberate about what each situation calls for. Together they constitute the framework of human excellence that makes flourishing possible. The next lesson examines Aristotle's account of friendship (<em>philia</em>), which he regards as essential to the good life.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.06 &middot; The Cardinal Virtues</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+        w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var card = e.target.closest('.ow-flip .flip-card');
+    if (card) {
+      card.classList.toggle('flipped');
+    }
+  });
+})();
+</script>
+</body>
+</html>

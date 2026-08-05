@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.07</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Science and Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.07</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Does Evolution Explain Morality?</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Science and Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.07</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Does Evolution Explain Morality? The Limits of Evolutionary Ethics</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If our moral instincts evolved because they helped our ancestors survive, does that make them true &mdash; or merely useful?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Since Darwin, thinkers have asked whether evolutionary biology could explain &mdash; and thereby ground &mdash; human moral behavior. This approach is taken seriously by contemporary scientists and philosophers. This lesson examines what evolutionary accounts of morality can genuinely explain, and where they hit a philosophical wall.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the basic evolutionary account of moral behavior and what it claims to explain.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the naturalistic fallacy and why an evolutionary origin for moral beliefs does not validate them.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe what evolutionary ethics can contribute to moral understanding without pretending it resolves the normative question.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE EVOLUTIONARY ACCOUNT</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">If you discovered that your tendency to feel that fairness matters evolved because it helped your ancestors cooperate and survive, would that change how seriously you take that feeling morally?</div>
+            <div class="widget-options">
+                <button data-response="That is a common reaction. The lesson will examine whether evolutionary origin is a reason to discount moral beliefs &mdash; and argue that it is not.">Yes, it would feel less authoritative</button>
+                <button data-response="That intuition is defensible. The origin of a belief is not the same as its justification. An evolved belief can still be true.">No, the feeling would be just as valid</button>
+                <button data-response="That uncertainty is philosophically productive. This lesson will give you tools to think through exactly that question.">I am not sure how to think about it</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Darwin's Descent of Man and Social Instincts</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In <em>The Descent of Man</em> (1871), Charles Darwin proposed that moral behavior in humans evolved from the social instincts of earlier species. Animals that lived in groups developed instincts for cooperation, mutual aid, and social cohesion &mdash; because groups with these traits survived better than those without. In human beings, these social instincts became the foundation of the moral sense. Darwin observed that animals exhibit what appears to be sympathy, concern for offspring, and loyalty to the group &mdash; rudimentary versions of what would become moral feeling in humans.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Later thinkers developed this line of thought. Herbert Spencer coined the phrase "survival of the fittest" and argued that evolution provided a natural standard for ethics: whatever promotes survival and flourishing is good. In the twentieth century, sociobiology and evolutionary psychology produced increasingly sophisticated accounts of how altruism, fairness, reciprocity, and kin preference might all have evolutionary explanations.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">What Evolutionary Ethics Can Explain</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The evolutionary account has real explanatory power at the level of <em>why we have the moral feelings we have</em>. The near-universality of prohibitions on in-group killing, obligations to care for children, and reciprocity norms is exactly what evolutionary theory would predict, if cooperative social behavior promotes group survival. Evolutionary psychology illuminates why moral intuitions feel compelling and immediate, rather than derived from reasoning. In that sense, it explains the <em>psychology</em> of morality.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHERE EVOLUTIONARY ETHICS CANNOT GO</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Naturalistic Fallacy</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The philosopher G.E. Moore identified what he called the <strong>naturalistic fallacy</strong>: the error of defining "good" in terms of any natural property, including properties identified by science. Spencer's error was precisely this: he argued that because evolution produces certain traits, those traits are good. But this is a version of Hume's is/ought gap. The fact that evolution selected for a trait does not make the trait morally valuable. Evolution has also selected for tribalism, violence against outgroups, deception, and cheating when profitable. If "good" means "selected by evolution," then all of these would also be good.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Moreover, evolution has no goal. Natural selection does not "aim" at flourishing; it selects for reproductive fitness. A trait that maximized reproduction at the cost of every other aspect of well-being would be evolutionarily selected. If evolution were our moral guide, we would have to follow wherever reproductive fitness leads &mdash; a conclusion virtually no one is willing to accept.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Origin/Justification Distinction</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">There is a crucial distinction between the <em>origin</em> of a belief and its <em>justification</em>. The origin of our belief in arithmetic may be that counting helped our ancestors track resources. That evolutionary origin does not make arithmetic true or false; arithmetic is justified on its own terms. The same applies to moral beliefs. Even if our moral instincts evolved, they may still accurately track something real about human flourishing, obligation, and the good. The evolutionary account explains how we came to have these beliefs; it does not settle whether the beliefs are correct.</p>
+
+        <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 6px; padding: 16px 20px; margin: 16px 0;">
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Naturalistic fallacy (G.E. Moore):</strong> The error of defining "good" in terms of any natural property. Applied here: the error of concluding that because evolution selected for a trait, the trait is morally good.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0;"><strong>Origin vs. justification:</strong> The cause of a belief (how you came to hold it) is distinct from its justification (whether you have good reasons to hold it). Evolutionary origin does not settle the question of moral justification.</p>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; ORIGIN OR JUSTIFICATION?</div>
+            <div class="widget-question">Decide whether each claim below concerns the origin of moral beliefs, their justification, or confuses the two.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Is this claim explaining how we came to have certain moral instincts, or is it saying those instincts are correct?" data-fb="Correct. This claim explains the evolutionary origin of moral instincts. It does not say whether those instincts accurately track moral truth.">
+                <div class="widget-row-prompt">1. "Human beings feel that it is wrong to harm their children because parental instincts for infant protection were selected for in evolutionary history."</div>
+                <div class="widget-options">
+                    <button data-choice="0">A claim about origin</button>
+                    <button data-choice="1">A claim about justification</button>
+                    <button data-choice="2">A confusion of origin with justification</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Does evolutionary selection make something morally good? What type of claim is being made here?" data-fb="Correct. This confuses origin with justification. Evolution selecting for a behavior does not make that behavior morally right. That inference commits the naturalistic fallacy.">
+                <div class="widget-row-prompt">2. "Because evolution selected for in-group cooperation, cooperating with your in-group is morally right."</div>
+                <div class="widget-options">
+                    <button data-choice="0">A claim about origin</button>
+                    <button data-choice="1">A claim about justification</button>
+                    <button data-choice="2">A confusion of origin with justification</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Is this claim trying to establish why we have certain beliefs, or why those beliefs are correct?" data-fb="Correct. This is a claim about justification: it tries to explain why fairness is morally required, not just why we evolved to care about it.">
+                <div class="widget-row-prompt">3. "Fairness is morally required because human persons have equal dignity, and treating them unequally fails to respect what they are."</div>
+                <div class="widget-options">
+                    <button data-choice="0">A claim about origin</button>
+                    <button data-choice="1">A claim about justification</button>
+                    <button data-choice="2">A confusion of origin with justification</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Darwin, <em>The Descent of Man</em>, Chapter 4 excerpt</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Darwin's account of the origin of moral instincts in social animals. Identify in your notebook: (a) which traits Darwin thinks evolved and why, and (b) whether Darwin himself claims these traits are morally justified or merely psychologically real.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Short Analysis (1.07 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In 250&ndash;350 words: explain what evolutionary ethics can and cannot contribute to moral understanding. What does it illuminate? What philosophical question does it leave unanswered?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Evolution explains why we have the moral instincts we have. It does not make those instincts correct, any more than the evolutionary origin of our number sense makes arithmetic true. The philosophical question &mdash; which moral claims are genuinely justified, and on what grounds &mdash; is not answered by biology. It requires the kind of reasoning that the rest of this course develops.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.07 &middot; Does Evolution Explain Morality?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

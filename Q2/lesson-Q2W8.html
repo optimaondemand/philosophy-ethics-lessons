@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.08</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    details { background: #EEF1F8; border-left: 4px solid #C7922C; border-radius: 4px; padding: 0; margin: 16px 0; }
+    details summary { padding: 14px 18px; font-size: 17px; color: #0e1c42; cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary { border-bottom: 1px solid #D0D9E8; }
+    details .reveal-body { padding: 14px 18px; font-size: 17px; color: #1a2340; line-height: 1.65; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">Modern Moral Philosophy</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.08</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Intuitionism, Social Contract, and Moral Particularism</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Modern Moral Philosophy</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.08</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Intuitionism, Social Contract, and Moral Particularism: Three Modern Alternatives</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What if moral knowledge does not always come through theory?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Both consequentialism and deontology are systematic theories: they offer a single principle from which all moral judgments are derived. But some of the most influential modern moral philosophers have argued that systematic theory misrepresents how moral knowledge actually works. This lesson examines three alternatives: moral intuitionism, which holds that some moral truths are directly known; social contract theory, which grounds morality in rational agreement; and moral particularism, which holds that there are no universal moral principles at all.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain moral intuitionism (W.D. Ross) and why moral intuitions are not automatically dismissed as mere feelings.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe Rawls's social contract theory and how the veil of ignorance is meant to generate principles of justice.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain moral particularism and assess its challenge to all universal moral theories.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; MORAL INTUITIONISM</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When you encounter a case of obvious cruelty to an innocent person, do you need a theory to tell you it is wrong, or do you simply know it?</div>
+            <div class="widget-options">
+                <button data-response="That is the intuitionist starting point: some moral truths are immediately known without inference from a theory. But the task of philosophy is then to explain what kind of knowledge this is and how it can be corrected when different people's intuitions conflict.">I simply know it. No theory needed.</button>
+                <button data-response="That is the more theoretical approach: identify the relevant principle and apply it. But notice: the principle you reach for came from somewhere. Intuitionists would ask: what grounds the principle itself?">I can explain it: it causes suffering and violates the person's rights.</button>
+                <button data-response="That uncertainty is philosophically interesting: it suggests that intuitions are not infallible, but it doesn't mean they are unreliable. The question is how to correct them when they go wrong.">I think it is wrong, but I'm not sure how to justify that belief.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Ross and Prima Facie Duties</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">W.D. Ross argued in <em>The Right and the Good</em> (1930) that moral knowledge does not come primarily from theory: it comes from moral intuitions that any sufficiently reflective person can recognize. We know, for example, that gratitude is owed to benefactors, that we should keep our promises, and that we should not harm innocent people. These are not deductions from a first principle; they are direct moral perceptions.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Ross called these <em>prima facie</em> duties: duties that genuinely bind us, but which can be overridden when a stronger duty applies. His list included: fidelity (keeping promises), reparation (making amends for wrongs done), gratitude, justice, beneficence (improving others' condition), self-improvement, and non-maleficence. When two prima facie duties conflict, we must exercise moral judgment to determine which is stronger in the circumstances &mdash; there is no algorithm for this, only practical wisdom.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Ross is important because he preserves what is compelling about both consequentialism and deontology (beneficence and non-maleficence, fidelity and justice) without reducing morality to a single principle. But his framework raises a question: if there is no principle for adjudicating between prima facie duties, what prevents moral judgment from collapsing into mere personal preference? Ross's answer is that moral perception is like perceptual knowledge of the external world: reliable in most cases, correctable through reflection and conversation, but not reducible to a formula.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; RAWLS AND THE SOCIAL CONTRACT</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Justice as Fairness</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">John Rawls (1921&ndash;2002) revived social contract theory in <em>A Theory of Justice</em> (1971), the most influential work of political philosophy published in the 20th century. Social contract theories, originating with Hobbes, Locke, and Rousseau, ground political and moral obligations in a hypothetical agreement among rational persons. Rawls designed a specific thought experiment: the <em>original position</em> behind a <em>veil of ignorance</em>.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Imagine choosing the basic structure of society before you know which position you will occupy in it: your natural abilities, your social class, your race, your generation, your conception of the good. Behind this veil of ignorance, what principles of justice would rational persons choose? Rawls argued they would choose two principles: first, the greatest equal scheme of basic liberties for all; second, the <em>difference principle</em>: social and economic inequalities are permissible only if they benefit the least advantaged members of society.</p>
+
+        <!-- Veil of ignorance visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 18px 24px; margin: 16px 0;">
+            <div style="font-size: 14px; color: #55C8E8; margin-bottom: 12px;">RAWLS'S ARGUMENT STRUCTURE</div>
+            <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 12px 16px; min-width: 160px; text-align: center; color: #ffffff; font-size: 14px; line-height: 1.5;">Original position: choose principles without knowing your place in society</div>
+                <div style="color: #55C8E8; font-size: 22px; font-weight: bold;">&rarr;</div>
+                <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 12px 16px; min-width: 160px; text-align: center; color: #ffffff; font-size: 14px; line-height: 1.5;">Rational persons choose principles that protect the worst-off position</div>
+                <div style="color: #55C8E8; font-size: 22px; font-weight: bold;">&rarr;</div>
+                <div style="background: rgba(255,255,255,0.12); border-radius: 8px; padding: 12px 16px; min-width: 160px; text-align: center; color: #ffffff; font-size: 14px; line-height: 1.5;">The difference principle: inequalities only justified if they benefit the least advantaged</div>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Rawls's theory is neither purely consequentialist (it does not maximize total welfare) nor purely deontological (it does not derive everything from the categorical imperative). It is a procedural theory: just principles are those that would be agreed to under conditions of fair reasoning. This gives it a different character from both Bentham and Kant, and it has been enormously influential in political philosophy and policy debates about inequality, healthcare, education, and taxation.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; MORAL PARTICULARISM</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Rejection of Universal Principles</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Jonathan Dancy, in <em>Moral Reasons</em> (1993), advanced a position that challenges every theory we have examined: moral particularism. The claim is that there are no universal moral principles. Any feature of a situation that counts as a moral reason in favor of an action in one case may count against the action in another case, or be morally neutral in a third. What makes lying wrong in one case is not transferable as a principle to all other cases; you must look at the whole moral texture of each particular situation.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Particularism is a serious challenge, but it faces a serious objection: if there are no generalizable moral principles, moral reasoning becomes impossible to share or evaluate. We need principles precisely because we want to be able to explain our moral judgments to each other, hold each other accountable, and build institutions that treat like cases alike. A morality that cannot be stated in any general form collapses into a sophisticated form of the intuitions-all-the-way-down view that Ross was trying to avoid.</p>
+
+        <details>
+            <summary>Identify the gap in particularism in your notebook, then read the analysis below.</summary>
+            <div class="reveal-body">
+                <p style="margin: 0 0 10px 0;">The deepest problem with particularism: even its advocates make implicit generalizations. When Dancy says "look carefully at the whole texture of the particular situation," he is offering a general methodological principle. When he says "no feature automatically counts as a reason everywhere," he is making a universal claim about moral reasons. It appears impossible to do moral philosophy without some level of generalization.</p>
+                <p style="margin: 0;">What particularism does usefully show is the danger of mechanical application of principles without attention to particular circumstances. Aristotle would agree with this much: moral wisdom (<em>phronesis</em>) is precisely the capacity to recognize what is called for in a particular situation, not a matter of applying an algorithm. This is one reason Quarter 3's virtue ethics is not fully captured by any modern principle-based theory.</p>
+            </div>
+        </details>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; MATCHING THEORIES TO CLAIMS</div>
+            <div class="widget-question">Match each claim to the moral theory it best represents.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="Which theory holds that some duties are immediately known by reflective persons and must be weighed against each other?" data-fb="Correct. Ross's intuitionism holds that we directly perceive prima facie duties, and practical judgment determines which duty is stronger in a given case.">
+                <div class="widget-row-prompt">1. "We directly recognize certain moral obligations, such as keeping promises and helping those in need. When these conflict, practical judgment determines which is stronger."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Social contract theory (Rawls)</button>
+                    <button data-choice="1">Moral particularism (Dancy)</button>
+                    <button data-choice="2">Moral intuitionism (Ross)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Which theory generates principles through a hypothetical procedure of rational agreement behind a veil of ignorance?" data-fb="Correct. Rawls's social contract theory holds that just principles are those rational persons would choose without knowing their place in society.">
+                <div class="widget-row-prompt">2. "Justice requires that basic institutions be organized so that rational persons, not knowing where they would land in society, would agree to them."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Social contract theory (Rawls)</button>
+                    <button data-choice="1">Moral particularism (Dancy)</button>
+                    <button data-choice="2">Moral intuitionism (Ross)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Which theory denies that any feature of a situation automatically constitutes a reason across all cases?" data-fb="Correct. Particularism holds that no moral principle applies universally; each situation must be read on its own terms without assuming that a feature that counted as a reason in one case must count as a reason in another.">
+                <div class="widget-row-prompt">3. "There is no general principle that 'lying is wrong,' because in some situations deception may be the morally required response."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Social contract theory (Rawls)</button>
+                    <button data-choice="1">Moral particularism (Dancy)</button>
+                    <button data-choice="2">Moral intuitionism (Ross)</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source Selections: Rawls, <em>A Theory of Justice</em>, §§ 1-4</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Rawls's introduction of the original position and the veil of ignorance. What is his argument for why this procedure generates just principles?</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (2.08 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Which of the three frameworks in this lesson (intuitionism, social contract theory, particularism) do you think addresses the deepest gap left by consequentialism and deontology? Defend your answer with a specific moral example.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Intuitionism, social contract theory, and particularism each respond to something the major systematic theories get wrong or leave out. Ross preserves the multiplicity of moral obligations without reducing them to one principle. Rawls develops a powerful procedural account of justice. Dancy challenges the very assumption that universalizable principles can capture moral truth. The next lesson closes Quarter 2 by examining the shared assumption of modern ethical theory and the challenge that assumption faces, setting the stage for the turn to virtue ethics in Quarter 3.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.08 &middot; Intuitionism, Social Contract, and Moral Particularism</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

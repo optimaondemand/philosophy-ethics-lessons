@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 3.03</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Virtue Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.03</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Practical Reason and Phronesis</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Virtue Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.03</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Practical Reason and Phronesis: The Intellectual Virtue That Governs All Others</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What kind of knowledge is needed to act well, and can it be taught?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Aristotle distinguishes carefully between different kinds of knowledge. Knowing that two plus two equals four is different from knowing how to build a house, which is in turn different from knowing what to do in a morally complex situation. This third kind of knowledge &mdash; practical wisdom, or <em>phronesis</em> in Greek &mdash; is Aristotle's name for the intellectual excellence that governs moral action. Without <em>phronesis</em>, the moral virtues are incomplete at best and dangerous at worst. Book VI of the <em>Nicomachean Ethics</em> is devoted to its analysis.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Aristotle's distinction between theoretical reason (<em>episteme</em>), productive knowledge (<em>techne</em>), and practical reason (<em>phronesis</em>).</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe why <em>phronesis</em> cannot be reduced to following rules, and what it requires instead.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why <em>phronesis</em> is the master virtue and how it relates to the other moral virtues.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THREE KINDS OF RATIONAL KNOWLEDGE</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">You know the principle "tell the truth." But in the case of the murderer at the door (Lesson 2.06), a rigid application seems wrong. What is needed to handle cases like that one?</div>
+            <div class="widget-options">
+                <button data-response="That is a rule-modification approach: find a better rule. But Aristotle would say: no matter how you refine the rule, real situations will outrun it. What is needed is not a better rule but a capacity for judgment that the rule cannot replace.">A better, more specific rule that handles this case.</button>
+                <button data-response="That is close to Aristotle's answer: the capacity to perceive what is called for in a specific situation, which goes beyond rule-following. He calls this phronesis, practical wisdom.">The ability to perceive what this specific situation actually requires, regardless of what a rule says.</button>
+                <button data-response="That reduces to preference, which is what moral relativism claims. Aristotle would say: practical wisdom is not mere preference; it is a form of knowledge about what is genuinely good, exercised in particular circumstances.">It is just personal judgment, and different people will judge differently.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Aristotle's Taxonomy of Knowing</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In Book VI, Aristotle distinguishes several intellectual virtues corresponding to different kinds of knowledge. The three most important for ethics are:</p>
+
+        <div style="overflow-x: auto; margin: 16px 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Greek term</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Kind of knowledge</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Example</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Subject matter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold; font-style: italic;">Episteme</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Scientific knowledge, theoretical understanding</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Knowing that the sum of angles in a triangle is 180 degrees</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Necessary, unchanging truths</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold; font-style: italic;">Techne</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Technical skill, craftsmanship, making</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Knowing how to build a house or compose music</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Things that can be made differently than they are</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold; font-style: italic;">Phronesis</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Practical wisdom, moral knowledge</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Knowing what to do in a morally complex situation</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Human action and what is good for human beings</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The crucial distinction between <em>techne</em> and <em>phronesis</em>: technical skill produces something external (a house, a piece of music), and what is produced can be evaluated independently of the producer. Practical wisdom is exercised in action itself, and the good it serves is the good of the person acting. Moreover, <em>techne</em> can be used well or badly (a skilled builder can build a house that traps its occupants). <em>Phronesis</em> cannot be misused: if you have genuine practical wisdom, you are already oriented toward genuine good, not merely toward producing some outcome.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHAT PHRONESIS IS AND WHAT IT REQUIRES</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Perception of Particulars</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><em>Phronesis</em> is not knowledge of universal principles and their application to particular cases. It is, in Aristotle's description, the capacity to perceive the morally relevant features of a particular situation and to determine what virtue requires in that situation. This perception is the crucial element &mdash; not deduction from principles, but a trained sensitivity to what is going on and what it calls for.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle uses an analogy: just as perceiving the right point to stop in mathematics requires a trained perception that cannot itself be reduced to a further rule, perceiving what is required in a moral situation requires a similar trained sensitivity. This is why <em>phronesis</em> cannot be acquired purely by reading and study. It is developed through experience, through actually encountering situations, making choices, suffering the consequences, and refining one's perception over time.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This does not mean that principles are useless. Principles &mdash; "keep your promises," "do not harm innocent people," "show gratitude to benefactors" &mdash; are generalizations from the perceptions of practically wise people. They capture, in rough form, what experience has shown tends to be true in most circumstances. But they are guides, not algorithms. The person with <em>phronesis</em> uses principles as guides while remaining capable of recognizing when a situation calls for departing from them.</p>
+
+        <!-- The phronesis cycle visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 18px 24px; margin: 16px 0;">
+            <div style="font-size: 14px; color: #55C8E8; margin-bottom: 12px;">WHAT PHRONESIS REQUIRES</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+                <div style="background: rgba(255,255,255,0.1); border-radius: 6px; padding: 12px 14px;">
+                    <div style="font-size: 13px; color: #C7922C; margin-bottom: 6px;">Correct desire</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;">You must genuinely want what is good, not merely the appearance of good. Character virtues provide this orientation.</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); border-radius: 6px; padding: 12px 14px;">
+                    <div style="font-size: 13px; color: #55C8E8; margin-bottom: 6px;">Perception of particulars</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;">You must be able to see what is morally relevant in a specific situation, including what others feel and need.</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); border-radius: 6px; padding: 12px 14px;">
+                    <div style="font-size: 13px; color: #C7922C; margin-bottom: 6px;">Deliberation</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;">You must reason correctly about how to bring about what you have already correctly perceived to be good.</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.1); border-radius: 6px; padding: 12px 14px;">
+                    <div style="font-size: 13px; color: #55C8E8; margin-bottom: 6px;">Experience</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;">The young cannot have phronesis; it requires years of living, making choices, and learning from them.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; PHRONESIS AS THE MASTER VIRTUE</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Unity of Virtue</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle argues that the moral virtues &mdash; courage, temperance, justice, generosity, and the others &mdash; cannot be fully possessed without <em>phronesis</em>. Without practical wisdom, what looks like courage may be mere recklessness; what looks like generosity may be improvidence. A person who acts from a character trait without the guidance of <em>phronesis</em> has, at best, a "natural virtue" &mdash; a tendency to act in a certain way &mdash; not the full virtue. Full virtue requires that the character trait be guided and informed by the perception of what is genuinely good.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This is why Aristotle says that the virtues are unified through <em>phronesis</em>: if you genuinely have <em>phronesis</em>, you have all the virtues, because <em>phronesis</em> is precisely the capacity to perceive what each virtue requires in each situation. And if you have one virtue in its full form, you have <em>phronesis</em>, and therefore all the others. This claim &mdash; the unity of virtue &mdash; is controversial, but it points at something important: genuine human excellence is not a collection of separate traits but an integrated character, held together by practical wisdom.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; PHRONESIS OR SOMETHING ELSE?</div>
+            <div class="widget-question">Identify whether each scenario illustrates phronesis, natural virtue (good tendency without phronesis), or cleverness (effective reasoning toward any goal, good or bad).</div>
+
+            <div class="widget-row" data-correct="1" data-hint="The person is inclined to act generously, but does the example suggest they have considered whether this is genuinely the right thing to do?" data-fb="Correct. Acting generously from inclination, without considering whether the action is truly good for the recipient, is natural virtue rather than phronesis. The full virtue requires perception of what genuine generosity calls for in this situation.">
+                <div class="widget-row-prompt">1. A student always gives money to classmates who ask, without ever considering whether this actually helps them or whether he can afford it.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Phronesis</button>
+                    <button data-choice="1">Natural virtue (good tendency, without full phronesis)</button>
+                    <button data-choice="2">Cleverness (effective reasoning toward any goal)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="The reasoning is effective, but what is the goal it serves? Does this person have correct desires, or just an effective means to achieve whatever goal they happen to have?" data-fb="Correct. Effective reasoning toward goals that may be wrong or even bad is cleverness, not phronesis. Phronesis requires that the goal itself be genuinely good, not merely that the means be well-chosen.">
+                <div class="widget-row-prompt">2. A politician reasons brilliantly about how to craft messaging that will win votes, without concern for whether the policies serve the genuine good of citizens.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Phronesis</button>
+                    <button data-choice="1">Natural virtue (good tendency, without full phronesis)</button>
+                    <button data-choice="2">Cleverness (effective reasoning toward any goal)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this person show perception of what the situation calls for, correct desire, and deliberation about how to respond well?" data-fb="Correct. This illustrates phronesis: perceiving what a situation actually requires (that correction, not mere encouragement, is what the friend needs), being motivated by genuine care for the friend's good, and finding a way to respond that addresses the real issue.">
+                <div class="widget-row-prompt">3. A person recognizes that her friend's repeated excuses for failures are actually harming him, and finds a way to address this honestly and caringly despite knowing it will be uncomfortable.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Phronesis</button>
+                    <button data-choice="1">Natural virtue (good tendency, without full phronesis)</button>
+                    <button data-choice="2">Cleverness (effective reasoning toward any goal)</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aristotle, <em>Nicomachean Ethics</em>, Book VI, Chapters 4&ndash;7 and 12&ndash;13</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Chapters 4-7 contrast techne with phronesis. Chapters 12-13 argue for the unity of virtue through phronesis. Note Aristotle's argument against "natural virtue."</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (3.03 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe someone (real, historical, or literary) who exemplifies practical wisdom. What does your example reveal about what phronesis requires that rule-following cannot capture?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Practical wisdom (<em>phronesis</em>) is Aristotle's answer to the gap in deontological ethics that Kant left unfilled: the capacity for moral perception and deliberation that cannot be reduced to rule-following, and that requires both correct desire (character) and trained perception developed through experience. It is the intellectual virtue that governs all the moral virtues, which is why Aristotle says you cannot fully possess any virtue without it. The next lesson examines how character and habit develop, laying the foundation for the whole of the virtues.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.03 &middot; Practical Reason and Phronesis</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

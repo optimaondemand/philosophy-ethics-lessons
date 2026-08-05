@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.04</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Obstacles to Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.04</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Is Morality Just Our Custom?</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Obstacles to Ethics</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.04</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Is Morality Just Our Custom? The Challenge of Moral Relativism</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If cultures disagree about what is right, does it follow that there is no right to disagree about?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Moral relativism &mdash; the view that moral truth is relative to cultures or individuals, with no universal standard above them &mdash; is one of the most widely held positions in contemporary life. It is also one that cannot withstand careful examination. This lesson examines relativism's appeal, its forms, and its fatal difficulties.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish cultural relativism from individual relativism and explain what each view claims.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the argument from disagreement that is typically used to support relativism and assess its logical validity.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the self-refutation problem and the tolerance objection as decisive difficulties for relativism.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Plato, <em>Protagoras</em> and <em>Theaetetus</em> excerpts (linked in assignment &mdash; focus on the sections where Protagoras' "man is the measure" doctrine is stated and examined)</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; RELATIVISM AND ITS APPEAL</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Have you ever heard someone say "That's just your opinion" or "You can't impose your values on others" in a moral conversation? What was your reaction when you heard it?</div>
+            <div class="widget-options">
+                <button data-response="That reaction points to a real instinct: moral claims feel like more than mere opinions. This lesson will examine whether that instinct is philosophically defensible.">It seemed too easy, like it shut down the conversation</button>
+                <button data-response="That is a fair place to be. Relativism has genuine appeal, and this lesson will take it seriously before showing why it fails.">I thought it was reasonable at the time</button>
+                <button data-response="Good instinct. Relativism is often used as a conversation-stopper rather than a genuine philosophical argument. Let's examine it carefully.">I wanted to push back but did not know how</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Protagoras and the Origin of Relativism</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The oldest form of relativism in the Western tradition comes from the Sophist Protagoras (c. 490&ndash;420 BCE), a contemporary of Socrates. His most famous claim, preserved in Plato's <em>Theaetetus</em>, is this: "Man is the measure of all things &mdash; of things that are, that they are; of things that are not, that they are not." Applied to values, this means that what is good or right is determined by each individual's or community's judgment. There is no standard above human opinion to which human opinion is answerable.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Contemporary moral relativism comes in two main forms. <strong>Cultural relativism</strong> holds that moral truth is relative to the standards of a given culture or society: what is right in one culture may be wrong in another, and neither culture's standard is objectively superior. <strong>Individual relativism</strong> (sometimes called subjectivism) holds that moral truth is relative to the judgment of each individual person. Both forms share the denial of any universal moral standard.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Argument from Disagreement</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The most common argument for moral relativism runs as follows:</p>
+        <div style="background: #F4F6FA; border-radius: 6px; padding: 16px 20px; margin: 0 0 14px 0;">
+            <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;">Premise 1: Different cultures hold different and conflicting moral beliefs.</p>
+            <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;">Premise 2: If morality were objective, rational inquiry would eventually produce convergence, as it does in science.</p>
+            <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;">Premise 3: There is persistent, deep moral disagreement.</p>
+            <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">Conclusion: Morality is not objective; it is relative to culture or individual.</p>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This argument has intuitive appeal. But notice: Premise 1 is an <em>empirical</em> (descriptive) claim about the world. The conclusion is a claim about the <em>nature</em> of morality (normative). The move from "people disagree" to "there is nothing to disagree about" is not a valid inference. People disagree about historical facts, scientific questions, and mathematical proofs. Disagreement does not show that there is no fact of the matter; it may simply show that the question is difficult.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Moreover, as we saw in the previous lesson, the extent of moral disagreement is itself exaggerated. Ancient moral codes from different cultures converge substantially on certain core demands. Much apparent moral disagreement reflects disagreement about <em>facts</em> (whether a given action has certain consequences) or about <em>metaphysics</em> (whether the souls of the dead need to be appeased), not disagreement about the underlying moral principles.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHY RELATIVISM FAILS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Self-Refutation Problem</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The most powerful objection to relativism is that it is self-undermining. Consider what the relativist is actually asserting: "Moral claims are only true relative to the standards of the person or culture making them; there is no universal moral standard." But this statement itself presents a universal claim about the nature of morality. It does not say "relative to my culture, morality is relative." It says morality as such has no universal standard. That is a claim the relativist intends to be true for everyone &mdash; which is precisely what the relativist's own position forbids.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Plato puts this point with characteristic precision in the <em>Theaetetus</em>. If Protagoras is right that each person's judgment determines truth for that person, then the judgment of those who believe Protagoras is wrong is, by Protagoras' own standard, true for them. Protagoras' position refutes itself the moment it is stated.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Tolerance Objection</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Relativism is often presented as a foundation for tolerance: if no culture's values are objectively superior to another's, then no one should judge or interfere with other cultures' practices. But this reasoning is incoherent on relativist grounds. If there is no universal moral standard, then there is no universal standard that says tolerance is right. The relativist who urges tolerance is making a universal moral claim &mdash; that all cultures have an obligation to tolerate each other &mdash; which contradicts the relativist's premise.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Furthermore, cultural relativism taken seriously implies that we cannot morally criticize any cultural practice on any grounds external to that culture. Historical practices that virtually everyone now judges to have been deeply unjust &mdash; the legal ownership of persons, the systematic exclusion of women from public life &mdash; would, on strict cultural relativism, be immune from moral criticism, because they were sanctioned by the cultures that practiced them. This implication is one most relativists are not willing to accept &mdash; but if they resist it, they are implicitly appealing to a standard that transcends the cultural consensus.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Practical Objection: Moral Progress</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Relativism cannot account for the concept of moral progress. If what is right is just what a culture approves of, then the abolition of chattel slavery in the nineteenth century was not moral progress &mdash; it was simply a change in cultural preference, no more significant morally than a change in fashion. But almost no one believes this. The very language of moral progress &mdash; that we have come to understand something better than our ancestors did &mdash; presupposes a standard of moral truth by which we can judge past and present practices.</p>
+
+        <!-- Key terms -->
+        <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 6px; padding: 16px 20px; margin: 16px 0;">
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Moral relativism:</strong> The view that moral claims are true only relative to a culture or individual, with no universal moral standard.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Cultural relativism:</strong> The form of relativism that grounds moral truth in cultural standards.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Individual relativism (subjectivism):</strong> The form of relativism that grounds moral truth in individual judgment.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0;"><strong>Self-refutation:</strong> When a position's own standards undermine or contradict the position itself.</p>
+        </div>
+
+        <!-- Evaluative widget: scale placement -->
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; WEIGH THE ARGUMENT &middot; DOES THIS SUPPORT OR UNDERMINE RELATIVISM?</div>
+            <div class="widget-question">For each piece of evidence or argument, place it on the scale: does it support moral relativism, undermine it, or is it neutral evidence that both sides can use?</div>
+
+            <div class="widget-row" data-correct="2" data-fb="Correct. The lesson showed in Week 2 that cultures converge substantially on certain moral demands. This actually complicates the relativist's claim that moral codes are entirely culture-dependent." data-hint="Look back at the convergence table from Lesson 1.02. What did it show about moral codes across cultures?">
+                <div class="widget-row-prompt">1. Ancient moral codes from widely separated civilizations all prohibit unprovoked killing of community members and require obligations to care for children.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Strongly supports relativism</button>
+                    <button data-choice="1">Slightly supports relativism</button>
+                    <button data-choice="2">Undermines relativism</button>
+                    <button data-choice="3">Neutral &mdash; consistent with both views</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3" data-fb="Correct. The existence of genuine moral disagreement is real evidence that both sides must account for. The relativist cites it as evidence for their view; the anti-relativist argues it is consistent with objective morality being difficult to know." data-hint="Can the existence of disagreement be explained both by relativism and by the difficulty of moral knowledge?">
+                <div class="widget-row-prompt">2. Two societies practiced different marriage customs and each considered their own practice morally required.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Strongly supports relativism</button>
+                    <button data-choice="1">Slightly supports relativism</button>
+                    <button data-choice="2">Undermines relativism</button>
+                    <button data-choice="3">Neutral &mdash; consistent with both views</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="If there is no standard above cultures, can any cultural practice be wrong? Think about what 'moral progress' would mean on a relativist view." data-fb="Correct. Our common judgment that some historical practices were wrong &mdash; regardless of whether they were culturally approved &mdash; implicitly appeals to a standard beyond cultural consensus. This is hard for relativism to accommodate.">
+                <div class="widget-row-prompt">3. The global consensus that certain historical practices (such as the legal ownership of persons) were unjust, regardless of their cultural approval at the time.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Strongly supports relativism</button>
+                    <button data-choice="1">Slightly supports relativism</button>
+                    <button data-choice="2">Undermines relativism</button>
+                    <button data-choice="3">Neutral &mdash; consistent with both views</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- What You'll Do Next -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Plato's <em>Theaetetus</em>, Protagoras section</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Find the passage where Plato's Socrates presents the self-refutation of Protagoras' doctrine. Paraphrase the argument in two or three sentences in your own words.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Essay (1.04 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In 300&ndash;400 words, present and evaluate the strongest form of moral relativism. You must address: (a) what relativism claims and why, (b) the self-refutation problem, and (c) whether you think the relativist has any response available.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrap-up -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Moral relativism is not a sophisticated position. It is an intuitively appealing reaction to the complexity of moral disagreement, but it collapses under examination. The argument from disagreement is logically invalid. The appeal to tolerance is self-contradicting. The implied denial of moral progress defies what virtually everyone believes when they think carefully about historical change. This does not mean moral questions are easy; it means that the relativist shortcut is not available. We are stuck with the hard work of reasoning through them.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.04 &middot; Is Morality Just Our Custom?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.01</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-scale .widget-options { justify-content: space-between; }
+    .ow-scale .widget-options button { flex: 1; text-align: center; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Introduction to Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.01</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Question We Cannot Avoid</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Introduction to Ethics</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.01</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Question We Cannot Avoid</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What is ethics, and why does it matter that we study it carefully?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">You make ethical judgments every day. You decide that some actions are wrong, others admirable, others neutral. This course asks a deeper question: are those judgments reliable? Can they be justified by reasons, or are they just feelings dressed up in serious-sounding language? Before you can answer that, you need to understand what ethics actually is and why it is the kind of thing that can be studied at all.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the difference between descriptive and normative claims, and say why ethics belongs to the normative domain.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the conditions under which an ethical question arises, distinguishing it from a practical or scientific question.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why Socrates' encounter with Euthyphro illustrates the need for careful ethical reasoning.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page (read through carefully before completing the check-in activities)</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Plato, <em>Euthyphro</em> (linked in the assignment &mdash; read the opening exchange between Socrates and Euthyphro, through 12e)</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your philosophy notebook for written responses</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; A MAN WHO KNEW HE WAS RIGHT</div>
+
+        <!-- Reflective check-in -->
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN &middot; Before you read, think about this.</div>
+            <div class="widget-question">Think of a moral belief you hold with real confidence. What makes you most certain you are right? (No wrong answer here.)</div>
+            <div class="widget-options">
+                <button data-response="Strong feelings are data. But this course will ask whether feelings alone can settle moral questions, or whether we need something more.">I feel it strongly</button>
+                <button data-response="Social agreement is one kind of evidence. But what if everyone in a society agreed about something that was wrong? That possibility is worth examining.">Everyone I know agrees</button>
+                <button data-response="Reasoning through it is exactly what ethics asks of us. Keep that habit. This course will sharpen it.">I reasoned through it</button>
+                <button data-response="That is a candid answer. One aim of this course is to give you better tools for forming and defending moral convictions.">I am not sure I am</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Porch of the King Archon</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In the early fifth century BCE, an Athenian named Euthyphro met Socrates outside the office of the King Archon, the magistrate responsible for religious matters. Euthyphro had come to file a murder charge against his own father. A laborer had killed a slave on his father's estate; the father had bound the man and left him in a ditch while he sent for advice from Athens. The man died before the messenger returned. Euthyphro was convinced that his duty to the gods required him to prosecute, even against his own family. His relatives thought the whole enterprise outrageous. Euthyphro was unmoved. He was certain.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Socrates found this confidence extraordinary. He asked Euthyphro a simple question: what, exactly, is piety? What makes an action holy? Euthyphro offered several answers. Each time, Socrates showed that the answer either described an example without defining the thing, or contained a contradiction. By the end of the dialogue, Euthyphro excused himself and left. The definition remained unfound.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The <em>Euthyphro</em> is the first text of Western ethics for a reason. It is not primarily a discussion of piety. It is a demonstration that confident moral certainty, taken alone, is not the same thing as moral knowledge. Euthyphro knew perfectly well what he intended to do. What he could not do was explain, in terms that held up to questioning, <em>why</em> it was right. That gap &mdash; between conviction and justification &mdash; is where ethics begins.</p>
+
+        <!-- Central concept visual -->
+        <div style="background: #EEF1F8; border: 2px solid #0E1C42; border-radius: 8px; padding: 20px 24px; margin: 20px 0; text-align: center;">
+            <div style="font-size: 13px; color: #6b7a99; margin-bottom: 8px; letter-spacing: 0.5px;">THE CENTRAL QUESTION OF THIS COURSE</div>
+            <div style="font-size: 22px; color: #0E1C42; font-style: italic; line-height: 1.5;">"Can we know what is right &mdash; and can we explain why?"</div>
+            <div style="font-size: 15px; color: #6b7a99; margin-top: 10px;">Euthyphro was sure. Socrates wanted to know the <em>reason</em>. Ethics is the systematic attempt to answer that demand.</div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHAT ETHICS IS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Descriptive and Normative Claims</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Before you can study ethics, you need to understand what kind of statement an ethical claim is. Consider these two sentences:</p>
+        <div style="background: #F4F6FA; border-radius: 6px; padding: 16px 20px; margin: 0 0 14px 0;">
+            <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;">(A) "In Athens in 399 BCE, a jury voted to execute Socrates."</p>
+            <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0;">(B) "The jury that executed Socrates acted unjustly."</p>
+        </div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Sentence (A) is a <strong>descriptive claim</strong>: it reports a fact about the world. It could be verified by historical records. It makes no judgment about whether what happened was good or bad. Sentence (B) is a <strong>normative claim</strong>: it evaluates the event. It asserts that there is a standard &mdash; justice &mdash; by which the jury's action falls short.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Ethics</strong> is the branch of philosophy that deals with normative claims about human action: what we ought to do, what we ought to avoid, what makes a life well-lived, and what makes an action right or wrong. The word comes from the Greek <em>ethos</em>, meaning character or custom &mdash; a reminder that for the Greeks, ethics was not primarily about rules, but about the kind of person one becomes.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">When Does an Ethical Question Arise?</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Not every question is an ethical question. "What is the boiling point of water?" is a scientific question. "Which route is fastest?" is a practical question. Ethical questions are different. They arise when:</p>
+        <ul style="font-size: 17px; color: #1a2340; line-height: 1.8; margin: 0 0 14px 0; padding-left: 22px;">
+            <li>An action affects others, and a standard of how they ought to be treated is at stake.</li>
+            <li>A choice involves competing values, and we must decide which takes priority.</li>
+            <li>We are asked to judge whether an action, practice, or character is good or bad, right or wrong.</li>
+        </ul>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Notice that ethical questions require a standard. Euthyphro was certain that prosecuting his father was right. Socrates' question forced him to name the standard he was appealing to. That is what ethics does: it makes our standards explicit, examines them, and asks whether they hold up.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Key Terms</h3>
+        <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 6px; padding: 16px 20px; margin: 0 0 14px 0;">
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Descriptive claim:</strong> A statement about how things are. Verifiable in principle by observation or record.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Normative claim:</strong> A statement about how things ought to be, or about what is good or right. Appeals to a standard beyond mere fact.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Ethics (from Greek <em>ethos</em>, character):</strong> The branch of philosophy that studies normative claims about human action and character. Ethics asks what we ought to do and why.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0;">&ldquo;The good&rdquo; (Greek: <em>to agathon</em>): That which is beneficial, excellent, or worth pursuing. Ethics ultimately tries to understand what the good is and how to pursue it.</p>
+        </div>
+
+        <!-- Evaluative widget: classify descriptive vs normative -->
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; DESCRIPTIVE OR NORMATIVE?</div>
+            <div class="widget-question">Each sentence below is either a descriptive claim or a normative claim. For each one, choose the correct category.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="This sentence reports an event that can be checked in historical records. No standard is applied.">
+                <div class="widget-row-prompt">1. "The Code of Hammurabi was written around 1754 BCE."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Normative</button>
+                    <button data-choice="1" data-fb="Correct. This sentence records a historical fact. It passes no judgment.">Descriptive</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this sentence report a fact, or does it apply a standard of what a ruler owes his people?">
+                <div class="widget-row-prompt">2. "A ruler who lets the innocent suffer to protect his own reputation acts unjustly."</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Correct. This sentence applies the standard of justice to a ruler's behavior. That is a normative claim.">Normative</button>
+                    <button data-choice="1">Descriptive</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Look at the sentence again. Does it evaluate the decision as good or bad, or does it just describe what was decided?">
+                <div class="widget-row-prompt">3. "The Athenian jury voted 280 to 220 to convict Socrates."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Normative</button>
+                    <button data-choice="1" data-fb="Correct. The vote count is a historical fact. Whether the verdict was just is a separate, normative question.">Descriptive</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="The word 'should' is a strong signal. Ask: does this sentence report a fact, or prescribe a standard of behavior?">
+                <div class="widget-row-prompt">4. "People should keep their promises even when breaking them would be more convenient."</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Correct. The word 'should' signals a normative claim. This sentence states a standard for how people ought to behave.">Normative</button>
+                    <button data-choice="1">Descriptive</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; WHY ETHICS CAN BE STUDIED</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Possibility of Ethical Guidance</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Some people assume that because ethics deals with values rather than measurements, it cannot be studied seriously. This assumption is worth challenging at the start. Consider: we regularly judge that some moral arguments are better than others, that some ethical views are more carefully reasoned, and that people can learn to reason about moral questions more carefully. These observations suggest that ethical claims are not simply arbitrary.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Plato's Socrates staked his life on this conviction. He did not claim to have all the answers. He claimed that the questions could be pursued systematically, that better and worse answers could be distinguished, and that a life spent examining these questions was more genuinely human than a life of comfortable certainty. In the <em>Euthyphro</em>, he demonstrates the method: ask for a definition, test it against cases, revise when the definition fails. The process is demanding, but it is not arbitrary.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This course follows Socrates' approach. It does not assume you already have all the right moral intuitions, and it does not simply ask you to report your feelings. It asks you to reason. That means stating your view precisely, considering objections, and being willing to revise when you cannot answer them. Ethics studied this way is genuinely demanding &mdash; which is what makes it genuinely rewarding.</p>
+
+        <!-- Commit-then-reveal -->
+        <div style="background: #EEF1F8; border-left: 5px solid #2196D0; border-radius: 6px; padding: 16px 20px; margin: 16px 0;">
+            <details>
+                <summary style="font-size: 17px; color: #0E1C42; cursor: pointer; font-weight: bold;">Before you continue: In your notebook, write one sentence answering this: What does Euthyphro know about piety, and what does he lack? Then click to compare.</summary>
+                <div style="margin-top: 14px; font-size: 17px; color: #1a2340; line-height: 1.65;">
+                    <strong>A strong answer includes both parts:</strong> Euthyphro knows what he <em>intends to do</em> and feels confident that it is pious. What he lacks is a <em>definition</em> &mdash; a principled account of what makes any action pious, which would allow him (or anyone) to evaluate cases correctly. He has moral certainty without moral justification.
+                </div>
+            </details>
+        </div>
+    </div>
+
+    <!-- What You'll Do Next -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source Reading: Plato, <em>Euthyphro</em></strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the opening exchange (through 12e) and identify at least two definitions of piety that Euthyphro offers. For each one, write a brief note on why Socrates finds it insufficient.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post: Your Own Euthyphro Moment</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Describe a situation in which you felt morally certain about something. Then apply Socrates' question to yourself: what definition or standard were you relying on, and does it hold up?</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrap-up -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Ethics begins not with doubt, but with honesty: the recognition that moral confidence and moral knowledge are not the same thing, and that closing the gap between them requires careful reasoning. Euthyphro left Socrates without an answer. You are at the beginning of the work he avoided. The rest of this course is that work &mdash; done rigorously, with the best thinkers who have taken it seriously.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.01 &middot; The Question We Cannot Avoid</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

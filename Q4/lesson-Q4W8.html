@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.08</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">Synthesis and Capstone</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.08</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Quarter 4 Synthesis</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Synthesis and Capstone</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.08</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">What Natural Law Gets Right: Quarter 4 Synthesis</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What has the tradition of natural law contributed to ethics that the other three theories could not, and where does its debate with them stand?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">You have now studied four major ethical theories across four quarters. This lesson brings the natural law quarter to a close by examining what it uniquely contributes, how it responds to the strongest objections, and how it relates to the other three theories you have studied. The next and final lesson (4.09) will synthesize the entire year.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state the internal logic of natural law theory across the eight lessons of Q4.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the three principal objections to natural law theory and the standard responses to them.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state what each of the four theories can learn from the others.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE LOGICAL STRUCTURE OF NATURAL LAW THEORY</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before reading on: in your own words, what is the most important philosophical contribution of natural law theory to the ethics you have studied this year?</div>
+            <div class="widget-options">
+                <button data-response="This is the most significant structural move. By grounding morality in human nature and its telos, natural law theory provides both the content of morality (what the basic goods are) and the source of moral obligation, without relying on either consequences or the demands of formal reason alone.">It grounds morality in human nature itself, rather than in consequences or in formal reason alone.</button>
+                <button data-response="That is a genuine contribution. The incommensurability of the basic goods is the natural law account's structural response to utilitarian aggregation and to the consequentialist justification for scapegoating. It explains why some prohibitions are absolute.">It explains why some prohibitions are absolute and cannot be overridden by any consequence calculation.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Argument in Five Steps</h3>
+        <div style="background: #0E1C42; border-radius: 10px; padding: 22px 26px; margin: 14px 0 6px 0; color: #ffffff;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.5px;">THE CHAIN OF ARGUMENT IN NATURAL LAW THEORY</div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 12px 16px;">
+                    <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;"><strong style="color: #C7922C;">There is a moral order built into nature.</strong> Human beings have a nature, and that nature has a telos: an end toward which it is ordered. The moral order follows from what human beings are and what they are for.</div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 12px 16px;">
+                    <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;"><strong style="color: #C7922C;">The first principle is: do good and avoid evil.</strong> Good is what human beings are naturally oriented toward. Evil is the privation of good. This principle structures all practical reasoning.</div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 12px 16px;">
+                    <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;"><strong style="color: #C7922C;">The basic human goods provide the content.</strong> Life, knowledge, friendship, practical reasonableness, and the other basic goods are what human nature is ordered toward. They are incommensurable: no common scale exists to trade them off against each other.</div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 12px 16px;">
+                    <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;"><strong style="color: #C7922C;">Absolute prohibitions follow.</strong> It is always wrong to directly act against a basic good. No consequence calculation can override this, because the incommensurability of the basic goods rules out the calculation.</div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 12px 16px;">
+                    <div style="min-width: 28px; height: 28px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">5</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;"><strong style="color: #C7922C;">Human law must conform to natural law.</strong> Valid human law derives its authority from conformity to the natural moral order. An unjust law is no law at all.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; PRINCIPAL OBJECTIONS AND RESPONSES</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Objection 1: The Is-Ought Gap</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Objection:</strong> You cannot derive an "ought" from an "is." Even if human beings have a nature and that nature has a telos, this is a description of what is. No amount of description tells us what ought to be done. Hume's is-ought gap shows that natural facts about human inclinations and ends cannot by themselves generate moral obligations.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Natural law response:</strong> Natural law theory does not derive "ought" from "is" in the way Hume describes. The first principle of natural law ("do good and avoid evil") is not derived from a description of human inclinations; it is grasped by practical reason as a self-evident truth. What the account of natural inclinations does is identify the content of what "good" means for human beings: not what to pursue because humans happen to pursue it, but what is genuinely good for beings of this nature. The argument from natural inclinations is not a derivation but a disclosure of what reason already recognizes as good.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Objection 2: Cultural Variation</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Objection:</strong> Different cultures have radically different moral codes. If natural law were universal and knowable by reason, we would expect much more agreement. The disagreement itself is evidence against universality.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Natural law response:</strong> Two points. First, the variation in moral codes is often overstated: at the level of first principles (do not kill the innocent, care for children, tell the truth, live in community), the agreement across cultures is remarkably broad. What varies is usually the application of these principles to particular cases: who counts as innocent, what forms of lying are permissible, and so on. Second, variation in belief does not entail variation in truth. Mathematical errors are widespread; we do not conclude that mathematical truths vary by culture.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Objection 3: The Naturalistic Fallacy</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Objection:</strong> G.E. Moore (1873&ndash;1958) argued in <em>Principia Ethica</em> that any attempt to define "good" in terms of natural properties (pleasure, flourishing, what we are inclined toward) commits the "naturalistic fallacy": confusing what is good with what is natural. For any natural property you name, it remains an open question whether it is good.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Natural law response:</strong> Finnis argues that Moore's objection misidentifies the structure of the natural law account. The basic goods are not identified as good because they are natural; they are identified as good because practical reason grasps them as self-evidently valuable. The appeal to natural inclinations is a heuristic for focusing attention on the goods that practical reason will then recognize; it is not itself the justification. The justification is the self-evidence of the basic goods to any person who reasons carefully.</p>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; WHAT EACH THEORY LEARNS FROM THE OTHERS</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CROSS-THEORY LEARNING</div>
+            <div class="widget-question">For each claim about what one theory learns from another, identify whether it is accurate or whether it mischaracterizes the theories involved.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Consider: does natural law theory actually acknowledge that intentions and the structure of action matter, not just outcomes?" data-fb="Correct. Natural law theory, through the Doctrine of Double Effect, does take from Kantian ethics the insight that intentions matter and that the structure of action (what you intend vs. what you foresee) makes a moral difference. This is a genuine cross-theory contribution: natural law's DDE owes something to the same intuition that drives Kant's distinction between acting from duty and acting in accordance with duty.">
+                <div class="widget-row-prompt">1. "Natural law theory learns from Kantian ethics that intentions matter: not just what outcomes you produce but what you intend and how you structure your action."</div>
+                <div class="widget-options">
+                    <button data-choice="0">This accurately describes a genuine cross-theory contribution</button>
+                    <button data-choice="1">This mischaracterizes one or both theories</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Consider: does virtue ethics contribute something about the role of character, desire, and formation that natural law theory incorporates?" data-fb="Correct. Natural law theory (especially in Aquinas) incorporates the virtue-theoretic insight that the virtues are needed to reliably act on natural law precepts in practice. Without the virtues, a person may know what natural law requires but lack the stable dispositions to act on that knowledge. Aquinas's account of the virtues, drawn directly from Aristotle, shows that natural law and virtue ethics are deeply complementary.">
+                <div class="widget-row-prompt">2. "Natural law theory learns from virtue ethics that moral knowledge is not enough: stable dispositions of character (the virtues) are needed to translate moral knowledge into reliable action."</div>
+                <div class="widget-options">
+                    <button data-choice="0">This accurately describes a genuine cross-theory contribution</button>
+                    <button data-choice="1">This mischaracterizes one or both theories</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does natural law theory accept that consequences are irrelevant? Think about what the Doctrine of Double Effect's fourth condition says about proportionate reason." data-fb="Correct. This mischaracterizes natural law theory. Natural law theory does not hold that consequences are morally irrelevant. The Doctrine of Double Effect's fourth condition explicitly requires proportionate reason: the good achieved must be sufficient to justify permitting the foreseen harm. Natural law holds that consequences are relevant within the limits established by the absolute prohibitions. What it denies is that consequences can override those prohibitions.">
+                <div class="widget-row-prompt">3. "Natural law theory holds that consequences are morally irrelevant: only the nature of the action and the intention matter."</div>
+                <div class="widget-options">
+                    <button data-choice="0">This accurately describes natural law theory</button>
+                    <button data-choice="1">This mischaracterizes natural law theory</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Review: Finnis, <em>Natural Law and Natural Rights</em>, Chapter XII (conclusion)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Finnis's conclusion, which summarizes the relationship between natural law and positive law, the role of practical reasonableness in political life, and the place of the tradition within contemporary jurisprudence.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 4 Synthesis Essay (4.08 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Write a 600&ndash;800 word essay responding to: "What is the most important philosophical contribution of natural law theory, and what is the most serious unresolved objection to it?" Draw on at least two primary sources from this quarter.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Natural law theory grounds morality in human nature and its telos, identifies the basic human goods through which that nature is fulfilled, derives absolute prohibitions from the incommensurability of those goods, and locates moral knowledge in synderesis and conscience. Its three principal objections (the is-ought gap, cultural variation, and the naturalistic fallacy) have carefully developed responses. It incorporates insights from both Kantian deontology (the moral significance of intention) and virtue ethics (the role of character in reliable moral action). The final lesson synthesizes the entire course.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.08 &middot; Quarter 4 Synthesis</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

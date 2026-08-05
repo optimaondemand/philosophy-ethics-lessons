@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.04</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Content of Natural Law</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.04</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Moral Obligation</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Content of Natural Law</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.04</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Moral Obligation: Why We Must Pursue the Good</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Why are the basic goods not merely desirable but obligatory?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">The previous lesson identified the basic human goods: the things toward which human beings are naturally oriented. But there is a gap between "this is a good for me" and "I am obligated to pursue it and not act against it." A person might acknowledge that health is a human good while claiming no obligation to pursue it. Natural law theory must explain the source of moral obligation: why the basic goods are not merely values to be pursued but constraints on action that may not be violated. This lesson examines Aquinas's and Finnis's accounts of obligation and their differences from Kant's account.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Aquinas grounds moral obligation in the relationship between human nature and reason.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Finnis's account of practical reasonableness and the requirements it generates.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what it means to act against a basic good and why natural law calls this intrinsically wrong.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE SOURCE OF OBLIGATION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">What makes something morally obligatory rather than merely advisable? Is there a difference between "you should do this if you want to flourish" and "you must not do this regardless of what you want"?</div>
+            <div class="widget-options">
+                <button data-response="Natural law theory agrees. The deepest obligations are not conditional on your preferences or goals; they bind you regardless of what you want because they are grounded in what you are. The challenge is to explain what makes this so, without simply appealing to God's arbitrary will.">Yes. Some things bind me regardless of my goals or preferences.</button>
+                <button data-response="This view is called hypothetical imperativism: all obligations are hypothetical, of the form 'if you want X, you must do Y.' Natural law theory argues that this cannot account for the most fundamental moral requirements. Even if I don't want to flourish, deliberately destroying an innocent person's life is wrong, not merely ill-advised.">All obligations are hypothetical: they only bind if you have the relevant goal.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Aquinas on the Source of Obligation</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">For Aquinas, moral obligation is grounded in the participation of human reason in the eternal law governing all creation. Natural law is not merely a description of what human beings happen to desire; it is the rational order to which human beings, as rational beings, are bound by their nature. The basic goods are not merely useful or enjoyable; they are genuine goods, and reason recognizes their genuine goodness as a claim on action. To act against a genuine good is to act against reality as reason perceives it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The critical distinction is between "this action would harm a good" and "this action directly intends to harm a good." Aquinas permits actions that have harmful side effects (under the doctrine of double effect, which you will study in detail in Lesson 4.06) but prohibits actions that directly target a basic good for destruction. The reason is that directly intending the destruction of a good is to treat something genuinely valuable as if it were not: it is a fundamental misuse of practical reason.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Finnis's Requirements of Practical Reasonableness</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Finnis translates this into a set of nine requirements of practical reasonableness: principles that specify how a person who is reasoning well about what to do will structure her choices and actions. The most important for understanding moral obligation are:</p>
+
+        <!-- Requirements visual -->
+        <div style="background: #EEF1F8; border-radius: 8px; padding: 18px 22px; margin: 12px 0;">
+            <div style="font-size: 13px; color: #0e1c42; margin-bottom: 14px; font-weight: 600;">FINNIS'S KEY REQUIREMENTS OF PRACTICAL REASONABLENESS</div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px;">
+                <div style="background: #FFFFFF; border-left: 4px solid #0E1C42; border-radius: 5px; padding: 12px 14px;">
+                    <div style="font-size: 14px; color: #0e1c42; font-weight: 600; margin-bottom: 6px;">No Arbitrary Preferences</div>
+                    <div style="font-size: 14px; color: #1a2340; line-height: 1.55;">You may not arbitrarily prefer some instances of a basic good over others, or prefer one person's good to another's without relevant justification.</div>
+                </div>
+                <div style="background: #FFFFFF; border-left: 4px solid #0E1C42; border-radius: 5px; padding: 12px 14px;">
+                    <div style="font-size: 14px; color: #0e1c42; font-weight: 600; margin-bottom: 6px;">Commitment to the Common Good</div>
+                    <div style="font-size: 14px; color: #1a2340; line-height: 1.55;">You must take seriously the good of others, not just your own. A life plan that simply ignores the good of other persons is not fully reasonable.</div>
+                </div>
+                <div style="background: #FFFFFF; border-left: 4px solid #C7922C; border-radius: 5px; padding: 12px 14px;">
+                    <div style="font-size: 14px; color: #C7922C; font-weight: 600; margin-bottom: 6px;">Do Not Act Directly Against a Basic Good</div>
+                    <div style="font-size: 14px; color: #1a2340; line-height: 1.55;">The most important requirement: you may not choose an action that directly intends the destruction of a basic good, whether in yourself or in others. This generates the absolute prohibitions of natural law.</div>
+                </div>
+                <div style="background: #FFFFFF; border-left: 4px solid #0E1C42; border-radius: 5px; padding: 12px 14px;">
+                    <div style="font-size: 14px; color: #0e1c42; font-weight: 600; margin-bottom: 6px;">Efficiency and Proportionality</div>
+                    <div style="font-size: 14px; color: #1a2340; line-height: 1.55;">Among available options that do not violate the absolute prohibition, choose the one that most effectively promotes the relevant goods at stake. Don't waste what is genuinely good.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; ABSOLUTE PROHIBITIONS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Why Some Prohibitions Are Absolute</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Natural law theory holds that some moral prohibitions are absolute: they admit of no exceptions, regardless of consequences. These are the prohibitions against directly intending the destruction of a basic good. The reason is not that natural law is dogmatic or indifferent to consequences, but that the structure of the basic goods makes exceptions impossible to justify.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Recall that the basic goods are incommensurable. If you cannot measure the good of one person against the good of another on a common scale, then you cannot justify destroying one person's basic good by pointing to a greater total good. The consequentialist calculation requires precisely this common scale. Natural law theory denies the scale exists; therefore it denies the calculation is valid. The prohibition on deliberately killing an innocent person, for example, is not just a very strong rule: it is the recognition that there is no perspective from which such a killing could be justified by "better outcomes."</p>
+
+        <!-- Commit-then-reveal -->
+        <details style="background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin: 18px 0;">
+            <summary style="font-size: 17px; color: #0e1c42; cursor: pointer; font-weight: 600;">Think about this first, then open: Does natural law theory say that bad consequences are irrelevant to moral decisions? Write or think through your answer before opening.</summary>
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #D0D9E8; font-size: 17px; color: #1a2340; line-height: 1.65;">
+                <strong>No.</strong> Natural law theory does not ignore consequences. Among actions that do not violate the absolute prohibitions, consequences matter significantly: the requirement of efficiency and proportionality says that you should choose the action that best promotes the relevant goods. What natural law denies is that consequences can justify crossing the absolute prohibition against directly acting against a basic good. There is a difference between "consequences determine everything" (consequentialism) and "consequences are relevant within moral limits" (natural law). Natural law accepts the latter and rejects the former.
+            </div>
+        </details>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Natural Law vs. Kant on Obligation</h3>
+        <div style="overflow-x: auto; margin: 10px 0;">
+            <table style="width: 100%; border-collapse: collapse; min-width: 480px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 11px 14px; text-align: left; font-size: 14px;">Question</th>
+                        <th style="padding: 11px 14px; text-align: left; font-size: 14px; color: #55C8E8;">Kant</th>
+                        <th style="padding: 11px 14px; text-align: left; font-size: 14px; color: #C7922C;">Natural Law (Aquinas/Finnis)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #f9fafc; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 11px 14px; font-size: 14px; color: #0e1c42; font-weight: 600; vertical-align: top;">Source of obligation</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Pure practical reason: the categorical imperative</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">The nature of the basic human goods and their claim on reason</td>
+                    </tr>
+                    <tr style="background: #ffffff; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 11px 14px; font-size: 14px; color: #0e1c42; font-weight: 600; vertical-align: top;">Role of human nature</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Irrelevant: moral law is derived from reason alone, not from human nature or inclinations</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Essential: what human beings are naturally oriented toward provides the content of natural law</td>
+                    </tr>
+                    <tr style="background: #f9fafc; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 11px 14px; font-size: 14px; color: #0e1c42; font-weight: 600; vertical-align: top;">What does obligation feel like from the inside?</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">A constraint imposed by reason on inclination; often experienced against the grain of desire</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Ideally an expression of one's own nature; experienced as a constraint only when one's desires are disordered</td>
+                    </tr>
+                    <tr style="background: #ffffff;">
+                        <td style="padding: 11px 14px; font-size: 14px; color: #0e1c42; font-weight: 600; vertical-align: top;">Are there absolute prohibitions?</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Yes: the categorical imperative generates absolute prohibitions (e.g., never use a person merely as a means)</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Yes: the prohibition on directly acting against a basic good admits no exceptions</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; OBLIGATION IN PRACTICE</div>
+
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; TRY IT &middot; OBLIGATION ANALYSIS</div>
+            <div class="widget-question">For each action, identify whether natural law theory would regard it as permissible, as something requiring justification, or as an absolute prohibition.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="Ask: does this action directly intend the destruction of a basic good? Or does it merely choose among options in a way that affects goods without directly targeting them?" data-fb="Correct. Torturing an innocent person to extract information directly intends to destroy the good of bodily integrity (life) of a person. On the natural law account, this falls under the absolute prohibition against acting directly against a basic good. The claim that the information will save others does not change this, because the basic goods are incommensurable: you cannot justify destroying one person's basic good by appeal to goods for others.">
+                <div class="widget-row-prompt">1. Torturing an innocent person to obtain information that will save other lives.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Permissible</button>
+                    <button data-choice="1">Requires justification (acceptable in some circumstances)</button>
+                    <button data-choice="2">Absolute prohibition</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="This action affects a good (the defendant's liberty), but is it directly intending the destruction of a basic good, or is it a determination of how to distribute a burden in a way consistent with protecting goods?" data-fb="Correct. Imposing a prison sentence is not a direct act against a basic good. It is a human law determination about how justice and the common good are to be served in the case of wrongdoing. It requires justification (proportionality, due process, legitimate purpose) but is not absolutely prohibited.">
+                <div class="widget-row-prompt">2. Sentencing a convicted criminal to prison.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Permissible without qualification</button>
+                    <button data-choice="1">Permissible, but requires justification</button>
+                    <button data-choice="2">Absolute prohibition</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Think about what good is at stake and whether this action promotes it, is neutral about it, or targets it for destruction." data-fb="Correct. Choosing to spend an evening with a close friend in order to sustain a valuable relationship is an action that directly promotes a basic good (sociability/friendship). On the natural law account this is not merely permissible but positively in accord with practical reasonableness.">
+                <div class="widget-row-prompt">3. Spending an evening with a close friend in order to strengthen and sustain the friendship.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Permissible and in accord with practical reasonableness</button>
+                    <button data-choice="1">Permissible but requires justification</button>
+                    <button data-choice="2">Absolute prohibition</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aquinas, <em>Summa Theologica</em> I-II, Question 94, Articles 4&ndash;6 (immutability and change in natural law); John Finnis, <em>Natural Law and Natural Rights</em>, Chapter V (selections provided)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Finnis's discussion of the requirements of practical reasonableness. Pay careful attention to the requirement not to act directly against a basic good.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (4.04 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Natural law theory holds that some prohibitions are absolute: they admit no exceptions. Do you find this position convincing? Identify the strongest objection to absolute prohibitions and explain how a natural law theorist would respond.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Moral obligation in natural law theory is grounded in the nature of the basic human goods and the demands of practical reasonableness. Some prohibitions are absolute: they cannot be overridden by consequences, because the incommensurability of the basic goods means there is no common scale on which such trade-offs can be calculated. Consequences remain relevant within the limits the absolute prohibitions establish. The next lesson examines what natural law theory means by morality itself: the full account of why morality is not merely social convention but a genuine dimension of human reality.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.04 &middot; Moral Obligation</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

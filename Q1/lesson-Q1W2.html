@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 18px 20px; cursor: pointer; text-align: center; }
+    .ow-flip .ow-flip-back { display: none; color: #1a2340; }
+    .ow-flip.flipped .ow-flip-front { display: none; }
+    .ow-flip.flipped .ow-flip-back { display: block; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Introduction to Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Universal Witness</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Introduction to Ethics</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <!-- Title strip -->
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Universal Witness</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <!-- Today's Focus -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Across every civilization we know of, people have tried to answer the question: what does morality require?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Before asking whether morality is objective, it is worth pausing to notice a remarkable fact: human beings everywhere and in every period have produced moral codes. This lesson examines what that universal moral impulse looks like across several ancient traditions, and asks what &mdash; if anything &mdash; the shared patterns among them suggest.</div>
+    </div>
+
+    <!-- Objectives -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the major moral codes from at least four ancient traditions examined in this lesson and describe their core moral demands.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the philosophical significance of cross-cultural moral convergence and explain why this fact matters for the study of ethics.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish moral convergence (what the codes share) from moral divergence (where they differ), and explain why both are philosophically significant.</div>
+        </div>
+    </div>
+
+    <!-- Materials -->
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Primary source excerpts (linked in assignment): Code of Hammurabi, Exodus 20 (Ten Commandments), Analects of Confucius, Sermon on the Mount (Matthew 5&ndash;7)</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Your philosophy notebook</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; FOUR VOICES FROM THE ANCIENT WORLD</div>
+
+        <!-- Reflective check-in -->
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN &middot; Before you read</div>
+            <div class="widget-question">If a researcher discovered a human society with no moral rules at all &mdash; no prohibitions, no obligations, no concept of fairness &mdash; what would be your first reaction? (No wrong answer.)</div>
+            <div class="widget-options">
+                <button data-response="That instinct is worth holding onto. This lesson will give you evidence for why moral codes seem to be universal, and invite you to think about what that universality means.">That sounds impossible</button>
+                <button data-response="An open mind is good here. But by the end of this lesson, you will have seen enough to at least complicate that assumption.">It could happen in theory</button>
+                <button data-response="Careful observers like C.S. Lewis and anthropologists who have studied moral codes across cultures have often shared your reaction. The universality is striking.">It would surprise me</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Babylon: The Code of Hammurabi (c. 1754 BCE)</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Carved onto a seven-foot stele of black diorite and discovered by French archaeologists in 1901, the Code of Hammurabi is one of the oldest surviving legal and moral codes in human history. King Hammurabi of Babylon opens it with a religious declaration: the gods Anu and Enlil have called him to make justice prevail in the land, to prevent the strong from oppressing the weak, to enlighten the land. The code contains 282 provisions covering commerce, property, family, wages, and punishment. What is philosophically significant is not just its age but its framing: Hammurabi presents law not as the king's arbitrary will, but as the gods' demand for order and fairness.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The code's famous principle of proportional punishment &mdash; an eye for an eye, a tooth for a tooth &mdash; is often caricatured as primitive cruelty. Its actual function was the opposite: it limited punishment to proportional response, preventing the unlimited retaliation that blood feuds otherwise permitted. The principle is an early attempt to embed the idea of fairness into law.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Israel: The Ten Commandments (c. 13th century BCE)</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The Ten Commandments, recorded in Exodus 20, differ structurally from Hammurabi's code. They are not case law but absolute prohibitions and positive obligations, grounded in the covenant between God and the people of Israel. The first four commandments concern the relationship between the people and God. The remaining six are moral commands governing human relationships: honor your parents, do not kill, do not steal, do not bear false witness, do not covet what belongs to your neighbor.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">What is philosophically notable here is the grounding: morality is not presented as the custom of the tribe or the preference of the king, but as the command of a God who is the source of all that exists. This gives moral demands an authority that transcends any human power. It also raises a question Plato would later frame precisely: do the gods command things because they are good, or are they good because the gods command them? That question &mdash; the Euthyphro dilemma &mdash; will return in Quarter 4 of this course.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">China: The Analects of Confucius (5th century BCE)</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The <em>Analects</em> record the teachings of Confucius (551&ndash;479 BCE), a contemporary of the early Socratic tradition. Confucius' ethical framework centers on <em>ren</em>, often translated as benevolence, humaneness, or goodness toward others. When a disciple asks Confucius if there is one word that can serve as the rule for one's entire life, he replies: "Is not <em>shu</em> &mdash; reciprocity &mdash; such a word? Do not impose on others what you yourself do not desire." This formulation of what we might call the negative Golden Rule appears independently across traditions separated by thousands of miles.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Confucius grounds ethics not in divine command but in the demands of proper human relationships: between ruler and subject, parent and child, husband and wife, elder brother and younger, friend and friend. The virtuous person fulfills the requirements of each relationship faithfully. This emphasis on character, relationship, and social role resonates strongly with the virtue ethics tradition you will study in Quarter 3.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Rome and Judea: The Sermon on the Mount (c. 30 CE)</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The Sermon on the Mount (Matthew 5&ndash;7) is among the most influential moral documents in Western history. Jesus extends and deepens the commandment tradition: where the law prohibits murder, the Sermon prohibits even the anger that leads to it. Where the law prohibits adultery, the Sermon addresses the disposition of the heart. The famous positive formulation &mdash; "Do unto others as you would have them do unto you" &mdash; makes the obligation active, not merely restraining.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The Beatitudes that open the Sermon present a striking inversion of conventional moral accounting: the poor in spirit, the meek, the merciful are declared blessed. This is not a valorization of weakness, but an argument about where genuine human flourishing is actually found &mdash; a claim that will matter enormously when you encounter Aristotle's account of happiness in Quarter 3.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHAT THE CONVERGENCE MEANS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Convergence and Divergence</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">These four traditions differ in important ways. Hammurabi grounds law in divine delegation to a king. The Ten Commandments ground it in direct divine command. Confucius grounds it in the requirements of human relationships and proper social order. The Sermon on the Mount grounds it in a transformed understanding of human dignity and the demands of love. The metaphysical frameworks differ substantially.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Yet across these differences, certain moral demands recur with striking consistency:</p>
+
+        <!-- Comparison visual -->
+        <div style="overflow-x: auto; margin: 16px 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Moral Demand</th>
+                        <th style="padding: 12px 14px; text-align: center; border: 1px solid #D0D9E8;">Hammurabi</th>
+                        <th style="padding: 12px 14px; text-align: center; border: 1px solid #D0D9E8;">Ten Commandments</th>
+                        <th style="padding: 12px 14px; text-align: center; border: 1px solid #D0D9E8;">Confucius</th>
+                        <th style="padding: 12px 14px; text-align: center; border: 1px solid #D0D9E8;">Sermon on the Mount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Prohibition on killing the innocent</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Prohibition on theft and false witness</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Obligation to care for the vulnerable</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Reciprocity (do not do to others what you would not want done to you)</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Honor obligations within the family</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; text-align: center; color: #2A9D5C;">&#10003;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 14px 0 14px 0;">This convergence is not something to be explained away. C.S. Lewis, writing in the mid-twentieth century, catalogued it extensively in the appendix to <em>The Abolition of Man</em>. His point was not that all moral codes are identical &mdash; they are not &mdash; but that certain moral demands appear across civilizations with a consistency that is difficult to explain if morality is merely a local custom or arbitrary preference. If morality were simply the habit of a tribe, we would expect moral codes to be as varied as culinary preferences. They are not.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">What the Convergence Does and Does Not Prove</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Cross-cultural moral convergence does not by itself prove that an objective moral law exists. It is possible &mdash; in principle &mdash; that the convergence is explained by shared evolutionary pressures, common social needs, or some other non-moral cause. These explanations will be examined in the Science and Ethics unit later this quarter.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">What the convergence does show is this: the moral relativist's simplest claim &mdash; that different cultures have entirely different morals, so there is no common standard &mdash; is factually incorrect. The diversity is real, but so is the convergence. Any serious account of morality has to explain both.</p>
+
+        <!-- Evaluative widget -->
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHAT DOES THE EVIDENCE SHOW?</div>
+            <div class="widget-question">For each claim below, decide whether the cross-cultural evidence examined in this lesson supports it, contradicts it, or neither.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Look at the convergence table again. The traditions examined share several moral demands across very different cultures and time periods.">
+                <div class="widget-row-prompt">1. "Prohibitions on killing the innocent and stealing appear across ancient moral codes from different cultures."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Contradicted by the evidence</button>
+                    <button data-choice="1" data-fb="Correct. The convergence table shows exactly this: prohibitions on killing and theft appear in all four traditions examined.">Supported by the evidence</button>
+                    <button data-choice="2">Not addressed by the evidence</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Does cross-cultural convergence in moral demands settle the deeper philosophical question of whether those demands are objectively grounded?">
+                <div class="widget-row-prompt">2. "Because ancient cultures agreed on certain moral rules, those rules are definitely grounded in an objective moral law."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Supported by the evidence</button>
+                    <button data-choice="1">Contradicted by the evidence</button>
+                    <button data-choice="2" data-fb="Correct. The lesson is careful to say convergence is evidence worth explaining, not proof of objective morality. That argument requires more philosophical work.">Not proven by the evidence alone</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="The lesson directly addresses this. Is the claim that different cultures have entirely different moral codes accurate?">
+                <div class="widget-row-prompt">3. "Moral relativism's simplest claim &mdash; that cultures have entirely different morals &mdash; is accurate."</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Correct. The lesson states that the moral relativist's simplest version of this claim is factually incorrect. The convergence is real and cannot be dismissed.">Contradicted by the evidence</button>
+                    <button data-choice="1">Supported by the evidence</button>
+                    <button data-choice="2">Not addressed by the evidence</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- What You'll Do Next -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source Comparison</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the linked excerpts from the Code of Hammurabi, Exodus 20, the Analects, and Matthew 5&ndash;7. Complete the comparison chart in your notebook: for each source, note (a) the grounding given for the moral rules, and (b) one rule or demand that surprised you.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Short Analysis (1.02 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In 200&ndash;300 words, identify one moral demand shared across at least three of the four traditions and explain what the convergence suggests to you about morality. Does the convergence point toward a common moral reality, or does it have a better explanation?</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrap-up -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Human beings everywhere have made moral judgments and constructed moral codes. The codes differ in their metaphysical foundations, but they converge on certain core demands with a consistency that is hard to explain if morality is simply the custom of a tribe. This convergence is neither proof of objective morality nor evidence against it. It is a fact that any serious theory of ethics must account for. The rest of this quarter will examine the leading theories &mdash; and their critics &mdash; with that fact in view.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.02 &middot; The Universal Witness</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      w.querySelectorAll('.ow-flip.flipped').forEach(function (c) { c.classList.remove('flipped'); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var flip = e.target.closest('.ow-flip');
+    if (flip) { flip.classList.toggle('flipped'); return; }
+  });
+})();
+</script>
+
+</body>
+</html>

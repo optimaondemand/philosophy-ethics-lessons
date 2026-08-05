@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.07</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Natural Law and Its Rivals</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.07</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">How Morality Is Known</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Natural Law and Its Rivals</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.07</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">How Morality Is Known: Conscience, Reason, and Synderesis</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If natural law is real, how do human beings come to know it?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Natural law theory claims that moral truths are objective and knowable by reason. But this raises a pressing epistemological question: through what faculty or capacity does a human being come to know what natural law requires? Aquinas's answer involves two closely related concepts: <em>synderesis</em> (the innate practical reason that grasps first principles) and <em>conscientia</em> (conscience: the application of those principles to particular cases). Understanding these concepts, and the ways in which moral knowledge can go wrong, is essential to a complete account of natural law theory.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Aquinas's distinction between synderesis and conscience and their respective roles in moral knowledge.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how moral knowledge can be mistaken and why Aquinas holds that erroneous conscience still binds.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish the natural law account of conscience from the mere-feeling account common in popular moral discourse.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; SYNDERESIS: THE SEED OF MORAL KNOWLEDGE</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When people appeal to "conscience," what do they usually mean? Is conscience an infallible guide, a feeling, a cultural product, or something else?</div>
+            <div class="widget-options">
+                <button data-response="This is the view Aquinas wants to develop with more precision. Conscience is indeed an inner guide, but it is not infallible, and it is not a mere feeling. It is a rational faculty that applies general moral principles to particular cases. Its reliability depends on how well-informed its underlying principles are and how carefully the reasoning is done.">Conscience is an inner voice or guide that tells me what is right.</button>
+                <button data-response="This is a serious philosophical position, but Aquinas would argue that it confuses what conscience happens to contain with what conscience is. The faculty of conscience can be more or less well-formed, more or less accurate, just as memory can be more or less reliable, without ceasing to be memory.">Conscience is just whatever moral rules I have absorbed from my culture.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Synderesis: The Natural Habit of First Principles</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aquinas uses the term <em>synderesis</em> (from the Greek, meaning "preservation" or "watching over") for the natural habit by which human beings grasp the first principles of practical reason. Just as the theoretical intellect has a natural habit of grasping self-evident truths (the principle of non-contradiction, the principle that the whole is greater than any of its parts), the practical intellect has a natural habit of grasping the first principles of action: do good and avoid evil; preserve life; seek truth; live in community.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Synderesis is infallible with respect to these first principles: no human being who is reasoning at all can genuinely fail to grasp that good is to be done and evil avoided. It can be confused, suppressed, or displaced by passion or habit, but it cannot be destroyed. Aquinas uses the image of a spark: the <em>scintilla conscientiae</em>, the spark of conscience, which remains even in the most corrupt person and can, in principle, be rekindled.</p>
+
+        <!-- Visual: two-level structure -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 20px 24px; margin: 14px 0 6px 0; color: #ffffff;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.5px;">AQUINAS'S TWO-LEVEL ACCOUNT OF MORAL KNOWLEDGE</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; min-width: 0;">
+                <div style="background: rgba(255,255,255,0.08); border-radius: 7px; padding: 16px 18px;">
+                    <div style="font-size: 16px; color: #C7922C; margin-bottom: 8px;">Synderesis (Level 1)</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 6px;"><strong>The natural habit of first principles.</strong></div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.6;">Grasps self-evident first principles of action: do good, avoid evil; preserve life; seek truth. These principles are universal and cannot be erased.</div>
+                </div>
+                <div style="background: rgba(255,255,255,0.08); border-radius: 7px; padding: 16px 18px;">
+                    <div style="font-size: 16px; color: #55C8E8; margin-bottom: 8px;">Conscientia (Level 2)</div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6; margin-bottom: 6px;"><strong>The application of principles to particular cases.</strong></div>
+                    <div style="font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.6;">Applies first principles to specific situations: is this particular act one of the kind prohibited? Conscientia can be mistaken; it requires reasoning, and reasoning can go wrong.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; ERRONEOUS CONSCIENCE</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Can Conscience Be Wrong?</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aquinas holds that conscience (at the level of <em>conscientia</em>) can be mistaken, and often is. The error typically arises not at the level of first principles (synderesis) but in the application of those principles to particular cases: a person may correctly grasp that innocent people should not be harmed but make an error in judging whether a particular person is innocent, or whether a particular action constitutes harm. Errors can also arise from false beliefs about what human nature requires, from disordered passions that distort judgment, or from cultural conditioning that misidentifies goods.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Erroneous Conscience Still Binds</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">One of Aquinas's most striking claims is that even an erroneous conscience binds: if you genuinely believe in good conscience that an action is right, you are obligated to do it (and vice versa). This may seem paradoxical. If the action is actually wrong, how can you be obligated to do it? Aquinas's answer is that conscience is the proximate rule of moral action: you must act according to your best judgment of what reason requires, not according to some standard you cannot access. A person who acts against his own conscience is acting badly, even if his conscience happens to be misinformed.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">However, Aquinas adds a critical qualification: you are obligated to form your conscience well. If your conscience is erroneous because of <em>vincible ignorance</em> (ignorance you could have corrected if you had taken reasonable steps to find out the truth), you are morally responsible for the error. Only <em>invincible ignorance</em> (ignorance that no reasonable effort could have dispelled) fully excuses the person who acts on an erroneous conscience.</p>
+
+        <!-- Commit-then-reveal -->
+        <details style="background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin: 18px 0;">
+            <summary style="font-size: 17px; color: #0e1c42; cursor: pointer; font-weight: 600;">Think about this first, then open: If erroneous conscience still binds, does this mean natural law theory collapses into moral relativism? Write your answer before clicking.</summary>
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #D0D9E8; font-size: 17px; color: #1a2340; line-height: 1.65;">
+                <strong>No, and here is why.</strong> The claim that erroneous conscience binds is a claim about subjective moral responsibility, not about objective moral truth. The person who acts on an erroneous conscience is not doing what is objectively right; she is doing what she genuinely and non-culpably believes to be right. Natural law theory maintains that there are objective moral truths (grounded in the basic goods and in natural law) and that these truths do not depend on what any individual or culture believes. The doctrine of erroneous conscience is about how we assess the moral responsibility of a person given her epistemic situation, not about whether the objective moral order varies from person to person. The two levels are distinct: objective moral truth is independent; subjective moral responsibility depends on what you know and what you could reasonably have known.
+            </div>
+        </details>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; SYNDERESIS AND CONSCIENCE IN PRACTICE</div>
+
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHICH LEVEL OF MORAL KNOWLEDGE?</div>
+            <div class="widget-question">For each description, identify whether it involves synderesis (first principles), conscientia (application), or an error at the conscientia level.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Is this a first principle, the application of a principle to a case, or a specific error in applying a principle?" data-fb="Correct. The recognition that good should be pursued and evil avoided is a first principle: an immediate, self-evident deliverance of practical reason that requires no derivation from more basic premises. This is synderesis: the natural habit by which human beings grasp the foundations of all practical reasoning.">
+                <div class="widget-row-prompt">1. A person recognizes immediately and without argument that good should be pursued and that harming an innocent person for one's own benefit is wrong.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Synderesis (first principle of practical reason)</button>
+                    <button data-choice="1">Conscientia (correct application of principles)</button>
+                    <button data-choice="2">Error in conscientia (mistaken application)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="The person has a correct first principle (do not harm innocents) but what has gone wrong in getting from that principle to this conclusion?" data-fb="Correct. A person who correctly holds the first principle that innocent people should not be harmed but incorrectly believes that members of a particular group are dangerous criminals is making an error in conscientia: a mistake in applying a correct first principle to a particular case. The error is in the factual belief feeding into the application, not in the first principle itself.">
+                <div class="widget-row-prompt">2. A person correctly holds that innocent people should not be harmed but incorrectly believes that a particular group of people are all dangerous criminals and should be treated accordingly.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Synderesis (first principle)</button>
+                    <button data-choice="1">Conscientia (correct application)</button>
+                    <button data-choice="2">Error in conscientia (mistaken application)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="The person is not recognizing a first principle, but they are working from a correct principle and applying it correctly to a specific situation. Which level is this?" data-fb="Correct. A judge who reasons from the correct principle that persons accused of serious crimes should receive fair processes and applies it to the specific requirements of due process in a particular case is exercising conscientia correctly: applying a correct first principle through accurate reasoning to a specific situation.">
+                <div class="widget-row-prompt">3. A judge reasons carefully from the principle that accused persons deserve fair processes to the specific requirements of due process in a difficult criminal case.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Synderesis (first principle)</button>
+                    <button data-choice="1">Conscientia (correct application)</button>
+                    <button data-choice="2">Error in conscientia</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aquinas, <em>Summa Theologica</em> I, Question 79, Articles 12&ndash;13 (Synderesis and Conscience); I-II, Question 19, Articles 5&ndash;6 (Erroneous Conscience)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Q. 79, A. 12 for Aquinas's definition and defense of synderesis. Then read Q. 19, A. 5-6 for his argument that erroneous conscience binds, along with his qualification about vincible and invincible ignorance.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (4.07 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A contemporary philosopher argues: "Conscience is just a name for whatever moral feelings we have, shaped by culture and upbringing." Using Aquinas's account of synderesis and conscientia, explain what is wrong with this view. What does Aquinas's account allow that the "mere feelings" account cannot?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Natural law is known through two levels of practical reason: synderesis (the natural habit that grasps self-evident first principles of action) and conscientia (the application of those principles to particular cases). Synderesis is infallible at the level of first principles; conscientia can be mistaken. Erroneous conscience still binds at the level of subjective responsibility, but this does not collapse into relativism: the objective moral order remains independent of what any person or culture believes. The two final lessons of the course bring everything together: first in a synthesis of natural law theory, then in a capstone examination of the full four-theory map of Western ethics.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.07 &middot; How Morality Is Known</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

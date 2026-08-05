@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.07</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">Modern Moral Philosophy</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.07</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Ethics in Medicine, War, and Technology</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Modern Moral Philosophy</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.07</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Ethics in Medicine, War, and Technology: Where the Theories Meet the World</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Applied ethics is not theory made simpler. It is theory made harder.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This lesson examines three domains where consequentialism, deontology, and emerging frameworks are tested against real decisions: medical ethics, the ethics of war, and the ethics of technology (including artificial intelligence). Each domain has generated systematic applied ethics frameworks. Understanding how and why they take the shape they do requires the theoretical foundations from the previous five lessons.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the four principles of medical ethics (Belmont Report) and identify the theoretical roots of each.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the just war tradition and how it applies both consequentialist and deontological constraints to the use of military force.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the central ethical questions raised by artificial intelligence and explain why answering them requires the theoretical frameworks of this quarter.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; MEDICAL ETHICS: THE BELMONT PRINCIPLES</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">A doctor believes a particular treatment is best for a patient and wants to proceed. The patient, fully informed, declines. What should the doctor do?</div>
+            <div class="widget-options">
+                <button data-response="That is the paternalist view: the doctor knows best and has an obligation to help. Modern medical ethics rejects this as a violation of the patient's autonomy, which is one of the four Belmont principles.">Proceed anyway: the doctor's obligation is to the patient's health.</button>
+                <button data-response="That is the autonomy-respecting view. Modern medical ethics requires that the patient's informed, competent refusal of treatment be honored, even when the physician disagrees.">Respect the patient's decision: autonomy is the patient's right.</button>
+                <button data-response="Sometimes that is correct. But the deeper question is: on what ethical principle do you decide when to override the patient's choice?">It depends on how serious the condition is.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Belmont Report (1979)</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Medical ethics as a formal discipline emerged partly in response to historical abuses: most notably the Tuskegee Syphilis Study (1932&ndash;1972), in which researchers withheld known effective treatment from Black men with syphilis without their knowledge or consent, in order to study the disease's progression. The National Commission for the Protection of Human Subjects produced the Belmont Report in 1979, which established the framework that governs research ethics and, by extension, much of clinical ethics today.</p>
+
+        <div style="overflow-x: auto; margin: 16px 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Principle</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">What it requires</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Theoretical root</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Respect for Persons (Autonomy)</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Treat individuals as autonomous agents; protect those with diminished autonomy.</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Kantian: respect for rational agency</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Beneficence</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Maximize benefits; minimize harm to research subjects and patients.</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Consequentialist: maximize well-being</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Non-maleficence</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">"First, do no harm." Some actions are prohibited regardless of potential benefit.</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Deontological: some actions are inherently prohibited</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Justice</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Distribute benefits and burdens fairly; do not exploit vulnerable populations.</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Rawlsian/Kantian: fairness and equal dignity</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Notice that the four principles draw from both consequentialist and deontological traditions. Medical ethics did not choose one theory and apply it; it drew on both because real medical situations call on both. This is characteristic of applied ethics: the question is not which theory is correct in the abstract, but which framework's insight is most relevant to the specific ethical dimension of the case at hand.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE ETHICS OF WAR: JUST WAR THEORY</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">A Tradition With Ancient Roots</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Just war theory is the most developed moral framework for evaluating the use of military force. It has roots in Cicero, developed fully in Augustine (354&ndash;430) and Aquinas (1225&ndash;1274), and has been refined through modern international law. The framework divides into two parts: <em>jus ad bellum</em> (the justice of going to war) and <em>jus in bello</em> (justice in the conduct of war).</p>
+
+        <div style="display: flex; gap: 14px; margin: 16px 0; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 220px; background: #EEF1F8; border-radius: 8px; padding: 16px 18px; border-left: 4px solid #0E1C42;">
+                <div style="font-size: 13px; color: #0e1c42; font-weight: bold; margin-bottom: 8px;"><em>Jus ad bellum:</em> When is war justified?</div>
+                <ul style="font-size: 14px; color: #1a2340; line-height: 1.7; margin: 0; padding-left: 18px;">
+                    <li>Just cause (defense, not aggression)</li>
+                    <li>Right intention</li>
+                    <li>Legitimate authority</li>
+                    <li>Last resort</li>
+                    <li>Reasonable chance of success</li>
+                    <li>Proportionality of ends</li>
+                </ul>
+            </div>
+            <div style="flex: 1; min-width: 220px; background: #EEF1F8; border-radius: 8px; padding: 16px 18px; border-left: 4px solid #C7922C;">
+                <div style="font-size: 13px; color: #c7922c; font-weight: bold; margin-bottom: 8px;"><em>Jus in bello:</em> How must war be conducted?</div>
+                <ul style="font-size: 14px; color: #1a2340; line-height: 1.7; margin: 0; padding-left: 18px;">
+                    <li>Discrimination (combatants vs. noncombatants)</li>
+                    <li>Proportionality of means</li>
+                    <li>No use of inherently evil means (e.g., torture of prisoners)</li>
+                    <li>Treatment of prisoners and wounded</li>
+                </ul>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Crucially, <em>jus in bello</em> requirements apply independently of <em>jus ad bellum</em>: a war that is just in its cause can still be conducted unjustly, and a soldier fighting in an unjust war is still bound by the in bello constraints. This independence reflects the deontological insight that some actions are prohibited regardless of the justice of the overall cause. The discrimination principle &mdash; the requirement not to deliberately target noncombatants &mdash; is central to evaluating the Hiroshima decision from Lesson 2.01.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; TECHNOLOGY AND ARTIFICIAL INTELLIGENCE</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">New Questions, Old Framework</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Artificial intelligence raises ethical questions that are genuinely new in their specific form but philosophically familiar in their structure. The 2017 Asilomar AI Principles &mdash; developed by a consortium of AI researchers &mdash; identified several core ethical concerns: safety (the AI should not harm users or others), fairness (the AI should not discriminate unjustly across groups), transparency (users should be able to understand how the AI makes decisions), privacy (the AI should not violate users' informational autonomy), and accountability (someone should be responsible for the AI's actions).</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Each of these maps onto the theoretical frameworks you have learned. Safety and fairness are partly consequentialist concerns: an AI that produces harmful or discriminatory outcomes is doing moral damage that counts against it. Transparency and privacy are deontological: they protect the rational autonomy of persons from being manipulated or used as data resources without consent. Accountability is a question about moral responsibility: when an AI system makes a harmful decision, who is the moral agent responsible?</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The question of moral agency is particularly interesting from the standpoint of the course. Kant defined moral agents as rational beings capable of acting from duty. AI systems, however sophisticated, do not act from duty: they optimize for specified objectives, which is closer to the consequentialist picture. But they cannot reflect on whether those objectives are the right ones &mdash; that remains a function of the humans who design and deploy them.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHICH PRINCIPLE APPLIES?</div>
+            <div class="widget-question">For each scenario, identify whether the primary ethical concern is consequentialist, deontological, or both.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this concern focus on the outcome (harm produced) or on whether a right has been violated?" data-fb="Correct. The concern about whether the AI produces accurate diagnoses is primarily about outcomes: better diagnoses save lives and reduce suffering. This is a consequentialist framing.">
+                <div class="widget-row-prompt">1. An AI diagnostic tool consistently produces less accurate diagnoses for patients from certain demographic groups, leading to worse treatment outcomes for those groups.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Primarily consequentialist: wrong because of harmful outcomes</button>
+                    <button data-choice="1">Primarily deontological: wrong because it violates a right or duty</button>
+                    <button data-choice="2">Both: harmful outcomes and a violation of equal dignity</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does the wrongness of collecting data without consent depend on the harm it produces, or on whether the person consented?" data-fb="Correct. Collecting and using personal data without consent violates the autonomy of persons regardless of whether any particular harm results. This is a Kantian/deontological concern: the duty to obtain consent flows from respect for persons as rational agents.">
+                <div class="widget-row-prompt">2. A technology company collects detailed personal data from users without their knowledge or meaningful consent and uses it for commercial purposes.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Primarily consequentialist: wrong because of harmful outcomes</button>
+                    <button data-choice="1">Primarily deontological: wrong because it violates a right or duty</button>
+                    <button data-choice="2">Both: harmful outcomes and a violation of equal dignity</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Is only the outcome wrong, or is there also a principle violated even if the outcome turned out well?" data-fb="Correct. An autonomous weapons system that kills without human authorization produces harmful outcomes (the deaths of persons) and also violates a deontological principle: persons may not be killed without some responsible human agent making that decision and bearing accountability for it.">
+                <div class="widget-row-prompt">3. An autonomous weapons system makes targeting decisions without any human authorization, resulting in the deaths of civilians who were incorrectly identified as threats.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Primarily consequentialist: wrong because of harmful outcomes</button>
+                    <button data-choice="1">Primarily deontological: wrong because it violates a right or duty</button>
+                    <button data-choice="2">Both: harmful outcomes and a violation of equal dignity</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Sources: The Belmont Report Summary and Asilomar AI Principles</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the Belmont Report's executive summary (linked in course materials) and the Asilomar Principles. For each document, identify which of your ethical frameworks is most reflected.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (2.07 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Choose one applied ethics domain from this lesson. Present a specific ethical dilemma in that domain, then analyze it using both consequentialist and deontological frameworks. Do the frameworks agree or disagree?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Applied ethics is not simpler than theoretical ethics: it is theory tested under the pressure of real decisions, real stakes, and real conflicts between competing principles. Medical ethics, just war theory, and AI ethics all show that consequentialist and deontological insights are not competitors but complementary lenses. Neither, by itself, gives a complete picture. The next lesson examines other modern moral frameworks &mdash; intuitionism and social contract theory &mdash; that address what consequentialism and deontology each leave out.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.07 &middot; Ethics in Medicine, War, and Technology</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.05</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Natural Law and Its Rivals</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.05</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">What Is Morality?</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Natural Law and Its Rivals</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.05</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">What Is Morality? Natural Law's Account</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What is morality, and why is it not reducible to social convention, personal preference, or the commands of the powerful?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Through three quarters you have studied four ethical theories and the objections to each. This lesson steps back from the level of specific theories and asks the more fundamental question: what is the domain of morality itself? Why do moral questions deserve serious answers at all? Natural law theory offers a distinctive answer: morality is the set of requirements that follow from reason's grasp of the good for human beings. This is not merely a cultural construction, not a matter of taste, and not simply the preferences of whoever holds power. Understanding why natural law makes this case, and what makes it compelling, is the goal of this lesson.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain three rival accounts of what morality is and articulate the natural law account against them.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the doctrine of double effect and state its four conditions.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> apply the doctrine of double effect to a case and explain what it permits and why.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; RIVAL ACCOUNTS OF MORALITY</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before reading on: is morality a matter of fact, a matter of preference, or a matter of social agreement? Does your answer change for different moral questions?</div>
+            <div class="widget-options">
+                <button data-response="This is the natural law (and Kantian) position: that moral claims can be true or false, not merely preferred or agreed upon. The challenge for this view is to explain what kind of facts moral facts are and how we know them.">Moral claims can be true or false independently of what anyone prefers or agrees to.</button>
+                <button data-response="This is emotivism or expressivism: moral claims express attitudes rather than stating facts. A.J. Ayer's 1936 version ('murder is wrong' means something like 'murder: boo!') is the starkest form. Natural law theory argues that this cannot account for moral argument and reasoning, which proceeds as if moral claims can genuinely contradict each other.">Moral claims just express attitudes or preferences; they aren't true or false in the way factual claims are.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Three Rival Accounts of Morality</h3>
+
+        <div style="background: #EEF1F8; border-radius: 8px; padding: 18px 22px; margin: 12px 0;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px;">
+                <div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border-radius: 6px; padding: 14px 16px;">
+                    <div style="font-size: 15px; color: #0e1c42; font-weight: 600; margin-bottom: 8px;">Moral Relativism</div>
+                    <div style="font-size: 14px; color: #1a2340; line-height: 1.6; margin-bottom: 8px;">Moral claims are true only relative to a culture, society, or individual. There are no universal moral truths. What is right in one society may be wrong in another, and there is no objective basis for judging between them.</div>
+                    <div style="font-size: 13px; color: #666; font-style: italic;">Problem: This cannot explain why we judge some historical practices (slavery, genocide) as wrong regardless of cultural approval, or why moral progress is possible.</div>
+                </div>
+                <div style="background: #FFFFFF; border-top: 3px solid #D0D9E8; border-radius: 6px; padding: 14px 16px;">
+                    <div style="font-size: 15px; color: #0e1c42; font-weight: 600; margin-bottom: 8px;">Legal Positivism</div>
+                    <div style="font-size: 14px; color: #1a2340; line-height: 1.6; margin-bottom: 8px;">Morality is what the law commands, or what the state declares. There is no independent moral standard above positive law. H.L.A. Hart and early Austin held versions of this view.</div>
+                    <div style="font-size: 13px; color: #666; font-style: italic;">Problem: This cannot account for judgments that laws themselves can be unjust, or for the Nuremberg principle that "following orders" is no defense for serious crimes.</div>
+                </div>
+                <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border-radius: 6px; padding: 14px 16px;">
+                    <div style="font-size: 15px; color: #C7922C; font-weight: 600; margin-bottom: 8px;">Natural Law (Aquinas/Finnis)</div>
+                    <div style="font-size: 14px; color: #1a2340; line-height: 1.6; margin-bottom: 8px;">Morality is the set of requirements that follow from reason's grasp of the basic human goods. These are universal, knowable by reason, and binding regardless of cultural agreement or positive law.</div>
+                    <div style="font-size: 13px; color: #666; font-style: italic;">This account can explain both why moral progress is possible (we come to understand the basic goods better) and why some things are wrong regardless of cultural approval.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2: Doctrine of Double Effect -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE DOCTRINE OF DOUBLE EFFECT</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">A Critical Tool: Distinguishing What We Intend from What We Foresee</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Natural law theory holds that it is never permissible to act directly against a basic good. But many actions have harmful effects as foreseen side effects, without those harms being the point of the action. A surgeon who removes a cancerous uterus foresees that the patient will lose the ability to bear children, but does not intend this as the goal of the surgery. A soldier defending a city foresees that civilians may be killed by the return fire, but does not intend to kill them.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The Doctrine of Double Effect (DDE) is the natural law principle that distinguishes morally between an action's intended effects and its merely foreseen effects. It originates in Aquinas (ST II-II, Q. 64, A. 7, on self-defense) and has been refined extensively in the centuries since.</p>
+
+        <!-- DDE visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 22px 26px; margin: 14px 0 6px 0; color: #ffffff;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.5px;">THE FOUR CONDITIONS OF THE DOCTRINE OF DOUBLE EFFECT</div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 14px 16px;">
+                    <div style="min-width: 30px; height: 30px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+                    <div>
+                        <div style="font-size: 15px; color: #C7922C; margin-bottom: 5px;">The action itself must not be intrinsically evil</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6;">The action being performed must not itself be a direct violation of natural law. You cannot do an evil thing in order to bring about a good result.</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 14px 16px;">
+                    <div style="min-width: 30px; height: 30px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+                    <div>
+                        <div style="font-size: 15px; color: #C7922C; margin-bottom: 5px;">The agent must intend only the good effect</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6;">The harmful effect must be foreseen but not intended. It must not be the goal or the means to the goal. The agent acts in spite of the harmful effect, not because of it.</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 14px 16px;">
+                    <div style="min-width: 30px; height: 30px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+                    <div>
+                        <div style="font-size: 15px; color: #C7922C; margin-bottom: 5px;">The good effect must not flow from the bad effect</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6;">The good result must not be achieved by means of the harmful effect. If the good follows causally from the harm (the good result is caused by the harm), then the harm is being used as a means, which is prohibited.</div>
+                    </div>
+                </div>
+                <div style="display: flex; align-items: flex-start; gap: 14px; background: rgba(255,255,255,0.07); border-radius: 7px; padding: 14px 16px;">
+                    <div style="min-width: 30px; height: 30px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 14px; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+                    <div>
+                        <div style="font-size: 15px; color: #C7922C; margin-bottom: 5px;">There must be proportionate reason</div>
+                        <div style="font-size: 14px; color: rgba(255,255,255,0.85); line-height: 1.6;">The good achieved must be sufficiently serious to justify permitting the harmful side effect. You cannot accept significant harm to secure a trivial benefit.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p style="font-size: 15px; color: #666; font-style: italic; margin: 6px 0 14px 0;">All four conditions must be satisfied. If any one fails, the action is not permissible under the DDE.</p>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; APPLYING THE DOCTRINE OF DOUBLE EFFECT</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; DDE ANALYSIS</div>
+            <div class="widget-question">For each case, identify whether the Doctrine of Double Effect permits or prohibits the action, and which condition (if any) is violated.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Work through each condition: Is the action itself intrinsically wrong? Is the harm intended or merely foreseen? Is the good achieved through the harm or alongside it? Is there proportionate reason?" data-fb="Correct. A surgeon who removes a cancerous tumor (action not intrinsically wrong) with the foreseen but unintended side effect of destroying surrounding healthy tissue satisfies all four DDE conditions: the action is legitimate, the harm is foreseen but not intended, the good (tumor removal) does not flow from the harm, and the reason (cancer treatment) is proportionate. DDE permits this.">
+                <div class="widget-row-prompt">1. A surgeon removes a tumor, foreseeing but not intending that the procedure will unavoidably destroy surrounding healthy tissue. The surgery is necessary to save the patient's life.</div>
+                <div class="widget-options">
+                    <button data-choice="0">DDE permits this action</button>
+                    <button data-choice="1">DDE prohibits this: condition 2 violated (harm intended)</button>
+                    <button data-choice="2">DDE prohibits this: condition 3 violated (good flows from harm)</button>
+                    <button data-choice="3">DDE prohibits this: condition 1 violated (action intrinsically wrong)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Think carefully about the causal structure. Is the bomb's explosion producing the good, or is it producing the harm, which is then used to produce the good?" data-fb="Correct. Bombing a hospital to demoralize an enemy violates condition 3: the good effect (military advantage) flows from the bad effect (killing patients and staff). The deaths are not a side effect of securing the military objective; they are the means by which the objective is pursued. DDE does not permit this.">
+                <div class="widget-row-prompt">2. A military commander bombs a hospital to demoralize the enemy and shorten the war, calculating that the demoralization (which requires the deaths) will save more lives overall.</div>
+                <div class="widget-options">
+                    <button data-choice="0">DDE permits this action</button>
+                    <button data-choice="1">DDE prohibits this: condition 2 violated (harm intended)</button>
+                    <button data-choice="2">DDE prohibits this: condition 3 violated (good flows from harm)</button>
+                    <button data-choice="3">DDE prohibits this: condition 4 violated (disproportionate reason)</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aquinas, <em>Summa Theologica</em> II-II, Question 64, Article 7 (on self-defense and the origin of the Doctrine of Double Effect)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the article carefully, paying attention to how Aquinas frames the key distinction between intending and foreseeing. Note his argument that an act is specified by its intention, not by its consequences.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (4.05 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Apply the Doctrine of Double Effect to the Hiroshima case from Lesson 2.01. Does the bombing satisfy all four conditions? Which conditions, if any, does it fail, and why?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Natural law theory holds that morality is the set of requirements that follow from reason's grasp of the basic human goods. It rejects moral relativism (morality as cultural convention) and legal positivism (morality as what the law commands). The Doctrine of Double Effect is its central tool for distinguishing permissible from impermissible actions that involve harmful effects: an action is permissible only if (1) the action itself is not intrinsically wrong, (2) the harm is foreseen but not intended, (3) the good does not flow from the harm, and (4) there is proportionate reason. The next lesson examines natural law and God: the question of whether the natural law requires a divine lawgiver, and how this relates to the Euthyphro dilemma from Lesson 1.03.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.05 &middot; What Is Morality?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

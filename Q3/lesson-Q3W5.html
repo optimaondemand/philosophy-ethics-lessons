@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 3.05</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Virtue Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.05</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Golden Mean: Virtue Between Extremes</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Virtue Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.05</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Golden Mean: Virtue as Excellence Between Extremes</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Virtue is a mean between two vices: the vice of excess and the vice of deficiency.</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Aristotle's doctrine of the mean (<em>mesotes</em>) is one of the most recognized ideas in all of philosophy. But it is frequently misunderstood. The mean is not a mathematical average or a recipe for mediocrity. It is a claim about what excellence looks like in any domain: excellence always involves the right amount, in the right way, toward the right people, at the right time. This lesson examines the doctrine carefully, applies it to specific virtues, and addresses the main objections to it.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Aristotle's doctrine of the mean and distinguish it from the misunderstanding that virtue is "moderation in all things."</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> apply the mean structure to at least three specific virtues and identify their corresponding vices of excess and deficiency.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why the mean is "relative to us" and what that means for moral guidance.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE DOCTRINE OF THE MEAN</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Is courage the same as fearlessness? Is a soldier who feels no fear at all during combat the most courageous soldier?</div>
+            <div class="widget-options">
+                <button data-response="Aristotle would strongly agree: fearlessness is not courage. Someone who feels no fear at all is not courageous but reckless or even constitutionally deficient. Courage involves feeling appropriate fear and acting rightly in spite of it.">No. Feeling no fear at all seems like a deficiency, not an excellence.</button>
+                <button data-response="This mixes courage with a particular personality type. Aristotle would say the fearless soldier may be reckless: charging into situations where fear would be the appropriate response. Courage requires the right response to genuinely fearful things.">Yes. The best soldier would not be distracted by fear.</button>
+                <button data-response="That is pointing toward the right analysis. Aristotle would say: courage is the mean between cowardice (excess of fear, deficiency of confidence) and recklessness (deficiency of fear, excess of confidence).">It depends on the situation and what kind of fear we mean.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Structure of the Mean</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In Book II, Chapter 6, Aristotle defines virtue of character as "a state of character concerned with choice, lying in a mean, i.e., the mean relative to us, this being determined by a rational principle, and by that principle by which the man of practical wisdom would determine it." This dense definition repays careful unpacking.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Every human response &mdash; emotion, action, or both &mdash; admits of too much and too little. Both excess and deficiency are forms of failure; both are vices. The virtue is the appropriate amount: the response that hits the mark given the specific circumstances, the specific persons involved, the specific purpose, and the specific time. This is the "mean relative to us": not the mathematical midpoint, but what is right for this person in this situation.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The mean is determined by practical reason, specifically by what a person of practical wisdom (<em>phronesis</em>) would determine. This prevents the doctrine from collapsing into relativism: the mean is not "whatever seems right to any individual" but "what someone with good character and good judgment would recognize as appropriate."</p>
+
+        <!-- Mean spectrum visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 20px 28px; margin: 18px 0;">
+            <div style="font-size: 14px; color: #55C8E8; margin-bottom: 16px; letter-spacing: 0.5px;">THE STRUCTURE OF VIRTUE: COURAGE AS EXAMPLE</div>
+            <div style="display: flex; align-items: center; gap: 0; margin-bottom: 14px;">
+                <div style="flex: 1; background: rgba(192,57,43,0.4); border-radius: 8px 0 0 8px; padding: 12px 14px; border: 1px solid rgba(192,57,43,0.5);">
+                    <div style="font-size: 12px; color: #ff8a8a; margin-bottom: 4px;">VICE OF DEFICIENCY</div>
+                    <div style="font-size: 16px; color: #ffffff; font-weight: bold;">Cowardice</div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px;">Excessive fear; deficient confidence</div>
+                </div>
+                <div style="width: 2px; height: 70px; background: rgba(255,255,255,0.2);"></div>
+                <div style="flex: 1; background: rgba(199,146,44,0.3); padding: 12px 14px; border: 1px solid rgba(199,146,44,0.5); text-align: center;">
+                    <div style="font-size: 12px; color: #C7922C; margin-bottom: 4px;">VIRTUE / THE MEAN</div>
+                    <div style="font-size: 16px; color: #ffffff; font-weight: bold;">Courage</div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px;">Right fear and confidence, at the right time</div>
+                </div>
+                <div style="width: 2px; height: 70px; background: rgba(255,255,255,0.2);"></div>
+                <div style="flex: 1; background: rgba(192,57,43,0.4); border-radius: 0 8px 8px 0; padding: 12px 14px; border: 1px solid rgba(192,57,43,0.5); text-align: right;">
+                    <div style="font-size: 12px; color: #ff8a8a; margin-bottom: 4px;">VICE OF EXCESS</div>
+                    <div style="font-size: 16px; color: #ffffff; font-weight: bold;">Recklessness</div>
+                    <div style="font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 4px;">Deficient fear; excessive confidence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE VIRTUES IN THE MEAN STRUCTURE</div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle applies the mean structure to a wide range of virtues and the domains of action and emotion they govern. The table below shows the pattern across several key virtues:</p>
+
+        <div style="overflow-x: auto; margin: 16px 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 11px 13px; text-align: left; border: 1px solid #D0D9E8;">Domain</th>
+                        <th style="padding: 11px 13px; text-align: center; border: 1px solid #D0D9E8; color: #ff8a8a;">Vice of Deficiency</th>
+                        <th style="padding: 11px 13px; text-align: center; border: 1px solid #D0D9E8; color: #C7922C;">Virtue (the Mean)</th>
+                        <th style="padding: 11px 13px; text-align: center; border: 1px solid #D0D9E8; color: #ff8a8a;">Vice of Excess</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340;">Fear / danger</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Cowardice</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #0e1c42; text-align: center; font-weight: bold;">Courage</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Recklessness</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340;">Bodily pleasures</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Insensibility</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #0e1c42; text-align: center; font-weight: bold;">Temperance</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Self-indulgence</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340;">Giving money</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Miserliness</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #0e1c42; text-align: center; font-weight: bold;">Generosity</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Prodigality</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340;">Self-presentation</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Understatement</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #0e1c42; text-align: center; font-weight: bold;">Truthfulness</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Boastfulness</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340;">Anger</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Spiritlessness</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #0e1c42; text-align: center; font-weight: bold;">Good temper</td>
+                        <td style="padding: 9px 13px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Irascibility</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">One feature worth noticing: Aristotle explicitly includes the vice of deficiency as a vice. The person who never feels anger at genuine injustice, who smiles blandly at genuine wrongdoing, lacks something morally important. Spiritlessness is not a virtue; it is the failure to have the appropriate emotional response. Genuine good character requires that the emotions function well, not that they be suppressed.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; OBJECTIONS AND CLARIFICATIONS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Three Common Misunderstandings</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Misunderstanding 1: "The mean" means "mediocre."</strong> The mean is not a lukewarm or middling response. Aristotle says explicitly: virtue is an extreme with respect to excellence, even though it is a mean with respect to the two vices. The courageous response to a dangerous situation might require extraordinary action; it is "mean" only in the sense that it avoids both the excess of recklessness and the deficiency of cowardice.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Misunderstanding 2: "The mean" is the same for everyone.</strong> Aristotle says it is "relative to us." What counts as courage for a professional soldier differs from what counts as courage for a civilian. The appropriate response to a difficult conversation depends on who you are, who the other person is, what the stakes are, and what the relationship is. There is no single arithmetic midpoint that applies equally to all.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Misunderstanding 3: The mean structure applies to all moral considerations.</strong> Aristotle is clear: some actions and emotions are simply wrong and have no virtuous mean. There is no "right amount" of murder, of adultery, of malicious spite. These are wrong as such; their very names imply excess. This is Aristotle's agreement with deontology on one point: some actions are simply prohibited, and no situational calibration can make them acceptable.</p>
+
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; TRY IT &middot; IDENTIFYING THE MEAN</div>
+            <div class="widget-question">For each scenario, identify whether the response described is most likely a vice of deficiency, the mean (virtue), or a vice of excess.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="Is an angry outburst that causes harm the appropriate emotional response, deficient, or excessive?" data-fb="Correct. Explosive anger that causes harm and loses proportion to the provocation is a vice of excess. Good temper (the mean in the domain of anger) involves feeling appropriate anger at appropriate times in appropriate ways.">
+                <div class="widget-row-prompt">1. A person reacts to a minor slight from a colleague with a furious outburst that damages the relationship and embarrasses everyone involved.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Vice of deficiency</button>
+                    <button data-choice="1">Virtue: the mean</button>
+                    <button data-choice="2">Vice of excess</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Is refusing to spend any money for any generous purpose the appropriate level of giving, or a deficiency?" data-fb="Correct. Refusing to give anything to any worthy cause or person in need, even when one can easily afford to, is miserliness: a vice of deficiency in the domain of giving.">
+                <div class="widget-row-prompt">2. A wealthy person refuses any charitable contribution, not because she cannot afford it but because she believes her money is only for herself.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Vice of deficiency</button>
+                    <button data-choice="1">Virtue: the mean</button>
+                    <button data-choice="2">Vice of excess</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does the response involve accurate self-presentation, neither more nor less than what is true?" data-fb="Correct. Describing your accomplishments honestly, without false modesty or exaggeration, is Aristotle's virtue of truthfulness in self-presentation. The mean here is neither understating (false modesty) nor overstating (boastfulness).">
+                <div class="widget-row-prompt">3. A person describes her achievements accurately and without exaggeration in a job interview, neither downplaying what she has done nor claiming credit she does not have.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Vice of deficiency</button>
+                    <button data-choice="1">Virtue: the mean</button>
+                    <button data-choice="2">Vice of excess</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aristotle, <em>Nicomachean Ethics</em>, Book II, Chapters 5&ndash;9</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Aristotle's full account of the mean, including his explicit statement that virtue is an extreme with respect to excellence, and his list of virtues with their opposing vices.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (3.05 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Choose a virtue not listed in the table above. Identify its domain, its vice of deficiency, and its vice of excess. Explain what the mean looks like and why it is relative to the person and situation.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Virtue is a mean between two vices: the vice of excess and the vice of deficiency. The mean is not a mechanical average but the response that is appropriate to the specific situation, determined by practical wisdom. It is "relative to us" in the sense that what counts as the right response depends on the person, the circumstances, and the relationship, not on a single standard applied uniformly. And the mean structure applies to actions and emotions together: the virtuous person feels the right things and acts rightly, not just one or the other. The next lesson examines the cardinal virtues in depth.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.05 &middot; The Golden Mean: Virtue Between Extremes</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

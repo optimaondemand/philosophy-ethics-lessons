@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.08</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Science and Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.08</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Psychology, Neuroscience, and Moral Judgment</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Science and Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.08</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">What Does the Brain Tell Us About Right and Wrong? Psychology, Neuroscience, and Moral Judgment</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Neuroscientists can now observe the brain during moral decisions. Does that tell us what morality is?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Recent decades have produced a wave of scientific research on the psychology and neuroscience of moral judgment. Researchers can identify which brain regions activate when people face moral dilemmas, measure how quickly moral judgments are made, and observe how emotion and cognition interact in moral decision-making. This lesson examines what this research genuinely contributes to our understanding of moral life &mdash; and why it does not, by itself, resolve the philosophical questions this course is asking.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe what psychological and neuroscientific research reveals about how moral judgments are actually made.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the descriptive/normative distinction as applied to neuroscience: what it can and cannot tell us about morality.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify what is genuinely valuable in the scientific study of moral psychology and where philosophical reasoning must take over.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; WHAT THE SCIENCE SHOWS</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think about the last time you made a moral judgment quickly, without deliberation. Was that judgment more like a perception, a calculation, or a gut feeling?</div>
+            <div class="widget-options">
+                <button data-response="Moral perception is an important concept we will encounter again in virtue ethics. The idea that moral knowledge can be immediate, like perception, has a long philosophical history.">More like a perception</button>
+                <button data-response="The calculation model corresponds to what psychologists call 'System 2' reasoning. This lesson will examine when moral reasoning is deliberate and when it is fast and automatic.">More like a calculation</button>
+                <button data-response="Moral psychology research suggests this is the most common experience. Fast, automatic moral intuitions drive most of our judgments, with reasoning often arriving after the fact.">More like a gut feeling</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Jonathan Haidt and Moral Intuition</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In a widely discussed 2001 paper in <em>Psychological Review</em>, Jonathan Haidt proposed the <strong>social intuitionist model</strong> of moral judgment. Haidt's research showed that people make moral judgments rapidly, before any deliberate reasoning, and then construct post-hoc rationalizations for those judgments. On Haidt's account, moral reasoning is largely a performance &mdash; we have already decided what we think based on gut feeling, and reasoning is deployed to persuade others rather than to reach conclusions. He summarized the position as: "The moral dog wags its rational tail."</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Neuroimaging studies have supported parts of this picture. The brain regions most active during rapid moral judgments include areas associated with emotion (the amygdala, the ventromedial prefrontal cortex). When people face trolley-problem-style dilemmas that require deliberate calculation of consequences, different regions of the prefrontal cortex become active, and responses are slower. The neuroscience suggests that moral judgment involves at least two different kinds of processing: fast emotional response and slower deliberative reasoning.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">What This Research Illuminates</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This research is genuinely valuable for understanding <em>how moral judgments are made</em>. It confirms the sentimentalist point that emotion is central to moral experience. It explains why moral argument is often less effective than moral education and habituation at changing behavior &mdash; something Aristotle insisted on two and a half millennia ago. And it raises important questions about the reliability of moral intuitions that have been formed in environments very different from the ones we now navigate.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHAT SCIENCE CANNOT SETTLE</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Descriptive/Normative Gap, Again</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Neuroscience tells us how moral judgments are processed in the brain. It does not tell us which moral judgments are correct. The brain also processes judgments that are morally false: biases, prejudices, and rationalizations all have neural correlates. The mere fact that a judgment activates certain brain regions does not make it right.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">More fundamentally: even if Haidt is right that moral reasoning often post-hoc rationalizes intuition, this does not show that moral reasoning is worthless. It shows that human beings sometimes reason badly. The capacity to reason can be exercised well or poorly. When Socrates questioned Euthyphro, he was not merely post-hoc rationalizing &mdash; he was genuinely testing whether an intuition survived scrutiny. The existence of bad reasoning does not invalidate good reasoning.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Finally, the neuroscientific account simply pushes the question back. Once we know that moral judgment involves emotional and deliberative processing, we still need to ask: <em>which</em> of these processes is morally reliable? Should we trust our quick emotional reactions or our considered deliberations? That question is a philosophical one, and no amount of brain imaging can answer it.</p>
+
+        <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 6px; padding: 16px 20px; margin: 16px 0;">
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Social intuitionist model (Haidt):</strong> The psychological account on which moral judgments are made rapidly by intuition, with deliberate reasoning typically serving to justify the conclusion already reached.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0;"><strong>Neuroethics:</strong> The interdisciplinary field applying neuroscientific findings to ethical questions, both by illuminating how moral judgment works and by raising new ethical questions about the brain itself.</p>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHAT DOES THE SCIENCE SETTLE?</div>
+            <div class="widget-question">For each question below, decide: can neuroscience or psychology settle this question, or does it remain philosophical?</div>
+
+            <div class="widget-row" data-correct="0" data-fb="Correct. Neuroscience can address this empirical question about the brain: which regions are active during different types of moral judgment." data-hint="Is this a question about how the brain works, or about what is morally right?">
+                <div class="widget-row-prompt">1. "Which brain regions are most active when people face trolley-problem dilemmas?"</div>
+                <div class="widget-options">
+                    <button data-choice="0">Science can settle this</button>
+                    <button data-choice="1">This remains a philosophical question</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Knowing that both fast emotional and slow deliberative processes exist does not tell you which one to trust. Is that a scientific question?" data-fb="Correct. Whether we should trust fast intuitions or slow deliberation is a normative question. Science can tell us they exist and differ; it cannot tell us which is more reliable for moral truth.">
+                <div class="widget-row-prompt">2. "Should we trust our fast moral intuitions more than our slow deliberative reasoning, or the other way around?"</div>
+                <div class="widget-options">
+                    <button data-choice="0">Science can settle this</button>
+                    <button data-choice="1">This remains a philosophical question</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does showing that a judgment has neural correlates, or that it is reached quickly, tell you whether the judgment is morally correct?" data-fb="Correct. The correctness of a moral judgment is not determined by its neural correlates or processing speed. That remains a philosophical question.">
+                <div class="widget-row-prompt">3. "Is the moral judgment that gratuitous cruelty is wrong actually correct, given that it is reached rapidly and involves emotional processing?"</div>
+                <div class="widget-options">
+                    <button data-choice="0">Science can settle this</button>
+                    <button data-choice="1">This remains a philosophical question</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Reading: Haidt, "The Emotional Dog and Its Rational Tail" (<em>Psychological Review</em>, 2001)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the linked excerpt. Identify Haidt's core claim and his main piece of evidence. Then write one paragraph responding: does showing that moral reasoning often rationalizes intuition show that moral reasoning is unreliable?</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Module 3 Reflection (1.08 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In 300&ndash;400 words: across sentimentalism, evolutionary ethics, and moral psychology, what does the scientific approach to ethics illuminate about moral life &mdash; and what question does it consistently fail to answer?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Psychology and neuroscience have made real contributions to our understanding of moral psychology: they confirm the importance of emotion, illuminate the speed and automaticity of moral judgment, and raise important questions about reliability. But they do not, and cannot, resolve the normative question: which moral judgments are correct, and why. That question requires the kind of reasoning this course has been building toward. Next week, we begin to ask how to actually do ethics well.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.08 &middot; Psychology, Neuroscience, and Moral Judgment</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

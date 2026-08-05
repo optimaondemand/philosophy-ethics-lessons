@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    details { background: #EEF1F8; border-left: 4px solid #C7922C; border-radius: 4px; padding: 0; margin: 16px 0; }
+    details summary { padding: 14px 18px; font-size: 17px; color: #0e1c42; cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary { border-bottom: 1px solid #D0D9E8; }
+    details .reveal-body { padding: 14px 18px; font-size: 17px; color: #1a2340; line-height: 1.65; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Consequentialism</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Does the End Justify the Means?</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Consequentialism</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Does the End Justify the Means? The Logic of Consequentialism</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If consequences are what matter morally, what exactly are consequences, and how do we measure them?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Consequentialism is the most intuitive moral theory in common use. When people say "the ends justify the means," they are stating a consequentialist principle. When people defend a painful policy by pointing to its long-run benefits, they reason consequentially. This lesson examines the internal logic of the theory: what it claims, what it requires, and what problems arise before we even get to the utilitarian version of it.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state the core claim of consequentialism in precise terms and distinguish it from related but weaker claims.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the three questions every consequentialist theory must answer: consequences for whom, measured by what, evaluated over what time frame.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe two foundational objections to consequentialism in its general form: the problem of moral demandingness and the problem of using persons as mere means.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE CORE CLAIM</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Which of the following feels like the most natural way to evaluate whether a decision was morally right?</div>
+            <div class="widget-options">
+                <button data-response="That is the consequentialist instinct: right actions are defined by the outcomes they produce. This lesson examines how far that principle can coherently be taken.">Looking at what actually happened as a result of it</button>
+                <button data-response="That is a deontological instinct: the moral quality of the action is determined by what it is, not what it causes. Lesson 2.05 develops this in depth.">Asking whether the action itself was the kind of thing one should do</button>
+                <button data-response="That is a virtue-based instinct: what matters is character, not just individual actions. Quarter 3 develops this at length.">Asking what a person of good character would have done</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Consequentialist Core</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Consequentialism is the position that the moral rightness of an action is entirely and exclusively determined by the consequences that action produces. Not the agent's character, not the type of action, not the agent's intentions in themselves &mdash; only the consequences. An action that produces better consequences is more right; an action that produces worse consequences is less right or wrong.</p>
+
+        <!-- Core claim visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 20px 28px; text-align: center; margin: 18px 0;">
+            <div style="font-size: 14px; color: #55C8E8; margin-bottom: 10px; letter-spacing: 0.5px;">THE CONSEQUENTIALIST PRINCIPLE</div>
+            <div style="font-size: 22px; color: #FFFFFF; line-height: 1.5; font-style: italic;">"An action is morally right if and only if it produces the best available consequences among all options open to the agent."</div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Notice what this implies: the same action can be morally right in one situation and morally wrong in another &mdash; not because the type of action changes, but because the consequences it produces change with circumstances. There is no action that is intrinsically right or wrong by its nature; everything depends on what it causes. This is consequentialism's greatest strength and, as we will see, one of its greatest vulnerabilities.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THREE QUESTIONS EVERY CONSEQUENTIALIST MUST ANSWER</div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Stating the principle is easier than applying it. Any consequentialist who wants to move from the abstract principle to specific moral judgments must answer three questions that turn out to be deeply difficult.</p>
+
+        <div style="overflow-x: auto; margin: 16px 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Question</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">What is at stake</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Competing answers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">1. Consequences for whom?</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Whose interests count in the calculation?</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Only the agent? The agent's community? All humans? All sentient beings?</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">2. Measured by what?</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">What makes a consequence "good"?</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Pleasure vs. pain? Preference satisfaction? Objective human goods? Flourishing?</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">3. Over what time frame?</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Short-run vs. long-run consequences can conflict sharply.</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Immediate effects only? Predictable downstream effects? Remote possible effects?</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Different consequentialist theories answer these questions differently, and the answers matter enormously for what the theory demands in practice. Utilitarianism &mdash; the most influential version of consequentialism, which we examine in the next two lessons &mdash; gives specific answers: consequences for all affected parties with equal weight, measured by well-being (happiness or preference satisfaction), aggregated across all persons.</p>
+
+        <details>
+            <summary>Think first: Is there a version of consequentialism that applies only to the agent's own community? What would follow from that?</summary>
+            <div class="reveal-body">
+                <p style="margin: 0 0 10px 0;">This position is sometimes called "national" or "communal" consequentialism: the right action for a political leader is the one that produces the best outcome for her own nation or community, with the interests of outsiders given little or no weight. On this view, Truman's decision would be evaluated only by its effects on Americans, not on the population of Hiroshima.</p>
+                <p style="margin: 0;">The problem: this is no longer a properly moral theory but a sophisticated self-interest theory. If the fact that someone is outside a given community means their suffering counts for nothing, the theory licenses almost any harm to outsiders when it benefits insiders. Most consequentialists argue that the scope must be genuinely universal: "each to count for one and none for more than one" (Bentham's phrase). That universalism is part of what makes consequentialism a moral theory rather than a tribal interest calculus.</p>
+            </div>
+        </details>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; TWO FOUNDATIONAL OBJECTIONS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Objection 1: The Problem of Moral Demandingness</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">If the right action is always the one that produces the best available outcome, then you are obligated to keep giving your money to effective charities until doing so would make your own situation worse than the situation of those you are helping. You are obligated to sacrifice personal projects, relationships, and commitments whenever doing so would produce better total consequences. The moral life becomes a relentless maximization exercise with no room for the commitments, special obligations, and personal pursuits that make a human life recognizable as a life.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Defenders of consequentialism respond in various ways: some bite the bullet and accept that consequentialism does demand a great deal; others argue that when indirect and long-run effects are included, a life with personal commitments actually produces more good than one of constant sacrifice; still others modify the theory into rule-consequentialism (which we examine in Lesson 2.04) to reduce the demandingness.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Objection 2: The Problem of Using Persons</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The most serious objection to consequentialism runs deeper. Consider a case where you could save five people by killing one innocent person who is not threatening anyone &mdash; perhaps by using his organs to save five patients who will otherwise die. The numbers favor the action: five lives for one. A strict consequentialist seems committed to saying this is morally required. But to most people, this conclusion is not just wrong &mdash; it is monstrous.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The reason it feels monstrous points at something consequentialism misses: persons have a dignity that is not tradeable, a standing that is not simply one unit in an aggregate calculation. Using a person as a mere instrument for others' benefit &mdash; even their great benefit &mdash; treats that person as a means to an end rather than as an end in herself. This intuition is the heart of deontological ethics, which we will develop in detail in Lessons 2.05 and 2.06.</p>
+
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; TRY IT &middot; HOW CONVINCING IS THE OBJECTION?</div>
+            <div class="widget-question">For each scenario, rate how serious a problem it poses for consequentialism.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="The consequentialist can respond: these are bad calculations, not the theory's fault. Does this actually challenge the theory?" data-fb="Correct. This is not a deep challenge to the theory; it is a challenge to the quality of the calculation. Consequentialism can absorb it by demanding better accounting of indirect effects.">
+                <div class="widget-row-prompt">1. "Consequentialism licenses bad decisions when decision-makers miscalculate the effects of their actions."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Decisive objection: defeats the theory</button>
+                    <button data-choice="1">Serious problem: requires major revision</button>
+                    <button data-choice="2">Minor challenge: absorbed by the theory itself</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this challenge only the calculation, or does it challenge the theoretical claim that outcomes are the only thing that matters morally?" data-fb="Correct. The organ-transplant case challenges the theory's core principle, not just its application. Even with perfect calculations, the conclusion appears to require an action that violates a person's fundamental standing.">
+                <div class="widget-row-prompt">2. "Consequentialism seems to require using one innocent person as an instrument when doing so saves five others."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Decisive objection: defeats the theory</button>
+                    <button data-choice="1">Serious problem: requires major revision</button>
+                    <button data-choice="2">Minor challenge: absorbed by the theory itself</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Can this be addressed within consequentialism, or does it require abandoning the theory?" data-fb="Correct. This is a serious problem, but consequentialists have genuine responses, including rule-consequentialism and arguments about indirect effects. It does not simply defeat the theory.">
+                <div class="widget-row-prompt">3. "Consequentialism demands so much sacrifice from individuals that it seems to leave no room for a distinctly personal life."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Decisive objection: defeats the theory</button>
+                    <button data-choice="1">Serious problem: requires major revision</button>
+                    <button data-choice="2">Minor challenge: absorbed by the theory itself</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: John Stuart Mill, <em>Utilitarianism</em>, Chapters 1 and 2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Mill provides the most readable and influential defense of consequentialism. As you read, note how he answers the three questions above: who counts, what is measured, and over what scope.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (2.02 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">State in your own words the core consequentialist principle, then explain which of its three foundational questions you find most difficult to answer and why.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Consequentialism's core claim is simple and initially compelling: consequences are what determine the moral quality of actions. But three foundational questions must be answered before the principle can guide any real decision, and two deep objections challenge whether the principle is correct at all. The utilitarian tradition &mdash; beginning with Jeremy Bentham in the late 18th century &mdash; gives the most careful and systematic answers to these questions, and provides the most developed defense of the consequentialist approach.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.02 &middot; Does the End Justify the Means?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

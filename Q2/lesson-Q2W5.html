@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.05</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Deontology</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.05</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Good Will and the Categorical Imperative</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Deontology</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.05</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Good Will and the Categorical Imperative: Kant's Moral Philosophy</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Is there any action that is morally required regardless of its consequences?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Immanuel Kant (1724&ndash;1804) is the most influential systematic philosopher of the modern era and the founder of the deontological tradition. His ethics is one of the most demanding and rigorous in the history of moral philosophy. It is also genuinely difficult. This lesson works through the core of Kant's <em>Groundwork of the Metaphysics of Morals</em> (1785) step by step: his account of the good will, his derivation of the categorical imperative, and what that imperative actually requires. These ideas are foundational to modern rights-based ethics and to the concept of human dignity.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what Kant means by the good will and why he claims it is the only thing good without qualification.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish hypothetical imperatives from categorical imperatives and explain why Kant believes moral requirements are categorical.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state and apply the two main formulations of the categorical imperative: the universalizability formula and the humanity formula.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE GOOD WILL</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Suppose two people both tell the truth in a difficult situation. One tells the truth because it will work out well for her; the other tells the truth because she believes it is the right thing to do, even though it will cost her. Which person acted more morally?</div>
+            <div class="widget-options">
+                <button data-response="That is Kant's view exactly. The moral worth of an action comes from acting from duty, not from inclination or expected benefit. A person who acts rightly because it benefits her may still be acting rightly, but she gets no moral credit for the motive.">The second: acting from duty has more moral worth than acting from self-interest, even if the action is the same.</button>
+                <button data-response="A consequentialist might say this: what matters is the right action, not the motive behind it. Kant disagrees: the moral worth of an action is located in the will of the agent, not in the outcome.">Both acted equally: both told the truth, and that is what matters.</button>
+                <button data-response="That is a subtle point. Kant does think both act in accordance with duty, but only the second acts from duty, and that distinction is what gives moral worth to an action.">It is too complex to judge without more information about the situation.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Nothing Good Without Qualification</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Kant opens the <em>Groundwork</em> with a sentence that sets the entire agenda: "Nothing in the world &mdash; indeed nothing even beyond the world &mdash; can possibly be conceived which could be called good without qualification except a good will." Intelligence, courage, perseverance, and happiness are all good, Kant says, but they can be misused: a sharp intelligence in the service of a criminal, or courage in a villain's hands, makes things worse, not better. They are conditional goods. Only the good will &mdash; the will to act from duty &mdash; is good under any and all circumstances, because it is the only thing whose goodness does not depend on any further conditions.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">An action has moral worth only when it is done from duty. Acting "in accordance with" duty is not enough: a shopkeeper who charges fair prices because it is good for business acts in accordance with the moral law, but not from it. Kant says such a person deserves no moral credit for that action. The moral worth of an action is located entirely in the maxim (the principle) on which the agent acts, and specifically in whether that maxim is the duty itself.</p>
+
+        <!-- Visual: The Good Will -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 20px 28px; margin: 18px 0;">
+            <div style="font-size: 14px; color: #55C8E8; margin-bottom: 14px; letter-spacing: 0.5px;">KANT'S DISTINCTION</div>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px;">
+                    <div style="font-size: 14px; color: #C7922C; margin-bottom: 6px;">Acting in accordance with duty</div>
+                    <div style="font-size: 15px; color: #ffffff; line-height: 1.6;">Doing the right thing, but for the wrong reason (e.g., self-interest, inclination). No moral worth in the action itself.</div>
+                </div>
+                <div style="flex: 1; min-width: 200px;">
+                    <div style="font-size: 14px; color: #55C8E8; margin-bottom: 6px;">Acting from duty</div>
+                    <div style="font-size: 15px; color: #ffffff; line-height: 1.6;">Doing the right thing because it is the right thing. This is the only action with genuine moral worth.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; HYPOTHETICAL AND CATEGORICAL IMPERATIVES</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Structure of Moral Commands</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Kant draws a crucial distinction between two types of practical imperatives &mdash; commands about what to do.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">A <strong>hypothetical imperative</strong> takes the form: "If you want X, do Y." It is conditional: its binding force depends on whether you have the relevant desire or goal. "If you want to be healthy, exercise regularly." "If you want to pass the exam, study." These are hypothetical imperatives. They bind you only if you have the specified end. If you do not care about your health or the exam, the imperative has no hold on you.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">A <strong>categorical imperative</strong> takes the form: "Do Y" &mdash; period. Its binding force is unconditional: it does not depend on any desire, goal, or consequence. "Do not lie." "Keep your promises." These bind you regardless of your inclinations, desires, or expected consequences.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Kant argues that genuine moral obligations are always categorical imperatives. The moral law does not say "if you want to be a good person, do not lie." It says "do not lie." Full stop. This is the structure of moral obligation: it does not yield to consequences, circumstances, or desires.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; THE CATEGORICAL IMPERATIVE: TWO FORMULATIONS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The First Formulation: Universalizability</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Kant derives the categorical imperative from the concept of a rational will operating under pure practical reason. His first formulation: <strong>"Act only according to that maxim by which you can at the same time will that it should become a universal law."</strong></p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">To test whether an action is morally permissible, ask: could you consistently will that the principle on which you act become a law that everyone follows? Consider lying to get out of a difficult situation. The maxim is something like: "When it is convenient, make a false promise." Could you will that everyone act on this principle universally? No &mdash; because if everyone made false promises whenever convenient, the institution of promising would collapse. No one would believe promises, making it impossible to make any. The maxim defeats itself when universalized, which means the action is morally impermissible.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Second Formulation: The Humanity Formula</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Kant's second formulation: <strong>"Act so that you treat humanity, whether in your own person or in that of another, always as an end, and never as a means only."</strong></p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Human beings have dignity &mdash; a worth that is not expressible in price, that cannot be traded against other values. This is because human beings are rational agents: capable of setting their own ends, governing their conduct by reason, and giving the moral law to themselves. To use a person merely as a means to your ends &mdash; without their rational consent, and without regard for their own ends &mdash; is to fail to respect what makes them persons. This formulation underlies the modern concept of human rights.</p>
+
+        <!-- Two-column visual -->
+        <div style="display: flex; gap: 14px; margin: 18px 0; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 240px; background: #EEF1F8; border-radius: 8px; padding: 16px 18px; border-left: 4px solid #0E1C42;">
+                <div style="font-size: 12px; color: #0e1c42; font-weight: bold; margin-bottom: 8px;">FORMULA OF UNIVERSAL LAW</div>
+                <div style="font-size: 15px; color: #1a2340; line-height: 1.6; margin-bottom: 8px; font-style: italic;">"Act only on the maxim you could will to be a universal law."</div>
+                <div style="font-size: 14px; color: #444; line-height: 1.6;">Tests whether the principle of your action is consistent when applied universally. Focuses on the formal structure of the maxim.</div>
+            </div>
+            <div style="flex: 1; min-width: 240px; background: #EEF1F8; border-radius: 8px; padding: 16px 18px; border-left: 4px solid #C7922C;">
+                <div style="font-size: 12px; color: #c7922c; font-weight: bold; margin-bottom: 8px;">HUMANITY FORMULA</div>
+                <div style="font-size: 15px; color: #1a2340; line-height: 1.6; margin-bottom: 8px; font-style: italic;">"Treat humanity never merely as a means, but always also as an end."</div>
+                <div style="font-size: 14px; color: #444; line-height: 1.6;">Tests whether you are respecting the rational agency of the persons affected. Focuses on the moral status of persons.</div>
+            </div>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; APPLYING THE CATEGORICAL IMPERATIVE</div>
+            <div class="widget-question">For each scenario, identify which formulation of the categorical imperative applies most directly.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this test involve asking whether a maxim could be universalized, or whether someone is being treated as an end?" data-fb="Correct. You are testing whether the maxim 'cheat when it helps me' could be universalized. It cannot: a world in which everyone cheats on exams would destroy the institution of academic assessment entirely.">
+                <div class="widget-row-prompt">1. You consider cheating on a test. You ask: could I will that everyone cheat whenever it would benefit them?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Formula of Universal Law</button>
+                    <button data-choice="1">Humanity Formula</button>
+                    <button data-choice="2">Both equally</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Is the focus here on whether the principle can be universalized, or on whether the person is being used as a tool?" data-fb="Correct. Manipulating someone through false information treats them as a tool for your ends, bypassing their rational agency. This is the core of the humanity formula.">
+                <div class="widget-row-prompt">2. You manipulate someone into doing what you want by giving them misleading information, exploiting their trust to serve your purposes.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Formula of Universal Law</button>
+                    <button data-choice="1">Humanity Formula</button>
+                    <button data-choice="2">Both equally</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Can you apply both? Does this action produce a maxim that fails universalization, and does it also use the victim merely as a means?" data-fb="Correct. Theft fails the universalizability test (universal theft would destroy the institution of property), and it also treats the victim merely as a means to your ends, violating their dignity and rational agency.">
+                <div class="widget-row-prompt">3. You steal from someone who has more than you, reasoning that you need it more.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Formula of Universal Law</button>
+                    <button data-choice="1">Humanity Formula</button>
+                    <button data-choice="2">Both equally</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Immanuel Kant, <em>Groundwork of the Metaphysics of Morals</em>, Sections 1 and 2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Kant's derivation of the good will (Section 1) and his formulation of the categorical imperative (Section 2). Pay special attention to the examples Kant uses: the honest shopkeeper, the person contemplating suicide, the person making a false promise.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (2.05 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Apply both formulations of the categorical imperative to one of Kant's own examples. Does the result seem correct? If not, is this a problem with the example or with the formulation?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Kant grounds morality not in consequences or feelings, but in the structure of rational agency itself. The good will acts from duty; moral requirements are categorical, not conditional; and the categorical imperative demands both that our maxims be universalizable and that we treat persons always as ends in themselves. These two formulations are connected: the dignity of persons as rational agents is precisely what grounds the unconditional character of moral duty. The next lesson examines what this foundation implies for human rights and contemporary applications of deontological ethics.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.05 &middot; The Good Will and the Categorical Imperative</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

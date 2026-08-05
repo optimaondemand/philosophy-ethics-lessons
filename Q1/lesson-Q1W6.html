@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.06</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Science and Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.06</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Can Science Ground Ethics?</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Science and Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.06</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Can Science Ground Ethics? Sentimentalism and Its Limits</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If reason cannot ground ethics, can feeling? And if feeling, which feelings &mdash; and whose?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Once it seems that moral claims cannot be derived from purely rational or empirical reasoning alone, a tempting alternative presents itself: ground ethics in human emotion. This approach &mdash; sentimentalism &mdash; was developed in the eighteenth century by Hume and Francis Hutcheson and remains influential today. This lesson examines what sentimentalism offers, where it genuinely succeeds, and where it runs into serious difficulty.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> define moral sentimentalism and explain how Hutcheson and Hume grounded ethics in natural human sympathy.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what sentimentalism gets right about the role of emotion in moral life.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why sentimentalism fails as a complete account of moral obligation, identifying the problems of moral conflict, correction, and the scope of sympathy.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE SENTIMENTAL TRADITION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When you see someone treated unfairly, do you feel something? What role do you think that feeling plays in your moral judgment &mdash; is it the source of the judgment, a confirmation of it, or something else?</div>
+            <div class="widget-options">
+                <button data-response="Sentimentalists would say you are on to something important. This lesson will explore how far that intuition can be developed into a full moral theory.">The feeling seems to be the judgment itself</button>
+                <button data-response="That distinction is philosophically significant. Several philosophers would say feeling confirms a judgment you could have reached by reason alone. Keep that thought as you read.">The feeling confirms a judgment I already made by reasoning</button>
+                <button data-response="That is a perceptive observation. Reason and feeling seem entangled in moral experience in ways that are hard to separate. This module will examine several attempts to do so.">Both seem involved at once</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Francis Hutcheson and the Moral Sense</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Francis Hutcheson (1694&ndash;1746), a Scottish-Irish philosopher and the teacher of Adam Smith, proposed that human beings are equipped with a <strong>moral sense</strong> &mdash; an immediate faculty of approval or disapproval analogous to the physical senses. Just as we perceive colors without inference, Hutcheson argued, we perceive the moral quality of actions directly: benevolence appears immediately as good, cruelty as repugnant. This moral sense is part of human nature, given by God, and oriented toward the happiness of others. Ethics, on this view, is grounded in a natural human capacity, not in abstract reason.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Hume and Natural Sympathy</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Hume developed a related position. While he is famous for the is/ought distinction examined in the previous lesson, Hume did not conclude that ethics was impossible. He grounded it instead in <strong>natural sympathy</strong>: the human capacity to feel, to some degree, what others feel. When we see another person in pain, we experience a reflected version of that pain. When we see someone flourish, we share in the pleasure. Moral judgments, on Hume's account, arise from this sympathetic response corrected by an impartial standpoint: we approve of actions that tend to benefit people in general, not just those we happen to like.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Sentimentalism in this tradition captures something genuinely important: human beings are not purely rational agents. Emotion is not an obstacle to moral judgment but part of its machinery. When we judge that something was cruel, we are not merely running a logical calculation; we react with something that resembles pain, and that reaction is not morally irrelevant. Aristotle himself insisted that virtue involves feeling as well as reasoning; a person who did the right thing without any emotional engagement would be missing something essential.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHERE SENTIMENTALISM RUNS OUT</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Three Problems</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Despite its genuine insight, sentimentalism faces three difficulties that it cannot resolve on its own terms.</p>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;"><strong>1. The problem of sympathy's scope.</strong> Natural sympathy is not impartial. We feel more strongly for those close to us, those who resemble us, those we can see and hear. Hume was aware of this and introduced the corrective of an "impartial spectator" &mdash; imagining how a rational, disinterested observer would judge the situation. But once you introduce an impartial spectator, you have already moved beyond raw feeling. The impartial standpoint is a rational construction, not an emotion. Sentimentalism, to work as an ethical theory, must smuggle reason back in.</p>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;"><strong>2. The problem of moral correction.</strong> We regularly judge that certain feelings are morally mistaken. A person who feels no sympathy for an outgroup is not simply having a different feeling; we judge that they are feeling wrongly, that their sympathy has been misdirected or corrupted. But if moral judgment just is feeling, what standard are we using to correct the feeling? The correction implies a standard that stands above any particular feeling &mdash; which is exactly what sentimentalism denies.</p>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>3. The problem of moral conflict.</strong> Emotions conflict. I feel sympathy for a friend who asks me to help him conceal wrongdoing; I also feel something like outrage at the wrongdoing itself. Sentimentalism has no resources to adjudicate between these competing feelings beyond appealing to some other feeling. But moral life regularly requires us to override one feeling on the basis of a principle &mdash; which is just what a purely sentiment-based ethics cannot provide.</p>
+
+        <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 6px; padding: 16px 20px; margin: 16px 0;">
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Moral sentimentalism:</strong> The view that moral judgments are grounded in natural human emotions (sympathy, approval, disapproval), not in reason alone.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0;"><strong>Impartial spectator:</strong> A theoretical device introduced by Hume and developed by Adam Smith: imagining how a rational, benevolent, and disinterested observer would evaluate an action. Used to correct the partiality of natural sympathy.</p>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; DOES SENTIMENTALISM HANDLE THIS?</div>
+            <div class="widget-question">For each scenario, decide: does moral sentimentalism provide a clear answer, or does the scenario expose a limit of the theory?</div>
+
+            <div class="widget-row" data-correct="0" data-fb="Correct. This is a case where natural sympathy clearly applies: the immediate emotional response is morally appropriate, and sentimentalism can explain it." data-hint="Is natural sympathy straightforwardly relevant here, or does the case require something beyond feeling?">
+                <div class="widget-row-prompt">1. You see a young child fall and scrape their knee. You feel immediately moved to help. Sentimentalism says: approve actions that promote others' well-being.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Sentimentalism handles this well</button>
+                    <button data-choice="1">This exposes a limit of sentimentalism</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="If sympathy is the basis of moral judgment, what adjudicates between two competing sympathies? Is there a feeling that ranks feelings?" data-fb="Correct. When two sympathies conflict, sentimentalism needs an external standard to decide between them &mdash; which it cannot provide on purely sentimental grounds.">
+                <div class="widget-row-prompt">2. You feel sympathy for a friend who committed a fraud and wants your help covering it up. You also feel sympathy for the people your friend defrauded. Both feelings are real. Which do you act on?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Sentimentalism handles this well</button>
+                    <button data-choice="1">This exposes a limit of sentimentalism</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Natural sympathy is not impartial. Does the sentimental theory have resources to extend moral consideration to those far away, without importing a rational principle?" data-fb="Correct. Natural sympathy tends to be stronger for those near to us. Extending moral consideration to distant strangers requires the kind of impartial standpoint that goes beyond raw feeling.">
+                <div class="widget-row-prompt">3. A philosopher argues that we have the same moral obligations to strangers in distant countries as to our own neighbors, because their suffering matters equally. Sentimentalism must explain this.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Sentimentalism handles this well</button>
+                    <button data-choice="1">This exposes a limit of sentimentalism</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Hume, <em>Enquiry Concerning the Principles of Morals</em>, Appendix I</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the excerpt. Identify Hume's account of moral sentiment and note one place where he acknowledges the need for an impartial standpoint to correct natural partial feelings.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Short Essay (1.06 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In 250&ndash;350 words: what does moral sentimentalism get right, and what does it fail to account for? Use one of the three problems described in this lesson to support your evaluation.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Sentimentalism is not wrong to insist that emotion is part of moral life. Aristotle agreed. But emotion alone cannot carry the full weight of moral obligation. The moment we need to adjudicate between competing feelings, correct a feeling that has gone astray, or extend moral consideration beyond the range of natural sympathy, we need something more &mdash; some standard that is not itself just another feeling. The search for that standard is the continuing project of this course.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.06 &middot; Can Science Ground Ethics?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

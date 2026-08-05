@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.05</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<!-- HEADER -->
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<!-- METADATA STRIP -->
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Obstacles to Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.05</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Is There a Fact About What Is Good?</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Obstacles to Ethics</div>
+    </div>
+</div>
+
+<!-- BODY -->
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.05</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Is There a Fact About What Is Good? The Fact/Value Distinction and Its Limits</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Can you logically derive an "ought" from an "is"? And what happens to ethics if you cannot?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Emotivism and moral relativism both assume a sharp distinction between facts and values: facts are knowable and objective; values are merely subjective. This assumption drives a philosophical challenge to the very possibility of ethics. This lesson examines the challenge at its root, considers the most serious attempt to press it (Friedrich Nietzsche's critique), and explains why the challenge, though powerful, ultimately fails.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Hume's is/ought distinction and why it generates pressure toward moral skepticism.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe Nietzsche's challenge to conventional morality and explain why his critique of moral complacency has genuine philosophical weight.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the naturalist objection, the self-refutation objection, and the moral perception objection as philosophical responses to moral skepticism.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">Friedrich Nietzsche, selected passages from <em>Beyond Good and Evil</em> (linked in assignment &mdash; Preface and Sections 1&ndash;6)</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; HUME'S CHALLENGE: THE IS/OUGHT GAP</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Consider this argument: "Human beings are social animals who depend on one another. Therefore, we ought to help each other." Does the conclusion follow from the premise? (No wrong answer.)</div>
+            <div class="widget-options">
+                <button data-response="That instinct is what Hume questions. This lesson will examine whether natural facts about humans can genuinely entail moral obligations.">Yes, it follows clearly</button>
+                <button data-response="Hume would agree with your hesitation. But by the end of the lesson, you will see that a complete gap between facts and values also has serious problems.">No, something is missing in the reasoning</button>
+                <button data-response="That middle ground is philosophically important. The lesson will examine exactly where the line between legitimate and illegitimate fact-to-value inferences lies.">It partly follows but not completely</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Hume's Observation</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">David Hume (1711&ndash;1776), the Scottish philosopher, noticed something troubling in the moral writing of his day. Authors would begin with statements about how things are &mdash; facts about human nature, history, or psychology &mdash; and then, without any explicit justification, slide into statements about what ought to be done. Hume called this transition illegitimate. An "ought," he argued, cannot be derived from an "is." No collection of purely factual statements, however large, logically entails a normative conclusion. The gap between description and prescription is absolute.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">If Hume is right, the implications for ethics are significant. Values cannot be read off the natural world. They cannot be verified by science. They seem to vary across cultures and periods. Two conclusions tend to follow. The first is <strong>relativism</strong>: if moral claims report no objective facts, perhaps they report facts about us &mdash; what we, as individuals or cultures, happen to approve. The second is <strong>moral skepticism</strong>: if moral claims cannot be grounded in anything objective, perhaps they have no claim to truth at all. This is the position sometimes called moral nihilism: the view that there are no moral facts, and statements like "cruelty is wrong" are neither true nor false &mdash; they merely express attitudes, like an exclamation of disgust.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Nietzsche: The Challenge to Moral Tradition</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Friedrich Nietzsche (1844&ndash;1900) pressed the challenge to conventional morality in a more radical direction than any philosopher before him. He did not merely argue that moral claims lack objective grounding. He argued that conventional moral systems &mdash; particularly those shaped by the Christian tradition &mdash; rest on unexamined assumptions that, when exposed, prove to be something other than disinterested pursuit of the good. In works such as <em>Beyond Good and Evil</em>, Nietzsche subjected inherited moral norms to genealogical scrutiny, asking not "is this true?" but "who benefits from believing this?" and "what kind of person does this morality produce?"</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Nietzsche's critique has genuine philosophical weight in one respect: he correctly identified that moral assumptions often go unexamined, that the comfortable assumption that one's own moral tradition is obviously right is a form of intellectual laziness, and that a serious thinker should be willing to ask hard questions about the foundations of any moral system. This is, in fact, exactly what Socrates was doing in the <em>Euthyphro</em>. The Socratic spirit and the Nietzschean spirit share a willingness to question received wisdom.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Where Nietzsche goes wrong &mdash; and where his critique ultimately self-destructs &mdash; is in the move from "these moral assumptions deserve to be questioned" to "there are no moral truths at all." That move does not follow. The fact that a moral tradition can be questioned is not evidence that morality has no rational foundation; it is evidence that the foundation has not yet been made fully explicit. That is an invitation to do better philosophy, not to abandon the enterprise.</p>
+
+        <!-- Key concept visual -->
+        <div style="background: #EEF1F8; border: 2px solid #0E1C42; border-radius: 8px; padding: 20px 24px; margin: 20px 0;">
+            <div style="font-size: 13px; color: #6b7a99; margin-bottom: 10px; letter-spacing: 0.5px;">THE FACT/VALUE DISTINCTION: WHAT IT SHOWS AND WHAT IT DOES NOT</div>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <div style="flex: 1; min-width: 200px; background: #FFFFFF; border-left: 4px solid #2A9D5C; border-radius: 6px; padding: 14px 16px;">
+                    <div style="font-size: 14px; color: #2A9D5C; margin-bottom: 6px;">What it correctly shows</div>
+                    <div style="font-size: 15px; color: #1a2340; line-height: 1.6;">You cannot derive "we ought to X" from "humans do X" by logic alone. Factual premises need normative premises to generate normative conclusions.</div>
+                </div>
+                <div style="flex: 1; min-width: 200px; background: #FFFFFF; border-left: 4px solid #C0392B; border-radius: 6px; padding: 14px 16px;">
+                    <div style="font-size: 14px; color: #C0392B; margin-bottom: 6px;">What it does not show</div>
+                    <div style="font-size: 15px; color: #1a2340; line-height: 1.6;">That facts about human nature are morally irrelevant, or that no moral claim is objectively true, or that moral reasoning is impossible. The gap only shows that moral reasoning requires both factual and normative premises.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE CASE AGAINST MORAL SKEPTICISM</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Three Responses to the Challenge</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The philosophical tradition has developed several powerful responses to the moral skepticism that the fact/value distinction seems to generate. Three deserve careful attention.</p>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;"><strong>1. The Naturalist Response (Aristotle)</strong></p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle argued in the <em>Nicomachean Ethics</em> that the is/ought gap, taken as absolute, depends on an impoverished account of what a fact is. Facts about a thing's nature entail facts about what counts as its flourishing. A knife is a good knife if it cuts well; that is what knives are for. Human beings have a characteristic way of living and functioning &mdash; a nature &mdash; and facts about that nature bear directly on what constitutes their genuine good. Hume's gap is only absolute if you assume that facts about human nature are morally inert. That assumption, Aristotle would say, is precisely what is in question.</p>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;"><strong>2. The Self-Refutation Response</strong></p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Moral skepticism &mdash; the view that there are no moral truths &mdash; faces the same self-refutation problem as moral relativism. To argue that moral claims are not objectively true, the moral skeptic must use reason, present evidence, and appeal to standards of logical validity. But these activities presuppose that some claims are better than others &mdash; that the argument for moral skepticism is itself better supported than the alternative. This is itself a normative judgment. The moment you argue for moral skepticism, you are already making a judgment that functions exactly like a moral claim. The position is unstable.</p>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 8px 0;"><strong>3. The Moral Perception Response</strong></p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Several philosophers in the Aristotelian tradition &mdash; Philippa Foot, Alasdair MacIntyre &mdash; have argued that our confidence in basic moral claims is often stronger than our confidence in the philosophical theories that deny them. We know that gratuitous cruelty is wrong with a clarity that outstrips most scientific and philosophical conclusions. A theory that implies otherwise has not refuted our moral knowledge; it has simply shown that the theory needs revision. The appropriate response to a philosophical argument that concludes "cruelty is not really wrong" is not to accept the conclusion, but to look for the false premise.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Key Terms</h3>
+        <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 6px; padding: 16px 20px; margin: 0 0 14px 0;">
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>The is/ought gap (Hume):</strong> The observation that no normative conclusion ("ought") follows logically from purely descriptive premises ("is") alone, without the addition of further normative premises.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0 0 8px 0;"><strong>Moral skepticism:</strong> The view that there are no objective moral truths, or that moral knowledge is impossible. The strongest form holds that moral statements are neither true nor false.</p>
+            <p style="font-size: 16px; color: #1a2340; line-height: 1.7; margin: 0;"><strong>Genealogical critique:</strong> Nietzsche's method of examining the historical origins and psychological motivations of moral beliefs, rather than asking whether they are rationally justified.</p>
+        </div>
+
+        <!-- Evaluative widget: which response applies? -->
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; MATCH THE OBJECTION</div>
+            <div class="widget-question">Each argument below responds to moral skepticism. Match each one to the response type it best illustrates: the Naturalist response, the Self-Refutation response, or the Moral Perception response.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="This argument says our direct moral certainty is stronger than any philosophical theory that denies it. Which response does that match?">
+                <div class="widget-row-prompt">1. "Our certainty that torturing an innocent person for entertainment is wrong is clearer and more reliable than any philosophical argument that claims to show otherwise. If the argument leads there, something in the argument is wrong."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Naturalist response</button>
+                    <button data-choice="1">Self-Refutation response</button>
+                    <button data-choice="2" data-fb="Correct. This is the Moral Perception response: basic moral knowledge is more certain than the philosophical theories that deny it.">Moral Perception response</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="This argument points out that the skeptic, in arguing, is already doing something that contradicts the skeptical position. Which response is that?">
+                <div class="widget-row-prompt">2. "Anyone who argues 'there are no moral truths' is already using reason as though it has normative authority &mdash; as though some conclusions are better supported than others. The argument for moral skepticism presupposes what it denies."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Naturalist response</button>
+                    <button data-choice="1" data-fb="Correct. The skeptic's own argument presupposes normative standards. That is the Self-Refutation objection.">Self-Refutation response</button>
+                    <button data-choice="2">Moral Perception response</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="This argument says facts about what humans need to flourish are morally relevant. Which response relies on that claim?">
+                <div class="widget-row-prompt">3. "A human being has a characteristic way of flourishing, just as a knife has a characteristic function. Facts about human nature tell us what promotes or damages that flourishing, and those facts are not morally inert."</div>
+                <div class="widget-options">
+                    <button data-choice="0" data-fb="Correct. The Naturalist response (following Aristotle) argues that facts about human nature bear directly on moral norms, closing the gap that Hume identified.">Naturalist response</button>
+                    <button data-choice="1">Self-Refutation response</button>
+                    <button data-choice="2">Moral Perception response</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <!-- What You'll Do Next -->
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Nietzsche, <em>Beyond Good and Evil</em></strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the Preface and Sections 1&ndash;6. In your notebook, identify: (a) Nietzsche's main target of criticism, and (b) what he means by "dogmatic philosophy" in ethics. Then write one sentence on whether Nietzsche's critique applies to Socratic questioning or only to uncritical moral tradition.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Essay (1.05 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In 350&ndash;450 words, evaluate the following claim: "Hume's is/ought observation shows that ethics cannot be rationally grounded." Present the strongest version of the argument, then explain which of the three responses you find most convincing, and why.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Wrap-up -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The fact/value distinction captures a genuine insight: moral conclusions cannot be read off empirical facts the way distances can be measured. But the insight is weaker than it looks. Hume's gap does not show that moral reasoning is impossible &mdash; only that moral reasoning requires both factual and normative premises. The challenge to find secure normative premises is real and serious, but it is an invitation to rigorous philosophy, not a reason to abandon the enterprise. By the time you finish this course, you will have a much better sense of where those secure premises can be found.</p>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.05 &middot; Is There a Fact About What Is Good?</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

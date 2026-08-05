@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 1.09</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q1 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">How to Do Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 1.09</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">How to Reason About Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">How to Do Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 1.09</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">How to Reason About Ethics: Arguments, Character, and the Limits of Theory</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If arguments alone cannot settle moral disputes, what else is required?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This is the final lesson of Quarter 1. You have now seen why the main shortcuts &mdash; emotivism, relativism, moral skepticism, sentimentalism, evolutionary reductionism &mdash; fail to give a satisfying account of morality. This lesson asks a constructive question: what does doing ethics well actually require? The answer matters for how you approach the rest of this course.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the limitations of ethical theory as a guide to moral decision-making in specific cases.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why moral character is not simply a supplement to ethical reasoning but a prerequisite for it.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe a defensible method for approaching ethical disagreement, including how to sort genuine disagreements from apparent ones.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE LIMITS OF ETHICAL ARGUMENT</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Looking back at Quarter 1: which obstacle to ethical reasoning struck you as most challenging? What made it hard?</div>
+            <div class="widget-options">
+                <button data-response="Emotivism is seductive because moral language really does carry emotional weight. The task is to show that it carries more than that.">The claim that morality is just feeling (emotivism)</button>
+                <button data-response="Relativism is widespread and socially comfortable. The self-refutation problem is the sharpest tool against it.">The claim that morality is just custom (relativism)</button>
+                <button data-response="Hume's point is technically the hardest to answer. The naturalist response from Aristotle is the strongest philosophical reply, and you will study it in detail this quarter.">The fact/value distinction</button>
+                <button data-response="The science is impressive and the question is important. The lesson is that explanation and justification are different questions, and science answers only the first.">The evolutionary or neuroscience argument</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Why Arguments Are Not Enough</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This course has been defending the possibility of ethical reasoning. But it is important to be clear about what ethical reasoning can and cannot do. Aristotle made a point that is easy to overlook: moral arguments are useful only for people who are already, in some degree, oriented toward the good. A person who genuinely does not care whether they are just will not be moved by an argument for justice. Ethics requires what Aristotle called <em>moral character</em> as a prerequisite &mdash; a stable orientation toward virtue, developed through habit and practice over time.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This is not a counsel of despair. It means that ethical education is not merely intellectual but formative: it shapes character, not just knowledge. Attending to the virtues &mdash; which you will study in Quarter 3 &mdash; is prior to mastering ethical theory. A clever person without good character is dangerous, not well-equipped for moral life.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Three Sources of Apparent Moral Disagreement</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Before assuming that a moral disagreement is genuine &mdash; that two people actually disagree about what is right &mdash; it is worth asking whether the disagreement has a less interesting source. Most apparent moral disputes fall into one of three categories:</p>
+        <ul style="font-size: 17px; color: #1a2340; line-height: 1.8; margin: 0 0 14px 0; padding-left: 22px;">
+            <li><strong>Factual disagreement:</strong> Two people agree on the moral principle but disagree about the facts of the case. If you and I both believe that protecting the innocent is required, but disagree about whether a given suspect is innocent, we do not have a moral disagreement; we have a factual one. Clarifying the facts is the appropriate response.</li>
+            <li><strong>Definitional disagreement:</strong> Two people use the same moral vocabulary but mean different things by it. One person uses "justice" to mean giving people what they deserve; another uses it to mean ensuring equal outcomes. Getting clear on terms is essential before arguing.</li>
+            <li><strong>Genuine moral disagreement:</strong> Two people agree on the facts, agree on what the terms mean, and still reach different moral conclusions. This is the most philosophically interesting kind, and it requires the tools of ethical theory to address.</li>
+        </ul>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; A METHOD FOR ETHICAL REASONING</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Socratic Method, Expanded</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The method modeled throughout Quarter 1 &mdash; and traced back to Socrates &mdash; gives us a practical starting point for ethical reasoning. When you face a moral question, the method proceeds as follows:</p>
+
+        <!-- Method ladder visual -->
+        <div style="margin: 16px 0;">
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="background: #0E1C42; color: #ffffff; border-radius: 6px; padding: 12px 16px; font-size: 16px; line-height: 1.5;"><strong>Step 1:</strong> State the question precisely. What exactly is being asked? Distinguish it from related but different questions.</div>
+                <div style="background: #1B6A94; color: #ffffff; border-radius: 6px; padding: 12px 16px; font-size: 16px; line-height: 1.5;"><strong>Step 2:</strong> Identify and clarify the relevant facts. Many apparent moral disputes dissolve here.</div>
+                <div style="background: #2196D0; color: #ffffff; border-radius: 6px; padding: 12px 16px; font-size: 16px; line-height: 1.5;"><strong>Step 3:</strong> Define the key moral terms. What does "just," "good," or "obligatory" mean in this context?</div>
+                <div style="background: #55C8E8; color: #0E1C42; border-radius: 6px; padding: 12px 16px; font-size: 16px; line-height: 1.5;"><strong>Step 4:</strong> State the moral principle you are appealing to. Make the standard explicit.</div>
+                <div style="background: #C7922C; color: #ffffff; border-radius: 6px; padding: 12px 16px; font-size: 16px; line-height: 1.5;"><strong>Step 5:</strong> Test the principle against cases. Does it hold in relevantly similar situations? Does it lead to conclusions you and others find obviously mistaken?</div>
+                <div style="background: #EEF1F8; color: #0E1C42; border: 2px solid #0E1C42; border-radius: 6px; padding: 12px 16px; font-size: 16px; line-height: 1.5;"><strong>Step 6:</strong> Revise or defend. Either show why the apparent counterexample is disanalogous, or revise the principle to handle it better. Repeat.</div>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 14px 0 14px 0;">This process is what Socrates was doing with Euthyphro. It is slow and often uncomfortable. It sometimes ends without a final answer. But it is the only honest method for making progress on genuine moral questions. Confidence without this process is Euthyphro's confidence &mdash; deeply felt, potentially radically mistaken.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">What Quarter 1 Has Established</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">You have spent a quarter examining why the easy alternatives to ethical reasoning fail. Emotivism cannot account for moral argument. Relativism self-refutes. Moral skepticism is unstable. Sentimentalism runs out when feelings conflict. Science explains moral psychology but not moral justification. These failures are not merely academic. They clear the ground for the serious project that occupies the remaining three quarters: understanding what actually grounds moral obligations, how character shapes moral perception, and what the best moral theory looks like.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; DIAGNOSE THE DISAGREEMENT</div>
+            <div class="widget-question">For each dispute, identify whether it is primarily a factual, definitional, or genuine moral disagreement.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Do these people disagree about a moral principle, or about what the facts are?" data-fb="Correct. Both parties agree it would be wrong to knowingly serve unsafe food. They disagree about whether the food is actually unsafe. That is a factual dispute.">
+                <div class="widget-row-prompt">1. Alicia believes the restaurant knowingly served food that could make customers ill. Marco believes the contamination was an honest mistake. Both agree that knowingly serving unsafe food is wrong.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Factual disagreement</button>
+                    <button data-choice="1">Definitional disagreement</button>
+                    <button data-choice="2">Genuine moral disagreement</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Do they disagree about the facts, about what is right, or about what the word means?" data-fb="Correct. They agree that fairness is important; they disagree about what fairness means. That is a definitional dispute and must be resolved before the moral argument can proceed.">
+                <div class="widget-row-prompt">2. Two people argue about whether a wage policy is "fair." One means equal pay for equal work; the other means pay proportional to individual economic contribution.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Factual disagreement</button>
+                    <button data-choice="1">Definitional disagreement</button>
+                    <button data-choice="2">Genuine moral disagreement</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Do they disagree about the facts, or about what the right principle is?" data-fb="Correct. Both parties agree on the facts and on the meaning of the terms. Their dispute is about which moral principle takes priority: consequences or rights. That is a genuine moral disagreement requiring philosophical analysis.">
+                <div class="widget-row-prompt">3. Two people agree on the full facts of a legal case. One argues that the outcome was just because it produced the best consequences; the other argues it was unjust because it violated the defendant's rights, regardless of consequences.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Factual disagreement</button>
+                    <button data-choice="1">Definitional disagreement</button>
+                    <button data-choice="2">Genuine moral disagreement</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 1 Major Assignment: Moral Autobiography</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Begin working on the Moral Autobiography assignment. Write a chronological account (500&ndash;750 words) of the development of your moral beliefs from childhood to the present. Identify the major influences and describe at least two moments when your moral views changed or were challenged.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 1 Reflection Essay (1.09 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">In 400&ndash;500 words: of the obstacles to ethical reasoning examined in Quarter 1, which do you find most common in everyday conversation? Which do you find philosophically most difficult to refute? How has your understanding of these obstacles changed since Week 1?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; QUARTER 1 CLOSE</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Quarter 1 has been about clearing the ground. Ethics is possible. The shortcuts do not work. Moral arguments require moral character to be effective, and genuine moral disputes require careful diagnosis before the tools of ethical theory can address them. In Quarter 2, you will encounter the two most influential systematic moral theories in Western philosophy: consequentialism and deontology. They were not built in a vacuum &mdash; they were built in response to exactly the questions you have been working through this quarter.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 1 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 1.09 &middot; How to Reason About Ethics</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

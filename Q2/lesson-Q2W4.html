@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.04</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    details { background: #EEF1F8; border-left: 4px solid #C7922C; border-radius: 4px; padding: 0; margin: 16px 0; }
+    details summary { padding: 14px 18px; font-size: 17px; color: #0e1c42; cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary { border-bottom: 1px solid #D0D9E8; }
+    details .reveal-body { padding: 14px 18px; font-size: 17px; color: #1a2340; line-height: 1.65; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">Consequentialism</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.04</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Applying and Testing Utilitarianism</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Consequentialism</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.04</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Act and Rule: Applying and Testing Utilitarianism</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">When you apply the utilitarian calculus to specific cases, do you calculate the expected utility of each individual act, or of the rule that prescribes it?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">The distinction between act-utilitarianism and rule-utilitarianism is not a minor technical refinement. It reveals a fundamental tension in consequentialism between two things most people care about: producing the best outcomes in specific situations, and following rules that, if generally adhered to, produce the best outcomes overall. The difference between these two can, in difficult cases, be a matter of life and death.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish act-utilitarianism from rule-utilitarianism and explain why the distinction matters for cases where they give different prescriptions.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the justice objection to utilitarianism and why the potential sacrifice of minorities for majority benefit is not easily absorbed by the theory.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> evaluate what utilitarianism does and does not contribute to our thinking about real-world policy and ethical decisions.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; ACT VS. RULE UTILITARIANISM</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">You are driving and could save several minutes by running a red light when no cars are visible. Should you run it?</div>
+            <div class="widget-options">
+                <button data-response="That is the act-utilitarian reasoning: evaluate each act individually by its expected utility. If no cars are coming and the gain is real, the act-utilitarian says run the light.">Yes, if you can see it's safe. The expected utility is positive.</button>
+                <button data-response="That is the rule-utilitarian reasoning: evaluate the rule 'run red lights when it seems safe' rather than this individual act. A world where everyone follows that rule produces worse outcomes than one where everyone stops.">No. If everyone reasoned that way, the results would be bad.</button>
+                <button data-response="That points toward a deontological or virtue-based answer: obedience to law or the habits of a safe driver. We will encounter these framings in Lessons 2.05 and Q3.">No. Traffic laws exist for reasons and should be obeyed.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Act-Utilitarianism</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Act-utilitarianism</strong> holds that the right action in any given situation is the one that produces the greatest expected utility for that particular situation. You calculate the expected pleasures and pains of each available option for all affected parties, and choose the option with the highest net sum. The calculation is done act by act.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This version is maximally flexible: it does not restrict you to following moral rules when a specific situation calls for breaking them. But it faces serious objections. First, it requires a calculation that is rarely possible in practice: we do not know the full consequences of our actions. Second, it seems to permit &mdash; or even require &mdash; terrible acts when the arithmetic favors them. If framing an innocent person for a crime would prevent a riot that would harm many others, the act-utilitarian appears to be committed to framing the innocent person.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Rule-Utilitarianism</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Rule-utilitarianism</strong> holds that the right action is the one prescribed by a set of moral rules that, if generally followed, would produce the greatest overall utility. You do not calculate the utility of each act; you follow the rule whose general observance produces the best consequences. Rules like "keep your promises" and "do not frame innocent people" pass this test because a society in which these rules are generally followed is better off than one in which they are not.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Rule-utilitarianism captures more of our moral intuitions because it preserves stable rules. But critics argue it is either redundant or unstable: if a rule produces better consequences when generally followed, then following it in a specific case where it would not produce better consequences seems like a failure to be a proper consequentialist. Rule-utilitarianism may smuggle in rule-following commitments that are really deontological, not consequentialist.</p>
+
+        <!-- Side-by-side comparison -->
+        <div style="display: flex; gap: 14px; margin: 18px 0; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 220px; background: #EEF1F8; border-radius: 8px; padding: 16px 18px; border: 1px solid #D0D9E8;">
+                <div style="font-size: 13px; color: #0e1c42; font-weight: bold; margin-bottom: 8px;">Act-Utilitarianism</div>
+                <div style="font-size: 14px; color: #1a2340; line-height: 1.6;">Evaluate each individual act by its expected utility in the specific situation.</div>
+                <div style="font-size: 13px; color: #666; margin-top: 8px; line-height: 1.5; font-style: italic;">Strength: flexible. Weakness: can license terrible acts in unusual situations.</div>
+            </div>
+            <div style="flex: 1; min-width: 220px; background: #EEF1F8; border-radius: 8px; padding: 16px 18px; border: 1px solid #D0D9E8;">
+                <div style="font-size: 13px; color: #0e1c42; font-weight: bold; margin-bottom: 8px;">Rule-Utilitarianism</div>
+                <div style="font-size: 14px; color: #1a2340; line-height: 1.6;">Follow the rule that, if generally observed, produces the greatest utility.</div>
+                <div style="font-size: 13px; color: #666; margin-top: 8px; line-height: 1.5; font-style: italic;">Strength: protects individuals. Weakness: may not be a pure form of consequentialism.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE JUSTICE OBJECTION</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Scapegoating and the Tyranny of the Majority</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The most persistent objection to utilitarianism, raised by John Rawls and many others, concerns justice. If the right action is the one that maximizes total welfare, what happens when the greatest welfare for the majority requires sacrificing the welfare &mdash; or the rights &mdash; of a minority? Slavery in the antebellum American South might have produced, for a brief historical period, a net positive welfare calculation for the majority of those in society who benefited from it economically. That conclusion is obviously monstrous, but the utilitarian calculus seems to permit it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Utilitarians respond in several ways. Mill himself was a passionate opponent of slavery and argued that when indirect effects (the corruption of character in slaveholders, the instability produced by injustice, the long-run social costs) are included, slavery fails even the utilitarian calculus. But this response is contested: it is not clear that the argument against slavery should depend on a calculation of indirect effects. If the only argument against enslaving a person is that the indirect costs are too high, then in a world where those costs were lower, slavery would be permissible &mdash; and most people believe the wrongness of slavery is not contingent on any such calculation.</p>
+
+        <details>
+            <summary>Work out this objection in your notebook, then read the analysis below.</summary>
+            <div class="reveal-body">
+                <p style="margin: 0 0 10px 0;">The justice objection forces us to ask: is there a morally relevant difference between a situation where 100 people are each slightly harmed, and a situation where 1 person is catastrophically harmed but 100 people are each slightly benefited, producing the same net welfare score?</p>
+                <p style="margin: 0 0 10px 0;">The utilitarian says no: what matters is the aggregate, and the aggregate is equal in both cases. But most people have a powerful intuition that the distribution of welfare matters morally, not just the total. Rawls argued that a just society is one that could be chosen by people who did not know which position in it they would occupy. Under such a condition, people would not choose a society that concentrated welfare by sacrificing a minority &mdash; because they might be in that minority.</p>
+                <p style="margin: 0;">This is one of the central objections that drives interest in both deontological ethics (Kant) and virtue ethics (Aristotle): both offer grounds for ruling out certain treatments of persons as intrinsically wrong, not merely as welfare-suboptimal.</p>
+            </div>
+        </details>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHICH OBJECTION IS WHICH?</div>
+            <div class="widget-question">Match each objection to the version of utilitarianism it most directly challenges.</div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this objection target individual-case calculations or the use of rules?" data-fb="Correct. The risk of permitting terrible acts in unusual situations is the main problem for act-utilitarianism, which evaluates each act individually.">
+                <div class="widget-row-prompt">1. "Framing an innocent person might sometimes maximize total utility in a specific situation."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Primarily a problem for act-utilitarianism</button>
+                    <button data-choice="1">Primarily a problem for rule-utilitarianism</button>
+                    <button data-choice="2">Equally a problem for both</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Which version of the theory is most susceptible to calculations that sacrifice a minority for the majority's benefit?" data-fb="Correct. The justice objection applies to both: act-utilitarianism makes each sacrifice calculation individually, while rule-utilitarianism may endorse rules that systematically disadvantage minorities if the aggregate utility favors it.">
+                <div class="widget-row-prompt">2. "Utilitarianism permits sacrificing the welfare of a minority for the benefit of a larger majority."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Primarily a problem for act-utilitarianism</button>
+                    <button data-choice="1">Primarily a problem for rule-utilitarianism</button>
+                    <button data-choice="2">Equally a problem for both</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Which version of the theory introduces rules and faces the question of whether that makes it consistently consequentialist?" data-fb="Correct. Rule-utilitarianism's commitment to following general rules even when violating them would produce better consequences in a specific case raises the question of whether it remains genuinely consequentialist or quietly incorporates deontological commitments.">
+                <div class="widget-row-prompt">3. "Committing to follow rules even when breaking them would produce better consequences in a specific case seems inconsistent with consequentialism."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Primarily a problem for act-utilitarianism</button>
+                    <button data-choice="1">Primarily a problem for rule-utilitarianism</button>
+                    <button data-choice="2">Equally a problem for both</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: John Stuart Mill, <em>Utilitarianism</em>, Chapters 3 and 5</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Chapter 3 addresses the question of motivation: why would people be moved to act for the general good? Chapter 5 develops Mill's account of justice. Note how Mill tries to accommodate justice within the utilitarian framework.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Consequentialism Essay Draft (2.04 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Write 400-500 words presenting the strongest form of the justice objection and the best utilitarian response you can construct. Use at least one specific example.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The act/rule distinction reveals an internal tension in utilitarianism: the theory that seemed to give a clean single principle turns out to generate two different versions that give different answers in important cases. And the justice objection shows that aggregating welfare across persons &mdash; treating the total as what matters &mdash; may fail to capture something morally fundamental about how individuals must be treated. Quarter 2 now turns to the tradition that builds its ethics precisely on that idea: the deontological ethics of Immanuel Kant.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.04 &middot; Act and Rule: Applying and Testing Utilitarianism</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.03</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .flip-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin: 16px 0; }
+    .flip-card { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 16px 18px; cursor: pointer; transition: box-shadow 0.15s; }
+    .flip-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.12); }
+    .flip-card .flip-front { font-size: 15px; color: #0E1C42; font-weight: 600; line-height: 1.4; }
+    .flip-card .flip-back { font-size: 14px; color: #1a2340; line-height: 1.6; margin-top: 10px; padding-top: 10px; border-top: 1px solid #D0D9E8; display: none; }
+    .flip-card.flipped .flip-back { display: block; }
+    .flip-card .flip-hint { font-size: 11px; color: #999; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 2</div>
+        <div style="font-size: 12px; color: #666;">The Content of Natural Law</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.03</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Basic Human Goods</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">The Content of Natural Law</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.03</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Basic Human Goods: What Natural Law Tells Us to Pursue</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What are the basic goods that all human beings seek, and how does natural reason identify them?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">If the first precept of natural law is "do good and avoid evil," the content of that precept depends on identifying what the basic human goods are. Aquinas identifies them by looking at the natural inclinations of human beings: the goods toward which human beings are naturally ordered by their nature. The contemporary natural law philosophers Germain Grisez and John Finnis (in <em>Natural Law and Natural Rights</em>, 1980) developed this Thomistic account into a full theory of "basic goods": a set of fundamental goods that are self-evidently valuable, not derivable from each other, and not reducible to any single master value.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state Aquinas's account of the basic human goods and explain how they are derived from natural inclinations.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why the basic goods are incommensurable and what follows from this for ethical reasoning.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what it means to act against a basic good and why natural law prohibits this unconditionally.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE THREE TIERS OF NATURAL INCLINATION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Can you think of something that seems valuable regardless of its consequences; something that you would not want to give up even if doing so produced more of some other good?</div>
+            <div class="widget-options">
+                <button data-response="This is precisely the intuition behind the basic goods tradition. The claim is that some goods, such as friendship, knowledge, or integrity, are not valuable merely as means to other things. They are intrinsically valuable: worth protecting and pursuing for their own sake, not merely as instruments for other goods.">Yes: some things seem valuable in themselves, not just as means to other goods.</button>
+                <button data-response="This is the utilitarian intuition: all goods are ultimately commensurable because they can all be translated into a common currency (utility, welfare, preference satisfaction). Natural law theory's response is to argue that this leads to the scapegoating problem you studied in Q2: if all goods are commensurable, no individual good is immune from sacrifice for a sufficiently large gain in the common currency.">Everything seems tradeable: with enough of other goods, I could give up almost anything.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Three Tiers of Natural Inclination</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aquinas identifies three levels of natural inclination, each generating a set of natural law precepts:</p>
+
+        <div style="overflow-x: auto; margin: 10px 0;">
+            <table style="width: 100%; border-collapse: collapse; min-width: 480px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px;">Level</th>
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px;">Shared with</th>
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px;">Inclination</th>
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px;">Natural law precept</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #f9fafc; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 11px 14px; font-size: 14px; color: #0e1c42; font-weight: 600; vertical-align: top;">1. Shared with all substances</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">All existing things</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">To preserve its own being and integrity</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Preserve human life; do not destroy it without justification</td>
+                    </tr>
+                    <tr style="background: #ffffff; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 11px 14px; font-size: 14px; color: #0e1c42; font-weight: 600; vertical-align: top;">2. Shared with animals</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">All animals</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Procreation and care of offspring; social living</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Protect and nurture the family; care for children</td>
+                    </tr>
+                    <tr style="background: #f9fafc;">
+                        <td style="padding: 11px 14px; font-size: 14px; color: #0e1c42; font-weight: 600; vertical-align: top;">3. Proper to rational beings</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Human beings only</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">To know truth (including about God); to live in community; to act according to reason</td>
+                        <td style="padding: 11px 14px; font-size: 14px; color: #1a2340; vertical-align: top;">Seek truth; cultivate knowledge; live justly in community</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PART 2: The Finnis-Grisez Basic Goods -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE BASIC GOODS: FINNIS AND GRISEZ</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Finnis's Catalogue of Basic Goods</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">John Finnis (born 1940), the most influential contemporary natural law philosopher, systematized Aquinas's account in <em>Natural Law and Natural Rights</em> (1980). He identifies seven basic goods, which he argues are: (1) self-evident, not in need of further justification; (2) incommensurable with each other, not reducible to a single master value; and (3) each a reason for action in its own right.</p>
+
+        <div class="flip-grid ow-flip">
+            <div class="flip-card">
+                <div class="flip-front">Life</div>
+                <div class="flip-back">Health, vitality, and freedom from injury. The goods of bodily integrity that make all other goods accessible. This includes one's own life and, by extension, a concern for the lives of others.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Knowledge</div>
+                <div class="flip-back">Truth pursued for its own sake, not merely as a means to practical success. The natural curiosity of the mind, the desire to understand reality as it is. Finnis includes speculative and practical knowledge.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Play</div>
+                <div class="flip-back">Engaging in activities for the pure enjoyment of them, without any further purpose. This is not frivolity but the expression of a dimension of human freedom: the capacity to do something for itself alone.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Aesthetic Experience</div>
+                <div class="flip-back">The enjoyment of beauty in art and nature. The capacity to appreciate form, harmony, and excellence in created things. This is distinct from both pleasure and knowledge: it is the contemplative response to beauty.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Sociability (Friendship)</div>
+                <div class="flip-back">The good of genuine friendship and community: being with others in relationships of mutual concern and affection. Finnis's account here draws directly on Aristotle's account of philia from NE Books VIII-IX.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Practical Reasonableness</div>
+                <div class="flip-back">The good of using one's reason effectively in shaping one's own life and decisions. This is not merely intelligence but the integrated exercise of freedom, reason, and will in ordering one's actions and commitments.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-front">Religion</div>
+                <div class="flip-back">The good of seeking a right relationship to whatever transcends human existence: the ultimate source of order and value. For Finnis, this is a basic human good even from a purely philosophical standpoint, because the question of ultimate origin and meaning is inescapable for rational beings.</div>
+                <div class="flip-hint">Tap to expand</div>
+            </div>
+        </div>
+        <button class="widget-reset" style="margin: 4px 0 12px 0;">Reset cards</button>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Incommensurability and Its Consequences</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The most philosophically important feature of the basic goods account is that the basic goods are incommensurable: they cannot be ranked or traded off against each other by reference to some common scale of value. There is no master currency into which life, knowledge, friendship, and practical reasonableness can all be converted. This has a decisive implication: you cannot justify destroying a basic good (acting directly against it) by appealing to a greater gain in the same or another basic good. Directly harming an innocent person to produce a better outcome for others is not permissible, because there is no common scale that makes this comparison legitimate.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This is natural law theory's structural response to the consequentialist justification of using persons as means: the problem is not merely that it feels wrong, but that it involves a conceptual error. The claim that "the harm to this person is outweighed by the good to the others" presupposes that the goods of different persons can be aggregated on a single scale. Natural law theory denies this.</p>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; RECOGNIZING THE BASIC GOODS</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHICH BASIC GOOD?</div>
+            <div class="widget-question">Identify which of Finnis's basic goods is most directly at stake in each scenario.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="What is the person in this scenario pursuing? Is it bodily integrity, understanding for its own sake, enjoyment for itself, relational connection, or something else?" data-fb="Correct. Spending hours reading about the history of ancient civilizations simply because it is fascinating is pursuing knowledge as a basic good: truth for its own sake, not as a means to practical benefit or professional advancement.">
+                <div class="widget-row-prompt">1. A student stays up late reading about the history of ancient civilizations, not because it is required for school, but because he finds it genuinely fascinating and wants to understand it.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Life</button>
+                    <button data-choice="1">Knowledge</button>
+                    <button data-choice="2">Play</button>
+                    <button data-choice="3">Sociability</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3" data-hint="Think about what kind of relationship is being described here. The question is not about what activity they are engaged in but about the good that the relationship itself represents." data-fb="Correct. A sustained relationship of mutual care and concern, maintained even when separation makes it difficult, is an instance of the basic good of sociability or friendship. The value being protected is the relationship itself, not its instrumental benefits.">
+                <div class="widget-row-prompt">2. Two friends make a deliberate effort to maintain their friendship across distance, meeting regularly and being honest with each other even when honesty is uncomfortable.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Practical reasonableness</button>
+                    <button data-choice="1">Knowledge</button>
+                    <button data-choice="2">Aesthetic experience</button>
+                    <button data-choice="3">Sociability</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="This scenario is not primarily about knowledge, pleasure, friendship, or reason. It is about something more basic that enables all other activity." data-fb="Correct. A medical decision to protect a patient's health and bodily integrity concerns the basic good of life: the bodily dimension of human wellbeing that is the foundation for all other goods.">
+                <div class="widget-row-prompt">3. A doctor declines to perform an elective procedure that carries significant risk without commensurate benefit, in order to protect the patient's health and bodily integrity.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Life</button>
+                    <button data-choice="1">Play</button>
+                    <button data-choice="2">Religion</button>
+                    <button data-choice="3">Knowledge</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aquinas, <em>Summa Theologica</em> I-II, Question 94, Article 2; John Finnis, <em>Natural Law and Natural Rights</em>, Chapter IV (selections provided)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Article 2 of Q. 94 for Aquinas's derivation of natural law precepts from natural inclinations. Then read the Finnis selections, which develop the basic goods account in more formal terms.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (4.03 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Finnis argues that the basic goods are incommensurable: they cannot be traded off against each other. Do you think this is correct? If you give two reasons for or against, and support them with reference to the basic goods account, you have the basis for a strong answer.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Natural law theory identifies a set of basic human goods by reflecting on the natural inclinations of human beings: goods toward which human nature is ordered across three levels (shared with all substances, shared with animals, proper to rational beings). Finnis systematizes this into seven basic goods: life, knowledge, play, aesthetic experience, sociability, practical reasonableness, and religion. These goods are incommensurable: they cannot be ranked or traded on a single scale of value. This incommensurability explains why directly acting against a basic good cannot be justified by appeal to better consequences. The next lesson examines what moral obligation means in this framework: why the basic goods are not merely desirable but obligatory.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.03 &middot; The Basic Human Goods</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+        w.querySelectorAll('.flip-card').forEach(function (c) { c.classList.remove('flipped'); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var card = e.target.closest('.ow-flip .flip-card');
+    if (card) { card.classList.toggle('flipped'); }
+  });
+})();
+</script>
+</body>
+</html>

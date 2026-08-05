@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.06</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    details { background: #EEF1F8; border-left: 4px solid #C7922C; border-radius: 4px; padding: 0; margin: 16px 0; }
+    details summary { padding: 14px 18px; font-size: 17px; color: #0e1c42; cursor: pointer; list-style: none; }
+    details summary::-webkit-details-marker { display: none; }
+    details[open] summary { border-bottom: 1px solid #D0D9E8; }
+    details .reveal-body { padding: 14px 18px; font-size: 17px; color: #1a2340; line-height: 1.65; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Deontology</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.06</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Human Dignity, Rights, and Objections to Kant</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Deontology</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.06</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Human Dignity, Rights, and the Limits of Deontology</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What is human dignity, and is it an adequate foundation for a complete ethics?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Kant's concept of human dignity &mdash; the idea that persons have an unconditional worth that may not be violated for any consequentialist calculation &mdash; is arguably the most important philosophical idea in modern Western civilization. It underlies the structure of human rights law, the Nuremberg principles, the Geneva Conventions, and the Universal Declaration of Human Rights. This lesson traces that connection, then examines the serious objections to Kantian ethics: the case of lying to save a life, the problem of conflicting duties, and the limits of a purely formal moral philosophy.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what Kant means by dignity as distinct from price, and how this distinction grounds rights-based ethics.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> trace the influence of Kantian dignity in the historical development of human rights frameworks.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state and evaluate two major objections to Kantian ethics: the lying objection and the problem of conflicting duties.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; DIGNITY AND RIGHTS</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think of something whose worth is not a matter of price. What makes it different from something that can be bought and sold?</div>
+            <div class="widget-options">
+                <button data-response="That is close to Kant's answer: some things have worth that cannot be expressed in terms of exchange. Dignity is Kant's term for this kind of unconditional worth that belongs to rational persons.">Some things have a worth that goes beyond any price.</button>
+                <button data-response="Kant would say: even sentimental value is a kind of conditional worth (conditioned on sentiment). Dignity is worth that does not depend on anyone's feelings, preferences, or valuations.">Sentimental value: it means something to me personally.</button>
+                <button data-response="Kant would agree that rarity can raise price, but price is still the measure. Dignity is different: it is not a very high price, but a different category of worth entirely.">Something unique that no amount of money can replace.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Price vs. Dignity</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In the <em>Groundwork</em>, Kant distinguishes sharply between what has a price and what has dignity. Everything with a price can in principle be replaced by something of equivalent value. There is a market price for goods and services, and a sentimental price for things we love. But a rational being &mdash; a person &mdash; has dignity: a worth that "is above all price and admits of no equivalent." This is not an extremely high price; it is a different kind of value altogether, incommensurable with anything that can be bought or sold.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">From this follows the idea of rights. A right, in the Kantian tradition, is a claim that may not be overridden by any consequentialist calculation, because the right protects something &mdash; the dignity of a person &mdash; that cannot be traded against any quantity of other goods. If persons have rights, then there are things you may not do to them regardless of how much total good you might produce by doing so.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Historical Impact: From Kant to Human Rights</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">After the atrocities of World War II revealed what states could do to their own populations, the international community undertook to codify protections for persons as persons, not merely as citizens of particular states. The Universal Declaration of Human Rights (1948) opens: "All human beings are born free and equal in dignity and rights." The word "dignity" is not accidental; it reflects the Kantian tradition that grounds human rights in the inherent worth of rational persons rather than in national law, culture, or any particular religious tradition.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The Nuremberg Trials (1945&ndash;1946) &mdash; where Nazi leaders were prosecuted for crimes against humanity &mdash; depended on the idea that some actions are wrong regardless of whether they violate any particular national law. This is precisely the Kantian claim: categorical obligations bind independently of any positive legal system, custom, or command structure.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; OBJECTIONS TO KANT</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Objection 1: The Lying Murderer</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Benjamin Constant posed a challenge to Kant that Kant himself answered in an essay, and the answer has troubled Kantians ever since. Suppose a murderer comes to your door asking where your friend is, and your friend is hiding in your house. Kant's prohibition on lying seems to require that you tell the murderer where your friend is. Kant's actual response was that you must tell the truth: if you lie and the murderer finds your friend anyway (perhaps having escaped), you bear moral responsibility for what happens. Only if you tell the truth and the murderer uses your information to commit murder is the murderer alone responsible.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Most people find this conclusion deeply counterintuitive, and it has generated sustained philosophical debate. Contemporary Kantians respond in several ways: some argue that Kant's formulation of the lying prohibition is too absolute and that the categorical imperative, properly applied, does not prohibit all deception in all circumstances; others argue that telling the murderer nothing (remaining silent) is permissible and avoids the dilemma; still others argue that the case reveals a genuine weakness in Kantian ethics that is only resolved by the virtue ethics tradition in Quarter 3.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Objection 2: Conflicting Duties</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Kant's framework presents duties as absolute and exceptionless. But what happens when duties conflict? You have a duty not to lie and a duty to protect innocent life. In the case above, both duties seem to bear on the situation, and they pull in opposite directions. Kant's system, which treats duties as categorical, provides no built-in mechanism for adjudicating between competing duties when they conflict. W.D. Ross (1877&ndash;1971), a 20th-century British deontologist, proposed a modification: <em>prima facie</em> duties &mdash; duties that hold generally but can be overridden when stronger duties apply in a specific situation. This is less demanding than Kant's absolutism, but it reintroduces a kind of situational judgment that pure deontology wanted to eliminate.</p>
+
+        <details>
+            <summary>Reason through this in your notebook, then read the comparison below.</summary>
+            <div class="reveal-body">
+                <p style="margin: 0 0 10px 0;">The table below compares how four different ethical approaches handle the lying murderer case:</p>
+                <p style="margin: 0 0 8px 0;"><strong>Kantian deontology (strict):</strong> Tell the truth. Lying violates a categorical duty regardless of consequences.</p>
+                <p style="margin: 0 0 8px 0;"><strong>Rossian deontology:</strong> The duty to protect innocent life is stronger than the duty not to lie in this case. Lying is permissible here, but remains wrong as a general matter.</p>
+                <p style="margin: 0 0 8px 0;"><strong>Consequentialism:</strong> Lie. Telling the truth produces worse consequences. The right action is determined by expected outcomes.</p>
+                <p style="margin: 0;"><strong>Virtue ethics (preview of Q3):</strong> A person of practical wisdom would lie, not because a rule permits it, but because any decent person with good character would recognize that the murderer has forfeited his claim to truthful information by seeking to use it for an unjust purpose. The virtue ethical response focuses on character and judgment rather than rule-following.</p>
+            </div>
+        </details>
+
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; TRY IT &middot; HOW SERIOUS IS EACH OBJECTION?</div>
+            <div class="widget-question">For each claim about Kantian ethics, rate how serious a challenge it poses to the theory.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="Is this a problem with Kant's specific application of his theory, or with the core principle?" data-fb="Correct. Most philosophers regard Kant's extreme prohibition on lying as a problem with the specific application, not a refutation of the core deontological idea. Contemporary Kantians have developed more nuanced positions.">
+                <div class="widget-row-prompt">1. "Kant's absolute prohibition on lying leads to the conclusion that you must tell a murderer where your friend is hiding."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Decisive: refutes Kantian ethics entirely</button>
+                    <button data-choice="1">Major problem: requires fundamental revision</button>
+                    <button data-choice="2">Significant but correctable: points to an overly rigid application</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does Kant's framework have a built-in way to resolve conflicts between duties? Is this a central gap?" data-fb="Correct. The problem of conflicting duties is a major structural gap in Kantian ethics that requires significant additions (like Ross's prima facie duties) to address. It is not a refutation of deontology, but it shows that the framework is incomplete as stated.">
+                <div class="widget-row-prompt">2. "Kant's system of absolute duties has no built-in mechanism for resolving conflicts when two duties apply and pull in opposite directions."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Decisive: refutes Kantian ethics entirely</button>
+                    <button data-choice="1">Major problem: requires fundamental revision</button>
+                    <button data-choice="2">Significant but correctable: points to an overly rigid application</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does Kant's framework address character formation? Does it need to, or does this point to a different tradition?" data-fb="Correct. Kant's ethics focuses entirely on duty and action, with no account of the formation of character or practical wisdom. This is a foundational limitation: it leaves the entire domain of virtue and moral development unaddressed. This is the strongest argument that virtue ethics (Q3) is necessary to complete the moral philosophical picture.">
+                <div class="widget-row-prompt">3. "Kant's ethics gives no account of moral character, practical wisdom, or how persons become capable of acting from duty in the first place."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Decisive: refutes Kantian ethics entirely</button>
+                    <button data-choice="1">Major problem: requires fundamental revision</button>
+                    <button data-choice="2">Significant but correctable: points to an overly rigid application</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Immanuel Kant, <em>Groundwork</em>, Section 3; and Universal Declaration of Human Rights, Articles 1, 4, and 5</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Kant's account of autonomy and the kingdom of ends. Then read Articles 1 (freedom and equality in dignity), 4 (prohibition on slavery), and 5 (prohibition on torture) of the UDHR. Note how the language of dignity appears.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Deontology Essay Draft (2.06 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Write 400-500 words arguing for or against Kantian deontology. You must address at least one of the two objections discussed in this lesson and present the strongest response available from within the Kantian tradition.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Kant's concept of dignity &mdash; the unconditional worth of persons as rational agents &mdash; is the philosophical foundation of modern human rights. But Kantian ethics faces genuine difficulties: an over-rigid application of the duty not to lie, and a structural gap in its handling of conflicting duties. The most fundamental limitation is what Kant left out: no account of character, habit, or practical wisdom. That gap is precisely what virtue ethics, which begins in Quarter 3, is designed to fill. The next two lessons complete Quarter 2 by surveying how these frameworks apply to contemporary cases.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.06 &middot; Human Dignity, Rights, and the Limits of Deontology</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

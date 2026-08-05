@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 3.02</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Virtue Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.02</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Human Nature and Telos: The Function Argument</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Virtue Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.02</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Human Nature and Telos: The Function Argument</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">If every kind of thing has a characteristic function, what is the characteristic function of a human being?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Aristotle's claim that <em>eudaimonia</em> is the highest good needs grounding. Why should flourishing count as the highest good rather than pleasure or anything else? Aristotle's answer lies in his account of human nature: every natural thing has a <em>telos</em> &mdash; a characteristic end or purpose that defines what kind of thing it is and what it means for it to be excellent. The human <em>telos</em> grounds the definition of <em>eudaimonia</em> and connects ethics to a broader picture of what human beings are. This lesson examines that argument and its implications.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Aristotle's concept of <em>telos</em> and apply it to the analogy between functional kinds and human beings.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> reconstruct Aristotle's function argument for the conclusion that human flourishing consists in the excellent exercise of rational activity.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> state and evaluate the main objections to the function argument.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; TELOS AND FUNCTION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Think about what makes a knife a good knife. What criteria would you use?</div>
+            <div class="widget-options">
+                <button data-response="That is exactly Aristotle's point: a good knife is one that performs its characteristic function well. Its purpose defines the standard by which it is evaluated. He will apply this same structure to human beings.">A good knife cuts well: it does what knives are for.</button>
+                <button data-response="Appearance is one consideration, but it doesn't get to the core: a beautiful knife that doesn't cut well is not a good knife in the relevant sense. Function determines excellence.">It looks good and feels balanced in the hand.</button>
+                <button data-response="That is also relevant, but durability is in service of function: a knife that lasts longer can keep doing what knives are for. The primary standard is still functional.">It is durable and keeps its edge.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Telos: Purpose and Completion</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><em>Telos</em> is the Greek word for end, purpose, or completion. It is the root of our English word "teleology" (study of purposes or ends). For Aristotle, understanding what a thing is requires understanding what it is for, what it is trying to become, what its completed form is. An acorn's <em>telos</em> is to become an oak tree. A doctor's <em>telos</em> is health for her patients. A knife's <em>telos</em> is to cut well. Each kind of thing has a characteristic activity or function, and excellence in that kind of thing consists in performing that function well.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This teleological framework is characteristically Aristotelian &mdash; his teacher Plato shared something of it, but Aristotle developed it with far greater systematic precision. For Aristotle, the natural world is organized by purposes: things have natures that incline them toward specific ends, and understanding those natures is the key to understanding what they are and what would count as their excellence or defect.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE FUNCTION ARGUMENT</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Aristotle's Argument in <em>NE</em> I.7</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In Book I, Chapter 7, Aristotle offers the most important argument of the <em>Nicomachean Ethics</em>. It runs as follows: just as a flute player, a sculptor, and a craftsman each have a characteristic function, a human being as such must also have a characteristic function. What is that function? It cannot be mere life, because plants have life. It cannot be sentient life, because animals share that with us. What is distinctive of human beings &mdash; and therefore constitutive of what it means to be a human being at all &mdash; is the capacity for rational activity. The human function, therefore, is the active exercise of the soul's faculties in accordance with reason, or at least not without reason.</p>
+
+        <!-- Function argument structure visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 20px 28px; margin: 16px 0;">
+            <div style="font-size: 14px; color: #55C8E8; margin-bottom: 14px;">THE FUNCTION ARGUMENT RECONSTRUCTED</div>
+            <div style="display: flex; flex-direction: column; gap: 10px;">
+                <div style="background: rgba(255,255,255,0.1); border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #ffffff; line-height: 1.6;"><span style="color: #C7922C;">P1.</span> Every kind of thing that has a function has an excellence that consists in performing that function well.</div>
+                <div style="background: rgba(255,255,255,0.1); border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #ffffff; line-height: 1.6;"><span style="color: #C7922C;">P2.</span> Human beings have a characteristic function: the active exercise of the soul in accordance with reason.</div>
+                <div style="background: rgba(255,255,255,0.1); border-radius: 6px; padding: 12px 16px; font-size: 14px; color: #ffffff; line-height: 1.6;"><span style="color: #C7922C;">P3.</span> Human excellence (virtue) consists in performing this function well, that is, in accordance with excellence (virtue).</div>
+                <div style="background: rgba(199,146,44,0.3); border-radius: 6px; padding: 12px 16px; font-size: 15px; color: #ffffff; line-height: 1.6; border: 1px solid rgba(199,146,44,0.5);"><span style="color: #C7922C;">C.</span> Therefore: <em>eudaimonia</em> is the active exercise of the soul's faculties in accordance with virtue (excellence), over a complete life.</div>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Several features of this conclusion deserve careful attention. First: it says "over a complete life." This is why Aristotle quotes with approval Solon's saying that we should "call no man happy until he is dead." Flourishing is not a single moment of well-being; it is what a whole life, taken together, amounts to. Second: it identifies flourishing with excellent rational activity, not with pleasant feelings. Feeling good is a consequence and accompaniment of flourishing, not its constituent. Third: the inclusion of "in accordance with virtue" makes ethics central to flourishing, not incidental to it.</p>
+    </div>
+
+    <!-- PART 3 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; OBJECTIONS TO THE FUNCTION ARGUMENT</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Does Human Nature Ground Ethics?</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The function argument has been criticized on several grounds. The most influential objection: Hume's is/ought gap (Lesson 1.05 of this course). Even if human beings have a natural function, why should fulfilling it be what we morally ought to do? Deriving an "ought" from an "is" about human nature looks like the naturalistic fallacy. A human being's nature includes the capacity for cruelty as well as for reason. Why privilege reason as the norm?</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle's response: the function argument is not trying to derive moral obligations from natural facts in the way the is/ought problem identifies. It is asking what genuine human excellence is, given what kind of thing a human being is. The response to "cruelty is also natural" is: yes, and a knife can also be used to pry open cans, but that is not what defines its excellence. The function identifies the norm internal to a kind, not an arbitrary selection from a range of possibilities. The excellences that constitute human flourishing are those in which the distinctively human capacities are fully and well exercised.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">A second objection: does the argument assume that human beings have a single function, and is that assumption warranted? Aristotle's defenders note that his claim is modest: not that every human being has the same specific occupation, but that the capacity for rational activity is constitutive of being human at all &mdash; which is much harder to deny.</p>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; UNDERSTANDING THE FUNCTION ARGUMENT</div>
+            <div class="widget-question">Identify whether each statement correctly applies the function argument or misapplies it.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does the function argument say human excellence consists in having good feelings, or in actively exercising rational capacities?" data-fb="Correct. The function argument does not say eudaimonia is a good feeling. It says eudaimonia is an activity: the active exercise of the soul in accordance with virtue. Feelings of happiness are a consequence of living well, not what living well consists in.">
+                <div class="widget-row-prompt">1. "The function argument shows that human excellence consists in experiencing high levels of pleasure and satisfaction."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Correctly applies the function argument</button>
+                    <button data-choice="1">Misapplies it: the argument concludes something different</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this correctly use the logic of the function argument: every kind of thing has a function; excellence in that kind consists in performing the function well?" data-fb="Correct. This correctly applies the structure of the function argument: what distinguishes humans from other animals is reason; therefore human excellence involves the excellent exercise of rational capacities.">
+                <div class="widget-row-prompt">2. "Because the capacity for reason distinguishes human beings from other animals, human excellence involves the excellent exercise of rational capacity."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Correctly applies the function argument</button>
+                    <button data-choice="1">Misapplies it: the argument concludes something different</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does the function argument imply that humans flourish by accumulating goods, or by actively exercising their capacities?" data-fb="Correct. The function argument does not say that accumulating goods (whether material or pleasurable) constitutes flourishing. It says that the activity of living in accordance with virtue is flourishing. Possessing goods may accompany flourishing but is not identical with it.">
+                <div class="widget-row-prompt">3. "Because humans naturally desire good things, the function argument shows that having many goods is what eudaimonia consists in."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Correctly applies the function argument</button>
+                    <button data-choice="1">Misapplies it: the argument concludes something different</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aristotle, <em>Nicomachean Ethics</em>, Book I, Chapter 7</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read the function argument carefully. Note how Aristotle rules out each candidate for the human function (life, sentient life) before arriving at rational activity.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (3.02 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Does the function argument succeed? Identify the strongest objection to it, and then evaluate Aristotle's response. Can ethics be grounded in an account of human nature?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The function argument grounds Aristotle's ethics in an account of human nature. Every kind of thing has a characteristic function that defines what it is and what its excellence consists in. The characteristic function of human beings is the active exercise of the soul's faculties in accordance with reason; therefore human excellence consists in performing this activity in accordance with virtue. The next lesson examines what virtue (<em>arete</em>) itself is and how Aristotle connects it to the concept of practical reason.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.02 &middot; Human Nature and Telos: The Function Argument</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

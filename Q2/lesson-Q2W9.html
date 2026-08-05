@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.09</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">Modern Moral Philosophy</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.09</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Shared Assumption and the Turn to Virtue</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Modern Moral Philosophy</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.09</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Shared Assumption and the Turn to Virtue: Quarter 2 Synthesis</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What do consequentialism and deontology have in common, and is what they share a problem?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">Quarter 2 has covered the two most influential ethical theories of the modern era. This final lesson asks: despite their deep disagreement, do consequentialism and Kantian deontology share a common assumption? The philosopher Elizabeth Anscombe thought they did &mdash; and that the assumption is a mistake. Her 1958 essay "Modern Moral Philosophy" is one of the most important papers in 20th-century ethics and is the direct inspiration for the revival of virtue ethics that Quarter 3 examines.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify what Anscombe called the shared assumption of modern moral philosophy and explain why she thought it was philosophically unstable.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why virtue ethics is not simply a third theory alongside consequentialism and deontology, but an attempt to reframe the questions of moral philosophy from the beginning.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> synthesize the main achievements and limitations of the theories covered in Quarter 2 in preparation for the Quarter 2 major assignment.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE SHARED ASSUMPTION: THE CONCEPT OF MORAL OBLIGATION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">When you hear the phrase "you are morally obligated to do X," what gives that phrase its force? Why should obligation bind you?</div>
+            <div class="widget-options">
+                <button data-response="That is a consequentialist grounding: obligation is binding because it reflects what produces the best outcome. But Anscombe's point is that 'produces the best outcome' does not automatically create obligation, unless you accept the utilitarian framework.">Because doing X produces the best outcome for everyone.</button>
+                <button data-response="That is a Kantian grounding: obligation derives from the structure of rational agency. But Anscombe asks: what makes 'being a rational agent' generate obligations, unless we have a prior account of what rational agents are for?">Because X is what a rational agent is required to do.</button>
+                <button data-response="That is Anscombe's own answer, in simplified form: obligation makes sense within a framework of human nature, purpose, and what human beings genuinely are and need. Without that framework, the language of obligation becomes philosophically unstable.">I'm not sure. The word 'obligation' seems to carry its weight from somewhere I can't quite locate.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Anscombe's Challenge</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Elizabeth Anscombe (1919&ndash;2001), one of the 20th century's most original moral philosophers and a student of Ludwig Wittgenstein, published "Modern Moral Philosophy" in 1958. Her argument has three main claims:</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">First: both consequentialism and Kantian deontology rely on the concept of "moral obligation" or "moral duty" as foundational. An action is "morally right" means, in these frameworks, that the agent is morally required or permitted to do it. Second: this concept of moral obligation has a specific historical origin in theological ethics, where obligations were commands of God. In that context, "you are morally obligated to do X" means "God commands X," which gives the concept its force. Third: modern secular moral philosophy has retained the language of obligation while discarding the theological background that gave it its meaning. The result is a concept that carries the psychological force of a divine command without any account of what grounds it.</p>
+
+        <!-- Visual: the shared assumption -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 20px 28px; margin: 18px 0;">
+            <div style="font-size: 14px; color: #55C8E8; margin-bottom: 14px;">ANSCOMBE'S ARGUMENT IN BRIEF</div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div>
+                    <div style="font-size: 13px; color: #C7922C; margin-bottom: 6px;">Consequentialism says:</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;">You are morally obligated to produce the best outcome. But why does "best outcome" obligate? Because happiness matters. But why does that obligate anyone?</div>
+                </div>
+                <div>
+                    <div style="font-size: 13px; color: #55C8E8; margin-bottom: 6px;">Deontology says:</div>
+                    <div style="font-size: 14px; color: #ffffff; line-height: 1.6;">You are morally obligated to act from duty. But why does rational nature obligate? Because that is what rational beings must do. But must implies obligation, which is what we were trying to ground.</div>
+                </div>
+            </div>
+            <div style="margin-top: 16px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 16px;">
+                <div style="font-size: 14px; color: #ffffff; line-height: 1.6;">Anscombe's diagnosis: both theories presuppose the force of "moral obligation" rather than grounding it. Without an account of human nature and human ends, the language of obligation is philosophically unstable.</div>
+            </div>
+        </div>
+
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Anscombe did not conclude that ethics was impossible. She concluded that we need to return to the concept of <em>human flourishing</em> (her translation of Aristotle's <em>eudaimonia</em>) as the foundation. Ethics should start not with "what are we obligated to do?" but with "what does it mean for a human being to live well?" That question has an answer rooted in human nature and its proper development &mdash; which is precisely the starting point of Aristotelian virtue ethics.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; WHY VIRTUE ETHICS IS NOT JUST A THIRD THEORY</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">A Different Starting Question</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">It would be easy to present virtue ethics as simply a third option alongside consequentialism and deontology, with "what makes actions right?" as the shared question and "the action that a virtuous person would perform" as virtue ethics' answer. But this misses what is philosophically distinctive about the virtue tradition.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Consequentialism and Kantian deontology are both primarily theories of right action: they ask what makes a single action morally right or wrong. Virtue ethics is primarily a theory of moral character: it asks what kind of person one should be, what constitutes genuine human excellence, and how human beings develop the capacity to live and act well. From this foundation, questions about right action are answered by reference to the character of the virtuous person &mdash; but the question of character comes first.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This means virtue ethics answers a whole set of questions that consequentialism and deontology do not address: How do human beings become capable of acting rightly? What role do habit and practice play in moral development? What is the relationship between moral excellence and a good human life? What does it mean to flourish as the kind of being that a human being is? Aristotle's <em>Nicomachean Ethics</em> &mdash; the foundational text of Quarter 3 &mdash; begins precisely with these questions.</p>
+    </div>
+
+    <!-- PART 3: Quarter 2 Synthesis -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; QUARTER 2 SYNTHESIS</div>
+
+        <div style="overflow-x: auto; margin: 16px 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 15px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Theory</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Central claim</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Core strength</th>
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Core limitation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Consequentialism</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Right action produces the best consequences</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Outcomes matter; impartial concern for all affected</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Can license sacrificing persons; no account of rights or character</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Kantian Deontology</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Right action conforms to the categorical imperative</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Grounds human dignity and rights; resists manipulation</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Overly rigid; no account of character formation</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Intuitionism (Ross)</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Multiple prima facie duties, balanced by judgment</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Flexible; preserves multiple moral considerations</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">No systematic principle for resolving conflicts</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #0e1c42; font-weight: bold;">Social Contract (Rawls)</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Just principles are those fair persons would choose</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Powerful account of political justice and fairness</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Limited to justice; does not address personal ethics</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="optima-widget ow-scale">
+            <div class="widget-kicker">&#9889; TRY IT &middot; QUARTER 2 SYNTHESIS</div>
+            <div class="widget-question">Which limitation is most serious for each theory?</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Which limitation strikes at the heart of what the theory is claiming, rather than just a gap it could in principle fill?" data-fb="Correct. The deepest limitation of consequentialism is not miscalculation but the possibility of using persons as instruments: a perfect calculation that still requires treating a person as a means. This challenges the theory's core claim, not just its application.">
+                <div class="widget-row-prompt">1. What is the deepest challenge to consequentialism?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Practical difficulty: it is too hard to calculate consequences accurately</button>
+                    <button data-choice="1">Theoretical: it may require treating persons as instruments when the numbers favor it</button>
+                    <button data-choice="2">Social: it makes impossible demands on individual behavior</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="Which limitation shows that Kantian ethics, even if correct about duty, leaves something important unaddressed?" data-fb="Correct. Kant's ethics tells us what we must do, but it does not tell us how we become the kind of person who can reliably do it. The entire domain of character formation, habituation, and practical wisdom is absent. That is not a minor gap.">
+                <div class="widget-row-prompt">2. What is the deepest gap in Kantian deontology?</div>
+                <div class="widget-options">
+                    <button data-choice="0">Logical: the categorical imperative is internally inconsistent</button>
+                    <button data-choice="1">Practical: its prohibition on lying leads to bad consequences in some cases</button>
+                    <button data-choice="2">Foundational: it provides no account of how persons develop the character to act from duty</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Which gap does Anscombe identify as the root problem in all modern moral philosophy?" data-fb="Correct. Anscombe's deepest objection is not to the specific conclusions of modern moral theories but to their shared presupposition: that 'moral obligation' is a foundational concept that can stand on its own, without an account of human nature and human ends to support it.">
+                <div class="widget-row-prompt">3. What does Anscombe identify as the root problem of modern moral philosophy (both consequentialism and deontology)?</div>
+                <div class="widget-options">
+                    <button data-choice="0">They use the concept of moral obligation as foundational without grounding it in human nature</button>
+                    <button data-choice="1">They are too abstract to apply to real moral decisions</button>
+                    <button data-choice="2">They disagree with each other, which shows neither is correct</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Quarter 2 Major Essay</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">See the assignment page for the Quarter 2 essay prompt. You will be asked to compare consequentialism and Kantian deontology on a case study of your choice, identify the key point of disagreement, and evaluate which theory provides the more compelling moral analysis. Length: 700-900 words.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Preview for Quarter 3: Read Aristotle, <em>Nicomachean Ethics</em>, Book I, Chapters 1-4</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Aristotle opens by asking: what is the highest good for human beings? As you read, ask yourself: is this the right question to begin ethics with, and how does it differ from the questions Bentham and Kant begin with?</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; QUARTER 2 SYNTHESIS</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Quarter 2 surveyed the landscape of modern moral philosophy. Consequentialism asks what outcomes our actions produce; deontology asks what duties and rights constrain our choices. Both offer genuine insights; both face genuine limitations. The other modern frameworks &mdash; intuitionism, social contract theory, particularism &mdash; each respond to one gap without resolving all of them.</p>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Anscombe's challenge suggests that the shared framework of modern ethics &mdash; the language of obligation and duty as foundational &mdash; is philosophically unstable without a prior account of what human beings are and what genuine human excellence looks like. That is precisely the question Aristotle raised in the 4th century BC and which his tradition of virtue ethics has never stopped answering. Quarter 3 returns to that older and deeper tradition.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.09 &middot; The Shared Assumption and the Turn to Virtue</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 2.01</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q2 &middot; Module 1</div>
+        <div style="font-size: 12px; color: #666;">Moral Decisions</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 2.01</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">A Decision That Divided the World</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Moral Decisions</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 2.01</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">A Decision That Divided the World: Introducing Consequentialism and Deontology</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Was President Truman's decision to use atomic weapons against Japan in August 1945 morally justified?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">This is one of the most seriously contested moral questions in modern history. It is a good entry point into Quarter 2 precisely because it forces into the open the central conflict between the two most influential moral theories in the Western tradition: consequentialism, which evaluates actions by their outcomes, and deontology, which holds that some actions are right or wrong independent of their results. Understanding how each framework approaches this question is more illuminating than reaching a verdict &mdash; at least at this stage.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the historical circumstances of August 1945 and the range of options Truman faced, as understood at the time.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how a consequentialist and a deontologist would each approach the moral question this decision raises, and what each framework would need to establish.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> identify the key point of disagreement between consequentialism and deontology as illustrated by this case.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE HISTORICAL SITUATION</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Before reading about the historical circumstances: when you think about a decision-maker facing a situation where any option involves serious harm, what moral considerations do you think matter most?</div>
+            <div class="widget-options">
+                <button data-response="That is the core consequentialist intuition. This quarter will examine it in depth and ask what problems arise when we follow it consistently.">Minimizing total harm to the most people</button>
+                <button data-response="That is the deontological intuition: some actions are wrong regardless of their consequences. This quarter will examine what grounds that claim.">Avoiding actions that are intrinsically wrong, regardless of outcomes</button>
+                <button data-response="That tension is exactly the question this case illuminates. Both frameworks have something to say about intention and outcome.">Both intentions and outcomes seem to matter</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Situation in August 1945</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">By the summer of 1945, the Pacific War had been grinding on for nearly four years. Japan had not surrendered despite massive conventional bombing of its cities. American military planners estimated that a land invasion of the Japanese home islands &mdash; Operation Downfall &mdash; would involve enormous casualties on both sides: estimates ranged from hundreds of thousands to over a million Allied casualties, with Japanese military and civilian deaths likely exceeding that figure. Japan's military command had issued orders to resist invasion to the last person.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">President Truman faced a set of options, each with serious moral costs: proceed with the land invasion; continue the conventional bombing and naval blockade and wait for Japan to surrender; negotiate an end to the war on terms that might allow Japan's military leadership to remain in power; or use the newly developed atomic weapon, which would destroy a city but might force a quick surrender. On August 6, Truman authorized the use of an atomic bomb against Hiroshima; on August 9, a second was used against Nagasaki. Japan's Emperor announced surrender on August 15.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This lesson does not ask you to reach a final verdict. It asks you to use this decision as a lens for understanding two philosophical frameworks. The historical facts are complex and contested; historians still debate what motivated the decision and whether other options were genuinely available. What this lesson examines is the <em>structure</em> of the moral argument each framework would make.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; TWO FRAMEWORKS, ONE QUESTION</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">The Consequentialist Analysis</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Consequentialism</strong> holds that the moral quality of an action is entirely determined by its consequences. An action is right if, among the available options, it produces the best overall outcome: the most benefit, the least harm, for the most people. On this framework, the question about August 1945 becomes: compared to the realistic alternatives, did the use of atomic weapons produce the best available outcome?</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">A consequentialist defense of the decision would argue: the alternatives &mdash; land invasion or prolonged blockade &mdash; would have produced even greater loss of life on all sides. If the atomic weapons shortened the war and prevented an invasion, the total harm was less than it would otherwise have been. On consequentialist grounds, minimizing total harm justifies the means. The moral analysis depends entirely on the accuracy of those projections, and historians contest them seriously.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">The Deontological Analysis</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;"><strong>Deontology</strong> (from the Greek <em>deon</em>, duty) holds that morality consists of duties and rights that constrain action regardless of consequences. Some actions are intrinsically wrong &mdash; wrong not because of their results, but because of what they are. On the deontological framework, the question is not only "what were the projected outcomes?" but "does this action violate any duty or right that cannot be overridden by consequentialist calculations?"</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">A deontological objection to the decision would argue: the atomic bombings directly and intentionally targeted civilian populations. The deliberate killing of noncombatants &mdash; people who did not themselves engage in the fighting &mdash; violates a moral prohibition that does not yield to calculations of overall benefit. Using civilians as the means of producing a desired military and political outcome treats them as instruments rather than as persons with rights of their own. The projected benefits of the decision, on this view, do not change what the action was.</p>
+
+        <!-- Framework comparison visual -->
+        <div style="overflow-x: auto; margin: 16px 0;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 16px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; border: 1px solid #D0D9E8;">Question</th>
+                        <th style="padding: 12px 14px; text-align: center; border: 1px solid #D0D9E8;">Consequentialism asks</th>
+                        <th style="padding: 12px 14px; text-align: center; border: 1px solid #D0D9E8;">Deontology asks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">What makes an action right?</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Its consequences: the best overall outcome</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Its conformity to duty and respect for rights</td>
+                    </tr>
+                    <tr style="background: #F4F6FA;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Can good ends justify harmful means?</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Yes, if the outcome is better enough</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">No: some means are forbidden regardless</td>
+                    </tr>
+                    <tr style="background: #FFFFFF;">
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340;">Key evidence in the Hiroshima case</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Projected casualties from alternatives</td>
+                        <td style="padding: 10px 14px; border: 1px solid #D0D9E8; color: #1a2340; text-align: center;">Status of those targeted (combatants vs. noncombatants)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHICH FRAMEWORK IS SPEAKING?</div>
+            <div class="widget-question">For each argument below, identify whether it is a consequentialist or a deontological argument.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does this argument focus on what the action is, or on what it produces?" data-fb="Correct. This is a deontological argument: it holds that deliberately targeting noncombatants is inherently wrong, regardless of projected outcomes.">
+                <div class="widget-row-prompt">1. "Whatever the projected benefits, it is inherently wrong to deliberately destroy a civilian population in order to achieve a military objective."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Consequentialist</button>
+                    <button data-choice="1">Deontological</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="Does this argument evaluate the action by its effects, or by what kind of action it is?" data-fb="Correct. This is a consequentialist argument: it evaluates the decision by comparing projected outcomes across available options.">
+                <div class="widget-row-prompt">2. "A land invasion would have produced more total deaths than the atomic bombings did. Therefore, using the atomic weapons was the morally preferable choice."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Consequentialist</button>
+                    <button data-choice="1">Deontological</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="Is the focus on the result for the people of Hiroshima, or on the rights that were violated?" data-fb="Correct. This is a deontological argument: it appeals to rights and the principle that persons may not be used as means.">
+                <div class="widget-row-prompt">3. "The people of Hiroshima had a right not to be used as instruments to achieve someone else's political aims, no matter how important those aims were."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Consequentialist</button>
+                    <button data-choice="1">Deontological</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Sources: Truman's Statement and Atomic Heritage Documents</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Truman's announcement statement (linked in assignment). Note: (a) what reasons he gives for the decision, and (b) whether his reasoning is primarily consequentialist, deontological, or neither.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (2.01 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Present the strongest version of either the consequentialist defense or the deontological objection to Truman's decision. Then identify the most serious challenge that version of the argument faces.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The central question of ethical theory &mdash; does morality reduce to consequences, or are there constraints that hold regardless of outcomes? &mdash; is not merely academic. It determines what arguments a decision-maker can make, what counts as a justification, and what counts as an excuse. The rest of Quarter 2 develops these two frameworks in depth, beginning with the utilitarian tradition that gives consequentialism its most rigorous formulation.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 2 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 2.01 &middot; A Decision That Divided the World</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (sBtn.dataset.fb || row.dataset.fb || 'Right.') : (sBtn.dataset.fb || row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

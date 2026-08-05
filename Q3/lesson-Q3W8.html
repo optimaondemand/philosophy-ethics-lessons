@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 3.08</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q3 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Virtue Ethics</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 3.08</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Weakness of Will</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Virtue Ethics</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 3.08</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Weakness of Will: When We Know What Is Right and Do Otherwise</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Why do we so often know what is right and still fail to do it?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">One of the oldest puzzles in ethics is the phenomenon the Greeks called <em>akrasia</em>: weakness of will, or acting contrary to one's better judgment. You know you should exercise; you stay on the couch. You know the cruel remark will wound; you make it anyway. Socrates argued that this is impossible: if you know what is good, you will necessarily pursue it. Aristotle disagrees. He takes <em>akrasia</em> seriously as a real phenomenon and devotes Book VII of the <em>Nicomachean Ethics</em> to explaining how it is possible, what distinguishes it from mere self-indulgence, and why it matters so deeply for virtue ethics.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain the Socratic denial of akrasia and Aristotle's response to it.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> distinguish akrasia from both vice and continence in Aristotle's taxonomy of character.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why akrasia is a challenge for virtue ethics and how Aristotle's account of character addresses it.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE SOCRATIC PUZZLE</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">Have you ever done something you knew was wrong at the moment you did it? Not something you regretted afterward, but something you judged to be wrong as you were doing it?</div>
+            <div class="widget-options">
+                <button data-response="You are in good company. This experience is precisely what Aristotle is trying to explain, and its apparent ordinariness is itself philosophically significant: if weakness of will is common, any ethical theory that denies its possibility has a serious problem.">Yes, and it is a familiar experience.</button>
+                <button data-response="Aristotle would find this interesting. Some philosophers have argued that genuine akrasia is actually rare or impossible: that what seems like weakness is really a failure of knowledge, not a failure of will. Your experience might support the Socratic position. But the burden is on that view to explain what is happening in cases that feel like akrasia.">Not really. When I do wrong I think I genuinely did not know it was wrong in that moment.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Socrates: Weakness of Will Is Impossible</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">In Plato's <em>Protagoras</em>, Socrates argues that no one does wrong voluntarily. His argument is elegant: if you know that action A is genuinely better than action B, you will choose A. If you choose B, that shows you did not really know A was better. What appears to be weakness of will is actually ignorance: the person who eats the cake when she knows she should not has really, in that moment, succumbed to the belief that the pleasure now outweighs the benefit later. The knowledge slipped away under the pressure of appetite. For Socrates, virtue is a form of knowledge, and vice is always a form of ignorance.</p>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Aristotle's Disagreement</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle opens Book VII by saying that the Socratic position "seems to conflict with the observed facts." He takes seriously the phenomenology of akrasia: people sometimes act contrary to knowledge they actually have, not merely contrary to knowledge they have lost. He distinguishes two kinds of practical knowledge: knowing a general principle ("overeating is harmful") and applying it to the particular case at hand ("this second helping is an instance of overeating"). The person in the grip of appetite may still hold the general principle but fail to bring it to bear on the particular case. The knowledge is present but, as Aristotle says, "not operative": like a person who knows the theorems of geometry but cannot apply them when drunk.</p>
+
+        <!-- Akrasia taxonomy visual -->
+        <div style="background: #0E1C42; border-radius: 10px; padding: 22px 26px; margin: 18px 0 6px 0; color: #ffffff;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.5px;">ARISTOTLE'S CHARACTER TAXONOMY (NE VII)</div>
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; min-width: 520px;">
+                    <thead>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.2);">
+                            <th style="text-align: left; padding: 10px 14px; font-size: 14px; color: #C7922C; width: 22%;">Type</th>
+                            <th style="text-align: left; padding: 10px 14px; font-size: 14px; color: #C7922C; width: 26%;">Relation to Desire</th>
+                            <th style="text-align: left; padding: 10px 14px; font-size: 14px; color: #C7922C; width: 26%;">Relation to Judgment</th>
+                            <th style="text-align: left; padding: 10px 14px; font-size: 14px; color: #C7922C; width: 26%;">Aristotle's Evaluation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <td style="padding: 10px 14px; font-size: 14px; color: #55C8E8; vertical-align: top;">Virtuous</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Desires the right things in the right amounts; desire and reason aligned.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Acts in accord with correct judgment, which is also his desire.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Best character: does right without inner struggle.</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <td style="padding: 10px 14px; font-size: 14px; color: #55C8E8; vertical-align: top;">Continent</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Has bad or disordered desires, but does not follow them.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Acts in accord with correct judgment, despite inner struggle.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Good but not fully virtuous: does right by effort, not by second nature.</td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.1);">
+                            <td style="padding: 10px 14px; font-size: 14px; color: #C7922C; vertical-align: top;">Incontinent (Akratic)</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Has bad or disordered desires and follows them, despite knowing better.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Knows what is right; acts against this knowledge under the pull of appetite.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Worse than continent. Better than vicious: still capable of remorse and reform.</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 10px 14px; font-size: 14px; color: #55C8E8; vertical-align: top;">Vicious</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Desires bad things; has fully disordered appetite.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Does wrong voluntarily and without inner conflict; judges bad things to be good.</td>
+                            <td style="padding: 10px 14px; font-size: 14px; color: rgba(255,255,255,0.85); vertical-align: top;">Worst character: not capable of remorse; does not see his actions as wrong.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <p style="font-size: 15px; color: #666; font-style: italic; margin: 4px 0 14px 0;">The critical distinction: the akratic person retains the ability to judge his actions as wrong and to feel shame and regret. The vicious person does not. This is why the akratic person is curable and the vicious person is very difficult to reform.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; AKRASIA AND VIRTUE ETHICS</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Why Akrasia Matters for Virtue Ethics</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Akrasia is a more serious challenge for virtue ethics than for consequentialism or deontology. For those theories, ethics is primarily a matter of what you know and what you decide: as long as you act rightly, your inner states and desires are secondary. For Aristotle, virtue requires that desire and reason be harmonized through habituation. Akrasia is evidence that this harmony has not been achieved: the person knows what is right in some theoretical sense, but her character has not been formed so that she reliably acts on that knowledge.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">This is why Aristotle says virtue ethics is not primarily a doctrine you learn but a form of training you undergo. A person who has been properly habituated will find, over time, that her desires align with her knowledge: she will not merely know that temperance is correct but will take genuine pleasure in temperate activity. The continent person who resists bad desires by force of will is in a more precarious position than the virtuous person in whom the conflict does not arise.</p>
+
+        <!-- Commit-then-reveal -->
+        <details style="background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin: 18px 0;">
+            <summary style="font-size: 17px; color: #0e1c42; cursor: pointer; font-weight: 600;">Think about this first, then open: Is the akratic person morally responsible for her actions? Write or think through your answer before opening.</summary>
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #D0D9E8; font-size: 17px; color: #1a2340; line-height: 1.65;">
+                <strong>Aristotle's position:</strong> Yes, the akratic person is morally responsible. She acted voluntarily and against her own judgment: she was not compelled, not ignorant of what was right, and not acting on a reasonable mistake. The fact that appetite was powerful does not excuse her in the way that genuine ignorance or compulsion would. However, Aristotle draws a distinction between straightforward akrasia (acting contrary to correct judgment under the immediate pressure of appetite) and the person who through repeated choices has formed a character predisposed to weakness. In the latter case, the person is also responsible for the character she has built, just as someone who injures themselves through negligent behavior is responsible for the injury even though she is not the direct cause of the disability.
+            </div>
+        </details>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">Remorse, Shame, and Moral Recovery</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">One of Aristotle's most important observations is that the akratic person remains capable of genuine remorse. After acting against her judgment, she recognizes her failure as a failure. This is not a minor point. It means the akratic person retains a working moral compass; the problem is not that she cannot tell right from wrong but that her character has not been formed strongly enough to act reliably on that knowledge. For Aristotle, this is what makes moral improvement possible. The vicious person, who has corrupted his judgment and no longer recognizes his actions as wrong, is far harder to help.</p>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; APPLYING THE TAXONOMY</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; CHARACTER CLASSIFICATION</div>
+            <div class="widget-question">Using Aristotle's taxonomy, identify which character type best describes each scenario.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="Pay attention to two things: does the person know what is right, and do they feel any conflict or remorse? These two features determine where the person falls in the taxonomy." data-fb="Correct. This is akrasia: the person knows what is right, acts against that knowledge under the pressure of appetite, and feels genuine remorse afterward. The retained capacity for remorse is a key marker distinguishing the akratic person from the vicious person.">
+                <div class="widget-row-prompt">1. A student knows he should spend the evening studying for a difficult exam. He spends it playing video games instead. The next morning he feels genuinely ashamed and resolves to do better.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Virtuous</button>
+                    <button data-choice="1">Continent</button>
+                    <button data-choice="2">Akratic (incontinent)</button>
+                    <button data-choice="3">Vicious</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3" data-hint="Consider whether this person has a judgment that her actions are wrong. Does she experience conflict? What does she think about her behavior?" data-fb="Correct. The person who cheats regularly, does not regard it as wrong, and experiences no conflict or remorse exemplifies vice in Aristotle's taxonomy. Her judgment has been corrupted by habit: she does not merely act against her better judgment but no longer makes the correct judgment at all.">
+                <div class="widget-row-prompt">2. A person regularly cheats in business dealings, feels no conflict about it, regards those who do not cheat as naive, and experiences no remorse when her dishonesty causes harm to others.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Virtuous</button>
+                    <button data-choice="1">Continent</button>
+                    <button data-choice="2">Akratic (incontinent)</button>
+                    <button data-choice="3">Vicious</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="This person has disordered desire, but something keeps her from following it. She does the right thing, but how? Is it effortless or the result of resistance?" data-fb="Correct. The continent person knows what is right and acts on it, but not without inner struggle. She experiences the pull of disordered appetite and resists it by force of will. This is admirable but, for Aristotle, not yet the ideal: the truly virtuous person has desires that are already aligned with correct judgment and does not need to resist them.">
+                <div class="widget-row-prompt">3. A person consistently feels strong impulses toward self-indulgence but each time restrains herself, follows her better judgment, and does what is right. She finds this requires real effort every time.</div>
+                <div class="widget-options">
+                    <button data-choice="0">Virtuous</button>
+                    <button data-choice="1">Continent</button>
+                    <button data-choice="2">Akratic (incontinent)</button>
+                    <button data-choice="3">Vicious</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Aristotle, <em>Nicomachean Ethics</em>, Book VII, Chapters 1&ndash;3 and 8&ndash;10</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Read Aristotle's discussion of the problem of akrasia, his response to Socrates, and his analysis of different types of incontinence. Chapter 3 contains his full account of how akrasia is possible.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (3.08 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Do you think Socrates or Aristotle has a better account of moral failure? Defend your position with specific reference to both the Socratic denial of akrasia and Aristotle's response to it.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Weakness of will, or <em>akrasia</em>, is the phenomenon of acting against one's better judgment. Socrates denied this was possible; Aristotle treats it as real and philosophically important. His analysis distinguishes the virtuous person (whose desires are aligned with reason), the continent person (who resists bad desires by force of will), the incontinent person (who acts against correct judgment under the pull of appetite), and the vicious person (whose judgment has been corrupted and who no longer judges his actions as wrong). The akratic person retains her moral compass and her capacity for remorse; this is what makes moral improvement possible. The next lesson synthesizes Quarter 3 and prepares you for the final quarter on natural law.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 3.08 &middot; Weakness of Will</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.06</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 3</div>
+        <div style="font-size: 12px; color: #666;">Natural Law and Its Rivals</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.06</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Morality and God</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Natural Law and Its Rivals</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.06</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Morality and God: The Euthyphro Dilemma Revisited</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Does natural law require God, and does it collapse into "do whatever God commands"?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">In Lesson 1.03 you encountered Plato's Euthyphro dilemma: Is something holy because the gods love it, or do the gods love it because it is holy? In ethical terms, the question becomes: Is something good because God commands it, or does God command it because it is good? This dilemma poses a challenge for any ethics that claims to be grounded in God's will. Natural law theory has a distinctive and sophisticated response to this dilemma. This lesson examines that response, and asks whether natural law needs God at all, or whether it can stand on purely rational grounds.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> restate the Euthyphro dilemma in ethical terms and explain why it poses a challenge for divine command theory.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain Aquinas's response: that natural law is grounded in God's rational nature, not in arbitrary divine will.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain whether natural law can function without a theological foundation, and what changes if it does.</div>
+        </div>
+    </div>
+
+    <!-- PART 1 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE EUTHYPHRO DILEMMA REVISITED</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; QUICK CHECK-IN</div>
+            <div class="widget-question">In Lesson 1.03 you saw the Euthyphro dilemma for the first time. Now that you have studied three quarters of ethics: do you think morality depends on God, or is it independent of God?</div>
+            <div class="widget-options">
+                <button data-response="This is the natural law position, properly understood: God is the ultimate source of the moral order, but not through arbitrary commands. God's nature is good, and the moral order follows from what human beings are and what God has made them to be. Morality is thus not independent of God but is grounded in what God is, not in what God arbitrarily decrees.">Morality is grounded in God's nature, not in arbitrary divine commands.</button>
+                <button data-response="This is what Finnis and many contemporary natural law theorists argue: that the basic goods and the requirements of practical reasonableness can be known by reason alone, without theological premises. They call this the 'secular natural law' position. Whether such an account is ultimately stable, or whether it eventually requires something like a theological grounding, is one of the deepest questions in the tradition.">Morality is fully knowable by reason alone and does not require God as its foundation.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Dilemma Stated</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Recall the dilemma in ethical terms: Is something morally right because God commands it, or does God command it because it is morally right?</p>
+        <ul style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0; padding-left: 20px;">
+            <li style="margin-bottom: 10px;"><strong>If right because God commands it (divine command theory):</strong> Then morality is arbitrary. God could have commanded cruelty and cruelty would be right. There is no reason why God's commands should be good other than the bare fact that God issued them. Moreover, to call God "good" becomes tautological: God is good because God is good by definition.</li>
+            <li><strong>If God commands it because it is right:</strong> Then there is a moral standard independent of and above God's will, to which God's commands must conform. God becomes a reporter of moral truths rather than their author. Morality does not depend on God; God depends on morality.</li>
+        </ul>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Both horns seem to create serious problems for any ethics that wants to be both God-grounded and non-arbitrary.</p>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; AQUINAS'S RESPONSE</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Escaping the Dilemma: God's Rational Nature</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aquinas argues that the Euthyphro dilemma presents a false choice. Both horns assume that God's will is one thing and the moral order is another. Aquinas denies this. For Aquinas, God is not a being with a will who issues arbitrary commands; God is the source of being itself, and God's nature is essentially rational and good. The eternal law is not an arbitrary decree of God's will but the expression of God's reason ordering all things to their ends. The moral order follows from what God is, not from what God arbitrarily decides.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">To the objection "God could have made cruelty right by commanding it," Aquinas replies: God could not have commanded cruelty because cruelty is contrary to the good, and God, being essentially good, cannot will the contrary of the good. Asking whether God could have made cruelty right is like asking whether God could have made a triangle have four sides: it is not a limitation on God's power but a recognition that some things are not genuinely possible.</p>
+
+        <div style="background: #0E1C42; border-radius: 10px; padding: 22px 26px; margin: 14px 0 6px 0; color: #ffffff; text-align: center;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 10px; letter-spacing: 0.5px;">AQUINAS'S RESOLUTION OF THE EUTHYPHRO DILEMMA</div>
+            <div style="font-size: 20px; color: #ffffff; font-style: italic; line-height: 1.45;">The moral order is neither above God nor arbitrarily commanded by God. It is an expression of what God essentially is.</div>
+            <div style="font-size: 14px; color: rgba(255,255,255,0.65); margin-top: 10px;">The eternal law is God's reason itself, as the principle governing the order of creation. Natural law is human reason's participation in this order.</div>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">Natural Law Without God: The Secular Version</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Finnis argues that the basic goods and the requirements of practical reasonableness are knowable by reason alone, without theological premises. A person who believes in no God can still recognize that life, knowledge, and friendship are basic goods, and that it is irrational to act directly against them. This is the "secular natural law" position: natural law's moral conclusions are available to anyone who reasons carefully, regardless of theological commitments.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">However, Finnis acknowledges that this secular version faces a question it cannot itself fully answer: why should human beings be rational in this way? If the basic goods are genuinely obligatory, where does that obligation come from? Finnis's own view is that this question ultimately points toward a theological grounding: the obligation is grounded in the rational order of creation, which in turn is grounded in what God is. But the secular version of natural law is a genuine contribution: the moral conclusions can be argued for, examined, and debated independently of any particular religious tradition.</p>
+
+        <!-- Commit-then-reveal -->
+        <details style="background: #EEF1F8; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 20px; margin: 18px 0;">
+            <summary style="font-size: 17px; color: #0e1c42; cursor: pointer; font-weight: 600;">Think about this first, then open: Does Aquinas's resolution of the Euthyphro dilemma succeed? Write or think through your answer before clicking.</summary>
+            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid #D0D9E8; font-size: 17px; color: #1a2340; line-height: 1.65;">
+                <strong>The most serious remaining objection:</strong> Even if God's nature is necessarily good, how do we determine what God's nature requires for human beings? If our knowledge of God's nature comes from reason reflecting on human nature, then we are back to natural law operating independently. If it comes from revelation, then we need to resolve questions about which revelations are authoritative. Aquinas's response is that these two sources, reason and revelation, are complementary and ultimately consistent: what reason discerns about the good for human beings is confirmed by, not replaced by, what revelation teaches. This "two-source" account is characteristic of the Catholic natural law tradition and was formally articulated at the First Vatican Council (1870).
+            </div>
+        </details>
+    </div>
+
+    <!-- PART 3: Widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; EUTHYPHRO ANALYSIS</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; TRY IT &middot; WHICH POSITION?</div>
+            <div class="widget-question">Identify which position on the relationship between God and morality each claim reflects.</div>
+
+            <div class="widget-row" data-correct="1" data-hint="Does this claim make morality prior to God's will, grounded in God's nature itself, or dependent on God's arbitrary commands?" data-fb="Correct. The claim that morality is what God commands, and that God could have commanded anything, is divine command theory (also called voluntarism). This is the first horn of the Euthyphro dilemma: morality is right because God commands it, which makes morality arbitrary.">
+                <div class="widget-row-prompt">1. "What is morally right is simply what God commands. If God had commanded cruelty, cruelty would be right."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Aquinas's natural law position</button>
+                    <button data-choice="1">Divine command theory (voluntarism)</button>
+                    <button data-choice="2">Finnis's secular natural law</button>
+                    <button data-choice="3">Moral relativism</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="0" data-hint="This claim escapes the Euthyphro dilemma by identifying a third option: the moral order is neither above God nor arbitrary, but an expression of God's rational nature." data-fb="Correct. The claim that God cannot command cruelty because God's nature is essentially rational and good is Aquinas's response to the Euthyphro dilemma. The moral order is not above God's will; it is an expression of what God essentially is. This escapes both horns of the dilemma.">
+                <div class="widget-row-prompt">2. "God cannot command cruelty, not because there is a moral standard above God, but because cruelty is contrary to the good, and God's nature is essentially good."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Aquinas's natural law position</button>
+                    <button data-choice="1">Divine command theory</button>
+                    <button data-choice="2">The second horn of the Euthyphro dilemma</button>
+                    <button data-choice="3">Moral relativism</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="2" data-hint="This claim affirms moral objectivity and universality but grounds it in reason rather than in God. Which position is this?" data-fb="Correct. The claim that moral truths are knowable by reason alone, without theological premises, is Finnis's secular natural law position. It argues that the basic goods and the requirements of practical reasonableness are accessible to any rational person, regardless of religious commitment.">
+                <div class="widget-row-prompt">3. "Moral truths about the basic human goods are knowable by reason alone, without reference to God. A non-believer can access and be bound by natural law just as fully as a believer."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Aquinas's fully theological account</button>
+                    <button data-choice="1">Divine command theory</button>
+                    <button data-choice="2">Finnis's secular natural law</button>
+                    <button data-choice="3">Moral relativism</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Primary Source: Plato, <em>Euthyphro</em> 9d&ndash;11b (revisit); Aquinas, <em>Summa Theologica</em> I-II, Question 93, Article 1 (Eternal Law as God's reason)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Reread the Euthyphro passage with Aquinas in view. Then read Aquinas's account of eternal law as the expression of divine reason. Notice how Aquinas explicitly rejects voluntarism.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Discussion Post (4.06 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Explain Aquinas's escape from the Euthyphro dilemma. Does it succeed? If you think it does not fully succeed, identify the most serious remaining problem and explain what further argument would be needed to address it.</div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; WHAT YOU HAVE LEARNED</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Aquinas's natural law theory escapes the Euthyphro dilemma by identifying a third option: the moral order is neither above God's will (as if God were just reporting pre-existing truths) nor an arbitrary product of God's commands (as divine command theory holds). Instead, the moral order is an expression of what God essentially is: rational, good, and the source of the order of creation. Natural law is human reason's participation in this order. Finnis's secular version shows that the moral conclusions of natural law can be argued for independently of theological premises. The next lesson examines how natural law is known: through reason, conscience, and the common first principles that all human beings share.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.06 &middot; Morality and God</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>

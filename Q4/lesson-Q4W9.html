@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Philosophy Honors: Ethics &mdash; Lesson 4.09</title>
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+    .widget-feedback.show { display: block; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">PHILOSOPHY HONORS: ETHICS</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Q4 &middot; Module 4</div>
+        <div style="font-size: 12px; color: #666;">Synthesis and Capstone</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 4.09</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Course Capstone</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Module Theme</div>
+        <div style="font-size: 16px; color: #0e1c42;">Synthesis and Capstone</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 4.09</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Four Theories and the Philosophical Life: Course Capstone</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What has this year's study of ethics revealed about how to think, how to live, and who to become?</div>
+        <div style="font-size: 18px; color: #1a2340; line-height: 1.65;">You have studied four of the most important ethical theories in the Western tradition. You have seen them argue with each other across centuries. You have tested them against hard cases, examined their objections, and traced the philosophical conversation from Plato's Socrates to Aristotle to Kant to Aquinas to Finnis. This final lesson does not simply review what you have covered. It asks a different question: given everything you have studied, what has the philosophical inquiry itself revealed? The discipline of ethics is not a collection of answers but a training in how to ask the questions that matter most.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> place all four theories in a single map showing their starting questions, their central claims, and their relationships to each other.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what the study of ethics contributes to the project of living well, and why philosophical training matters for a full human life.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> take and defend a reasoned position on which ethical theory is most adequate, with specific philosophical justification.</div>
+        </div>
+    </div>
+
+    <!-- PART 1: Four-theory map -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 1 &middot; THE COMPLETE MAP</div>
+
+        <div class="optima-widget ow-reflect">
+            <div class="widget-kicker">&#9889; FINAL REFLECTION</div>
+            <div class="widget-question">Looking back across the whole year: which of the four theories do you find most philosophically compelling? What makes it compelling, and what is its most serious remaining weakness?</div>
+            <div class="widget-options">
+                <button data-response="Consequentialism's strength is its clarity about what morality is for: the welfare of actual people. Its deepest weakness, which you have examined extensively, is that it has no structural prohibition on using persons as means. The scapegoating problem and the justice objection both push against its core aggregative logic.">Consequentialism: ethics should be about actual welfare, not abstract principles.</button>
+                <button data-response="Kantian deontology's strength is its account of the unconditional dignity of persons: something consequentialism cannot provide. Its deepest weakness is the question of whether pure practical reason, by itself, can generate substantive moral content without some account of what human beings are and what they need.">Deontology: persons have unconditional dignity and may not be used merely as means.</button>
+                <button data-response="Virtue ethics' strength is its psychological realism: it takes seriously the whole person, including desires, emotions, and character. Its deepest weakness is the question of what grounds the telos of human nature and why the virtues are obligatory rather than merely admirable.">Virtue ethics: what matters is who you are becoming, not just what you do.</button>
+                <button data-response="Natural law theory's strength is its ambition: it tries to ground morality in the structure of human nature itself, providing both content (the basic goods) and obligation (practical reason's recognition of the first precept). Its deepest challenge remains explaining the grounding of the telos without circularity, and navigating the is-ought gap.">Natural law: morality is grounded in human nature and knowable by reason.</button>
+            </div>
+            <div class="widget-feedback"></div>
+            <button class="widget-reset">Reset</button>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 18px 0 8px 0;">The Complete Four-Theory Map</h3>
+        <div style="overflow-x: auto; margin: 10px 0;">
+            <table style="width: 100%; border-collapse: collapse; min-width: 700px;">
+                <thead>
+                    <tr style="background: #0E1C42; color: #ffffff;">
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px; width: 16%;">Question</th>
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px; width: 21%; color: #55C8E8;">Consequentialism</th>
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px; width: 21%; color: #55C8E8;">Deontology</th>
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px; width: 21%; color: #C7922C;">Virtue Ethics</th>
+                        <th style="padding: 12px 14px; text-align: left; font-size: 14px; width: 21%; color: #C7922C;">Natural Law</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="background: #f9fafc; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 10px 14px; font-size: 13px; color: #0e1c42; font-weight: 600; vertical-align: top;">Starting question</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">What produces the best outcomes?</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">What does duty require?</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">What kind of person should I be?</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">What is genuinely good for human beings?</td>
+                    </tr>
+                    <tr style="background: #ffffff; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 10px 14px; font-size: 13px; color: #0e1c42; font-weight: 600; vertical-align: top;">Central figures</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Bentham, Mill; Rawls (as contrast)</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Kant, W.D. Ross</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Aristotle, MacIntyre</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Aquinas, Finnis, Grisez</td>
+                    </tr>
+                    <tr style="background: #f9fafc; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 10px 14px; font-size: 13px; color: #0e1c42; font-weight: 600; vertical-align: top;">Key strength</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Focuses on real consequences for real persons; no hidden bias toward one type of good</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Accounts for unconditional human dignity; explains why persons may not be used as mere means</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Psychologically realistic; takes seriously the whole person; assesses lives, not just acts</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Grounds both the content of morality and its obligatory force in human nature; explains absolute prohibitions</td>
+                    </tr>
+                    <tr style="background: #ffffff; border-bottom: 1px solid #D0D9E8;">
+                        <td style="padding: 10px 14px; font-size: 13px; color: #0e1c42; font-weight: 600; vertical-align: top;">Key objection</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Cannot explain why individual persons may not be sacrificed for the aggregate good</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Generates implausible results in hard cases (the lying murderer); struggles with conflicting duties</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Does not fully explain why the human telos has normative force; culture-dependent risk</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Is-ought gap; how the list of basic goods is determined; role of God in grounding obligation</td>
+                    </tr>
+                    <tr style="background: #f9fafc;">
+                        <td style="padding: 10px 14px; font-size: 13px; color: #0e1c42; font-weight: 600; vertical-align: top;">What it needs from others</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">The Kantian insight that persons have inviolable dignity; the virtue-theoretic account of character</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">The consequentialist reminder that outcomes matter; the virtue account of practical wisdom to handle hard cases</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Natural law's account of what grounds the human telos; Kantian clarity about non-violation of persons</td>
+                        <td style="padding: 10px 14px; font-size: 13px; color: #1a2340; vertical-align: top;">Virtue ethics' account of how moral knowledge becomes reliable in action; consequentialist reminder about outcomes within limits</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- PART 2 -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 2 &middot; THE PHILOSOPHICAL LIFE</div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 0 0 8px 0;">Ethics as a Way of Living, Not a Subject to Be Passed</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Aristotle opens the <em>Nicomachean Ethics</em> with the observation that every art, inquiry, action, and pursuit aims at some good. He closes it with the observation that the good life for human beings is an activity rather than a possession: eudaimonia is not something you have; it is something you do. The same is true of the philosophical life that ethics describes and demands. You do not possess philosophical wisdom by completing a course; you pursue it by continuing, for the rest of your life, to ask the questions this course has taught you to ask.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">Plato's Socrates says in the <em>Apology</em> (38a): "The unexamined life is not worth living for a human being." This is not an arrogant dismissal of ordinary life. It is the claim that human beings, as rational animals, are capable of something that mere living does not exhaust: the examined life, the life lived in the light of reason reflecting on what is genuinely good and how to pursue it. Ethics is the systematic form of that examination. What you have learned this year is not a set of answers but a set of tools and a set of questions that will repay examination for the rest of your life.</p>
+
+        <div style="background: #0E1C42; border-radius: 10px; padding: 24px 30px; margin: 18px 0 10px 0; text-align: center;">
+            <div style="font-size: 13px; color: #55c8e8; margin-bottom: 10px; letter-spacing: 0.5px;">PLATO, APOLOGY 38A</div>
+            <div style="font-size: 24px; color: #ffffff; font-style: italic; line-height: 1.4;">"The unexamined life is not worth living for a human being."</div>
+            <div style="font-size: 14px; color: rgba(255,255,255,0.65); margin-top: 8px;">Socrates, speaking at his trial in Athens, 399 BC</div>
+        </div>
+
+        <h3 style="font-size: 20px; color: #0e1c42; margin: 20px 0 8px 0;">What This Course Has Given You</h3>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">At the beginning of this course, you encountered Socrates asking: "How should one live?" You have spent a year learning four rigorous answers to that question from the Western tradition's greatest ethical thinkers. You have seen each answer tested against objections, compared with competitors, and applied to real cases. You know that the question is harder than it looks; you also know that it is not unanswerable, that the tradition has resources for making real progress on it, and that your own reasoning about these questions is now equipped with distinctions, arguments, and examples that most people never encounter.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 14px 0;">The most important thing this course has tried to give you is not the answers but the questions: the habit of asking, before any important action, what is genuinely at stake; whose interests are affected; what duties or obligations apply; what kind of person this action will make you; and whether it is consistent with what reason and conscience tell you about the good. That habit of question-asking, persistently applied, is what the philosophical tradition calls practical wisdom. It is, as Aristotle says, the master virtue.</p>
+    </div>
+
+    <!-- PART 3: Final widget -->
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; PART 3 &middot; THE YEAR IN FULL</div>
+
+        <div class="optima-widget ow-select">
+            <div class="widget-kicker">&#9889; FINAL CHECK &middot; THE FOUR THEORIES</div>
+            <div class="widget-question">One final comprehensive check. Identify which theory each claim represents.</div>
+
+            <div class="widget-row" data-correct="2" data-hint="This claim is about the highest good and its connection to what kind of being a human being is. Which theory grounds ethics in human nature and its characteristic activity?" data-fb="Correct. The claim that morality is concerned with what constitutes the highest good for beings of human nature, and that this consists in the excellent exercise of what is characteristic of human beings, is Aristotle's virtue ethics. It is the function argument in compressed form.">
+                <div class="widget-row-prompt">1. "Morality is ultimately concerned with what constitutes the highest good for beings of our nature, and that good consists in the excellent exercise of the activity characteristic of us."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Consequentialism</button>
+                    <button data-choice="1">Deontology (Kant)</button>
+                    <button data-choice="2">Virtue ethics (Aristotle)</button>
+                    <button data-choice="3">Natural law (Aquinas)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="3" data-hint="This claim grounds morality in a hierarchy of law, with human-made law being valid only insofar as it conforms to something above it. Which theory makes this argument?" data-fb="Correct. The claim that human-made law derives its authority from a higher moral order discoverable by reason is natural law theory's account of the relationship between natural law and human law. Aquinas's formulation: 'An unjust law is no law at all.'">
+                <div class="widget-row-prompt">2. "Human-made law has moral authority only when it conforms to the natural moral order. A law that commands what is contrary to basic human goods has no genuine claim on our obedience."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Consequentialism</button>
+                    <button data-choice="1">Deontology (Kant)</button>
+                    <button data-choice="2">Virtue ethics</button>
+                    <button data-choice="3">Natural law (Aquinas)</button>
+                </div>
+            </div>
+
+            <div class="widget-row" data-correct="1" data-hint="This claim holds that there is exactly one condition for an action to have moral worth: act from duty. Which theory holds that the moral worth of an action depends entirely on the motive from which it is done?" data-fb="Correct. The claim that an action has moral worth only when done from duty, not from inclination or consequence-calculation, is Kant's central thesis about moral worth. This is the argument of the Groundwork, Section I: actions done from inclination or self-interest, even if they conform to what duty requires, lack genuine moral worth.">
+                <div class="widget-row-prompt">3. "An action has moral worth only when it is done from duty: from the recognition that the moral law requires it, not from inclination, sympathy, or calculation of consequences."</div>
+                <div class="widget-options">
+                    <button data-choice="0">Consequentialism</button>
+                    <button data-choice="1">Deontology (Kant)</button>
+                    <button data-choice="2">Virtue ethics</button>
+                    <button data-choice="3">Natural law</button>
+                </div>
+            </div>
+
+            <button class="widget-reset">Reset</button>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; YOUR FINAL ASSIGNMENTS</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Capstone Essay (4.09 Assignment)</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">Write a 900&ndash;1200 word philosophical essay responding to: "Which of the four ethical theories studied in this course is the most adequate account of morality, and why? What remains unresolved?" You must engage at least three of the four theories by name, with specific reference to at least three primary sources from the course.</div>
+            </div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Confirm all Quarter 4 submissions before the course closes</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">
+                    <ul style="margin: 6px 0 0 0; padding-left: 20px; line-height: 1.75;">
+                        <li>Lesson 4.01 Discussion Post</li>
+                        <li>Lesson 4.02 Discussion Post</li>
+                        <li>Lesson 4.03 Discussion Post</li>
+                        <li>Lesson 4.04 Discussion Post</li>
+                        <li>Lesson 4.05 Discussion Post</li>
+                        <li>Lesson 4.06 Discussion Post</li>
+                        <li>Lesson 4.07 Discussion Post</li>
+                        <li>Lesson 4.08 Synthesis Essay</li>
+                        <li>Lesson 4.09 Capstone Essay</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="background: #0E1C42; border-radius: 10px; padding: 28px 32px; margin-bottom: 20px; text-align: center;">
+        <div style="font-size: 13px; color: #55c8e8; margin-bottom: 14px; letter-spacing: 0.5px;">PHILOSOPHY HONORS: ETHICS &middot; COURSE CONCLUSION</div>
+        <div style="font-size: 22px; color: #ffffff; margin-bottom: 12px; line-height: 1.4;">The philosophical conversation you entered this year is four thousand years old. You are now part of it.</div>
+        <div style="font-size: 17px; color: rgba(255,255,255,0.75); line-height: 1.65;">From Socrates asking his fellow citizens to account for their lives, to Aristotle tracing eudaimonia through virtue and friendship, to Kant demanding that persons never be used as mere means, to Aquinas showing how reason participates in the order of creation, the tradition has asked, again and again, the same question that opens Lesson 1.01: how should one live? There is no final answer that closes the question. There is only the ongoing effort of reason, conscience, and character to answer it well.</div>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; PHILOSOPHY HONORS: ETHICS &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 4.09 &middot; Course Capstone</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget') || reset.parentElement;
+      if (w) {
+        w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+        w.querySelectorAll('.widget-feedback').forEach(function (f) { f.classList.remove('show'); f.textContent = ''; });
+        w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      }
+      return;
+    }
+    var rBtn = e.target.closest('.ow-reflect .widget-options button');
+    if (rBtn) {
+      var rw = rBtn.closest('.optima-widget');
+      rw.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected'); });
+      rBtn.classList.add('selected');
+      var fb = rw.querySelector('.widget-feedback');
+      fb.textContent = rBtn.dataset.response || '';
+      fb.classList.add('show');
+      return;
+    }
+    var sBtn = e.target.closest('.ow-select .widget-row .widget-options button, .ow-scale .widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? (row.dataset.fb || 'Right.') : (row.dataset.hint || 'Not quite. Try again.');
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+  });
+})();
+</script>
+</body>
+</html>
