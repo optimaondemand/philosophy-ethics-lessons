@@ -30,9 +30,9 @@
 <body>
 <div class="canvas-frame">
 
-<!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
-     OPTIMA READ-ALOUD PLAYER â€” drop-in snippet for GitHub-hosted lesson pages
-     â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER — drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
 
      WHAT IT DOES
        Adds a "Listen" player that reads the page aloud using the browser's
@@ -42,19 +42,19 @@
 
      WHERE TO PASTE
        Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
-       NOT Canvas RCE pages â€” the RCE strips <script>). Paste this whole block
+       NOT Canvas RCE pages — the RCE strips <script>). Paste this whole block
        just inside the body wrapper, right BEFORE the first content card.
 
      OPTIONS
-       â€¢ Add  data-ra-skip  to any element the reader should NOT read
+       • Add  data-ra-skip  to any element the reader should NOT read
          (e.g. the local preview banner, decorative text, answer keys).
-       â€¢ Add  data-readaloud-root  to one container to limit reading to it.
+       • Add  data-readaloud-root  to one container to limit reading to it.
          Default scope: the .canvas-frame wrapper, else <body>.
 
      NOTES
-       â€¢ The player never reads itself, <button> labels, or hidden elements
+       • The player never reads itself, <button> labels, or hidden elements
          (so unrevealed widget feedback stays unread until shown).
-       â€¢ If the browser has no speech voices, the player disables itself
+       • If the browser has no speech voices, the player disables itself
          with a friendly message instead of breaking the page.
 -->
 <div id="optima-read-aloud">
@@ -102,13 +102,13 @@
         return;
     }
 
-    var LABEL_PLAY   = "â–¶ï¸ Listen";
-    var LABEL_PAUSE  = "â¸ï¸ Pause";
-    var LABEL_RESUME = "â–¶ï¸ Resume";
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
     var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
     var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
 
-    var queue = [];        // [{ el, text }] â€” one entry per sentence
+    var queue = [];        // [{ el, text }] — one entry per sentence
     var idx = 0;
     var playing = false, paused = false, stopping = false;
     var currentBlock = null;
@@ -139,7 +139,7 @@
                 || document.querySelector(".canvas-frame")
                 || document.body;
         var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
-        var items = [];   // [{ el, text }] â€” one entry per block, in reading order
+        var items = [];   // [{ el, text }] — one entry per block, in reading order
         var node;
         while ((node = walker.nextNode())) {
             if (!/\S/.test(node.textContent)) continue;
@@ -155,7 +155,7 @@
         items.forEach(function (item) {
             var clean = item.text.replace(/\s+/g, " ").trim();
             if (!clean) return;
-            var sentences = clean.match(/[^.!?]+[.!?]+[â€"')\]]*\s*|[^.!?]+$/g) || [clean];
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
             sentences.forEach(function (s) {
                 s = s.trim();
                 if (s) q.push({ el: item.el, text: s });
@@ -198,7 +198,7 @@
         };
         currentUtterance = u;
         window.speechSynthesis.speak(u);
-        statusEl.textContent = "Readingâ€¦ " + (idx + 1) + " / " + queue.length;
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
     }
 
     function finish(message) {
@@ -223,7 +223,7 @@
             window.speechSynthesis.resume();
             paused = false;
             playBtn.textContent = LABEL_PAUSE;
-            statusEl.textContent = "Readingâ€¦ " + (idx + 1) + " / " + queue.length;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
             return;
         }
         queue = collectQueue();
@@ -256,7 +256,7 @@
 })();
 </script>
 </div>
-<!-- â•â•â• END OPTIMA READ-ALOUD PLAYER â•â•â• -->
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
 
 <div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
     <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
